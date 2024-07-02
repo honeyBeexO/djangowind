@@ -2,39 +2,48 @@
 
 Here's a simple way to configure Tailwind CSS with Django:
 
-Install required packages:
-Copynpm install -D tailwindcss
+### Install required packages:
+```sh
+npm install -D tailwindcss
 
-Create a Tailwind config file:
-Copynpx tailwindcss init
 
-Configure your template paths in tailwind.config.js:
-javascriptCopymodule.exports = {
-  content: [
-    './templates/**/*.html',
-    './your_project/**/*.py',  // adjust this to your project name
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+### Create a Tailwind config file:
+    ```sh
+    npx tailwindcss init
 
-Create a CSS file (e.g., static/css/input.css):
-cssCopy@tailwind base;
-@tailwind components;
-@tailwind utilities;
+### Configure your template paths in tailwind.config.js:
+    ``` javascript 
+    module.exports = {
+        content: [
+            './templates/**/*.html',
+            './your_project/**/*.py',  // adjust this to your project name
+        ],
+        theme: {
+            extend: {},
+        },
+        plugins: [],
+    }
 
-Add a script to your package.json:
-jsonCopy"scripts": {
-  "dev": "tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch"
-}
+### Create a CSS file (e.g., static/css/input.css):
+    ```css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 
-Run the Tailwind CLI build process:
-Copynpm run dev
+### Add a script to your package.json:
+    ``` javascript
 
-Include the compiled CSS in your base template:
-htmlCopy<link href="{% static 'css/output.css' %}" rel="stylesheet">
+    "scripts": {
+    "dev": "tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch"
+    }
+
+### Run the Tailwind CLI build process:
+    ``` sh
+    npm run dev
+
+### Include the compiled CSS in your base template:
+    ``` html
+    <link href="{% static 'css/output.css' %}" rel="stylesheet">
 
 Make sure 'django.contrib.staticfiles' is in INSTALLED_APPS and you've set up STATIC_URL in settings.py.
 Use Tailwind classes in your HTML.
