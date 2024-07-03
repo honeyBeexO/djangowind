@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base - Tailwind CSS Startup Template</title>
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
-  
+	<script src="https://js.stripe.com/v3/"></script> <!-- new -->
+    <script src="{% static 'main.js' %}"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
   {% compress css %}
 	  <link rel="stylesheet"
 		href="{% static 'css/output.css' %}">
@@ -326,5 +328,5 @@
 			  };
 			};
 		  </script>
-		<script defer src="bundle.js"></script></body>
+		<script defer src="{% static 'js/bundle.js' %}"></script></body>
 </html>

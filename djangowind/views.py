@@ -1,7 +1,7 @@
 from django.shortcuts import render # type: ignore
 
 def index(request):
-	return render(request, 'blog-grid.html')
+	return render(request, 'index.html')
 def signin(request):
 	return render(request, 'signin.html')
 def signup(request):

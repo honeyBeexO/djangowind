@@ -27,9 +27,12 @@
               </p>
 
               <div class="tc tf yo zf mb">
-                <a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l"
-                  >Get Started Now</a
-                >
+                
+                <button class="button is-primary ek jk lk gh gi hi rg ml il vc _d _l" id="submitBtn" data-config-url="{% url 'config' %}" data-checkout-session-url="{% url 'checkout' %}">
+                  Get Started Now!
+                </button> 
+                {% comment %} <a href="{% url 'home' %}" class="ek jk lk gh gi hi rg ml il vc _d _l" id="submitBtn"
+                  >Get Started Now</a>  {% endcomment %}
 
                 <span class="tc sf">
                   <a href="#" class="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
@@ -485,7 +488,7 @@
             <!-- Project Item -->
             <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
               <div class="c i pg sg z-1">
-                <img src="images/project-01.png" alt="Project" />
+                <img src="{% static 'images/project-01.png' %}" alt="Project" />
 
                 <div 
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -507,7 +510,7 @@
             <!-- Project Item -->
             <div class="project-item wi fb vd jn/2 to/3 digital">
               <div class="c i pg sg z-1">
-                <img src="images/project-02.png" alt="Project" />
+                <img src="{% static 'images/project-02.png' %}" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -529,7 +532,7 @@
             <!-- Project Item -->
             <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
               <div class="c i pg sg z-1">
-                <img src="images/project-04.png" alt="Project" />
+                <img src="{% static 'images/project-04.png' %}" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -551,7 +554,7 @@
             <!-- Project Item -->
             <div class="project-item wi fb vd vo/3 digital ecommerce">
               <div class="c i pg sg z-1">
-                <img src="images/project-03.png" alt="Project" />
+                <img src="{% static 'images/project-03.png' %}" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -607,10 +610,10 @@
                     <span class="rc je md/2 mh yg h q p"></span>
 
                     <div class="tc sf rn tn un zf dp">
-                      <img class="bf" src="images/testimonial.png" alt="User" />
+                      <img class="bf" src="{% static 'images/testimonial.png' %}" alt="User" />
 
                       <div>
-                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <img src="{% static 'images/icon-quote.svg' %}" alt="Quote" />
                         <p class="ek ik xj _p kc fb">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.
                         </p>
@@ -621,7 +624,7 @@
                             <span class="rc">Founter @democompany</span>
                           </div>
 
-                          <img class="rk" src="images/brand-light-02.svg" alt="Brand" />
+                          <img class="rk" src="{% static 'images/brand-light-02.svg' %}" alt="Brand" />
                         </div>
                       </div>
                     </div>
@@ -656,10 +659,10 @@
 
       <!-- ===== Counter Start ===== -->
       <section class="i pg qh rm ji hp">
-        <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
-        <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
-        <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
-        <img src="images/shape-15.svg" alt="Shape" class="h q p" />
+        <img src="{% static 'images/shape-11.svg' %}" alt="Shape" class="of h ga ha ke" />
+        <img src="{% static 'images/shape-07.svg' %}" alt="Shape" class="h ia o ae jf" />
+        <img src="{% static 'images/shape-14.svg' %}" alt="Shape" class="h ja ka" />
+        <img src="{% static 'images/shape-15.svg' %}" alt="Shape" class="h q p" />
 
         <div class="bb ze i va ki xn br">
           <div class="tc uf sn tn xf un gg">
@@ -684,173 +687,6 @@
       </section>
       <!-- ===== Counter End ===== -->
 
-      <!-- ===== Clients Start ===== -->
-      <section class="pj vp mr">
-        <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Trusted by Global Brands`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
-
-
-        </div>
-        <!-- Section Title End -->
-
-        <div class="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
-          <div class="wc rf qn zf cp kq xf wf">
-            <a href="#" class="rc animate_top">
-              <img class="th wl ml il zl om" src="images/brand-light-01.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-01.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-02.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-02.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-03.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-03.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-04.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-04.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-05.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-05.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-06.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-06.svg" alt="Clients" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Clients End ===== -->
-
-      <!-- ===== Blog Start ===== -->
-      <section class="ji gp uq">
-        <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Latest Blogs & News`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
-
-
-        </div>
-        <!-- Section Title End -->
-
-        <div class="bb ye ki xn vq jb jo">
-          <div class="wc qf pn xo zf iq">
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-01.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Free advertising for your online business</a>
-                </h4>
-              </div>
-            </div>
-
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-02.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">9 simple ways to improve your design skills</a>
-                </h4>
-              </div>
-            </div>
-
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-03.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Tips to quickly improve your coding speed.</a>
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Blog End ===== -->
 
       <!-- ===== Contact Start ===== -->
       <section id="support" class="i pg fh rm ji gp uq">

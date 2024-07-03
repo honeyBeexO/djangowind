@@ -1,16 +1,24 @@
+document.addEventListener("DOMContentLoaded", function() {
 console.log("Sanity check!");
 
+// Get the button element
+const submitBtn = document.querySelector("#submitBtn");
+
+// Get URLs from data attributes
+const configUrl = submitBtn.getAttribute('data-config-url');
+const checkoutSessionUrl = submitBtn.getAttribute('data-checkout-session-url');
+
 // Get Stripe publishable key
-fetch("/config/")
+fetch(configUrl)
 .then((result) => { return result.json(); })
 .then((data) => {
   // Initialize Stripe.js
   const stripe = Stripe(data.publicKey);
 
   // Event handler
-  document.querySelector("#submitBtn").addEventListener("click", () => {
+  submitBtn.addEventListener("click", () => {
     // Get Checkout Session ID
-    fetch("/create-checkout-session/")
+    fetch(checkoutSessionUrl)
     .then((result) => { return result.json(); })
     .then((data) => {
       console.log('Checkout session data:', data);  // Log the received data
@@ -30,4 +38,5 @@ fetch("/config/")
       console.error('Error in fetch chain:', error);
     });
   });
+});
 });

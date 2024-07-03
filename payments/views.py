@@ -5,6 +5,10 @@ from django.http.response import JsonResponse, HttpResponse # type: ignore # new
 from django.views.decorators.csrf import csrf_exempt # type: ignore # new
 from django.views.generic.base import TemplateView # type: ignore
 import stripe # type: ignore
+from django.http import HttpResponseRedirect
+from django.shortcuts import render,redirect
+from django.urls import reverse
+from django.contrib import messages
 
 class HomePageView(TemplateView):
     template_name = 'home.html'
@@ -30,17 +34,17 @@ def create_checkout_session(request):
         
         try:
             checkout_session = stripe.checkout.Session.create(
-                success_url=domain_url + 'success?session_id={CHECKOUT_SESSION_ID}',
-                cancel_url=domain_url + 'cancelled/',
+                success_url=domain_url + 'buy/success?session_id={CHECKOUT_SESSION_ID}',
+                cancel_url=domain_url + 'buy/cancelled/',
                 payment_method_types=['card'],
                 mode='payment',
                 client_reference_id=request.user.id if request.user.is_authenticated else None,
                 #allow_promotion_codes=True,
-                discounts=[
-                    {
-                        "coupon": 'yaEA65kR',
-                     }
-                ],
+                # discounts=[
+                #     {
+                #         "coupon": 'yaEA65kR',
+                #      }
+                # ],
                 # line_items=[
                 #     {
                 #         'price_data': {
@@ -64,8 +68,15 @@ def create_checkout_session(request):
             return JsonResponse({'sessionId': checkout_session['id']})
         except Exception as e:
             return JsonResponse({'error': str(e)})
-        
+   
+# def sucess_view(request):
+#     messages.success(request, f'Payement Successfully Completed!')
+#     return redirect(request,reverse('index'))     
+
 class SuccessView(TemplateView):
+    #HttpResponseRedirect(reverse("polls:results", args=(question.id,)))
+    #messages.success(request, f'Account was successfully registered for {username}! You can now login with using your details')
+    #return redirect('login')
     template_name = 'success.html'
 
 
