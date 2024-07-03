@@ -5,7 +5,7 @@ from .views import index,signin,login,signup,error
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='index'),
+    #path('', index, name='index'),
     path('index/', index, name='index'),
     path('signin/', signin, name='signin'),
     path('signup/', signup, name='signup'),

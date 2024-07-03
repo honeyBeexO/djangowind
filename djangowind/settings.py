@@ -26,13 +26,16 @@ env = environ.Env(
 
 # Take environment variables from .env file
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
-
+import stripe  # type: ignore
 # Base settings
 SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 STRIPE_PUBLISHABLE_KEY = env('STRIPE_PUBLISHABLE_KEY')
 STRIPE_SECRET_KEY = env('STRIPE_SECRET_KEY')
+STRIPE_ENDPOINT_SECRET = env('STRIPE_ENDPOINT_SECRET')
 
+stripe.STRIPE_SECRET_KEY = STRIPE_SECRET_KEY
+#stripe.WebhookEndpoint = STRIPE_ENDPOINT_SECRET
 
 ALLOWED_HOSTS = []
 
