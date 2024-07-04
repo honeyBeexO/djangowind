@@ -24,6 +24,12 @@
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
     :class="{'b eh': darkMode === true}"
   >
+
+  {% if DEBUG %}
+  	<script src="http://127.0.0.1:8080/livereload.js?snipver=1"></script>
+  {% endif %}
+
+
     <!-- ===== Header Start ===== -->
     <header
   class="g s r vd ya cj"
@@ -121,12 +127,16 @@
 		  <div class="ji gp">
 			<div class="tc uf ap gg fp">
 			  <div class="animate_top zd/2 to/4">
-				<a href="index.html">
+				<a href="{% url 'signin' %}">
 				  <img src="{% static 'images/logo-light.svg' %}" alt="Logo" class="om" />
 				  <img src="{% static 'images/logo-dark.svg' %}" alt="Logo" class="xc nm" />
 				</a>
 	  
-				<p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
 	  
 				<ul class="tc wf cg">
 				  <li>

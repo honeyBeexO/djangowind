@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 3rd party libraries
     'compressor',
+    #'django_extensions',
+    'livereload',
     
     # Custom apps
     'users.apps.UsersConfig',
@@ -64,7 +66,13 @@ COMPRESS_ROOT = BASE_DIR / 'static'
 COMPRESS_ENABLED = True
  
 STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
- 
+#LIVERELOAD_SERVER_PORT = 8080
+
+# Explicitly specify the directories to watch
+LIVERELOAD_WATCH_PATHS = [
+    str(BASE_DIR / 'templates'),
+    str(BASE_DIR / 'static'),
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -74,6 +82,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # live reloading
+    'livereload.middleware.LiveReloadScript',
 ]
 
 ROOT_URLCONF = 'djangowind.urls'
