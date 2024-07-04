@@ -12,4 +12,5 @@ urlpatterns = [
     path('login/', login, name='login'),
     path('404/', error, name='error'),
     path('buy/', include('payments.urls')), # new
+    path('products/', include('products.urls')), # new
 ]

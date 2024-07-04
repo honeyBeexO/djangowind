@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     # Custom apps
     'users.apps.UsersConfig',
     'payments.apps.PaymentsConfig',
+    'products.apps.ProductsConfig',
 ]
 
 """ Django compressor configuration """
