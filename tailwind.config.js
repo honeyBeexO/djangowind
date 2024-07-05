@@ -3,7 +3,7 @@ module.exports = {
   darkMode: 'class',
   content: [
     './templates/**/*.html',
-    './djangowind/**/*.py',
+    './config/**/*.py',
   ],
   theme: {
     extend: {},

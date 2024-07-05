@@ -1,4 +1,4 @@
-# djangowind
+# config
 
 Here's a simple way to configure Tailwind CSS with Django:
 
