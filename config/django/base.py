@@ -43,20 +43,6 @@ INSTALLED_APPS = [
     'products.apps.ProductsConfig',
 ]
 
-""" Django compressor configuration """
-COMPRESS_ROOT = BASE_DIR / 'static'
- 
-COMPRESS_ENABLED = True
- 
-STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
-#LIVERELOAD_SERVER_PORT = 8080
-
-# Explicitly specify the directories to watch
-LIVERELOAD_WATCH_PATHS = [
-    str(BASE_DIR / 'templates'),
-    str(BASE_DIR / 'static'),
-]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -74,7 +60,11 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [
+            BASE_DIR / 'templates',
+            BASE_DIR / 'admin',
+                 
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -134,7 +124,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
-import os
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
@@ -146,3 +135,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.CustomUser'
+
+# Here is a good place to import all 3rd party settings
+# from config.settings.celery import *
+# from config.settings.file_storage import *
