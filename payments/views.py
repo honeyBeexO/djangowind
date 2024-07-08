@@ -4,7 +4,7 @@ from django.conf import settings # type: ignore # new
 from django.http.response import JsonResponse, HttpResponse # type: ignore # new
 from django.views.decorators.csrf import csrf_exempt # type: ignore # new
 from django.views.generic.base import TemplateView # type: ignore
-import stripe # type: ignore
+from config.settings import stripe # type: ignore
 from django.http import HttpResponseRedirect
 from django.shortcuts import render,redirect
 from django.urls import reverse

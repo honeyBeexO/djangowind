@@ -19,12 +19,9 @@ from config.env import BASE_DIR, env
 env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Base settings
-SECRET_KEY = env('SECRET_KEY')
-DEBUG = env.bool('DJANGO_DEBUG',default=True)
-
-
-ALLOWED_HOSTS = ["*"]
-
+SECRET_KEY = env('DJANGO_SECRET_KEY')
+DEBUG = env.bool('DJANGO_DEBUG',default=False)
+ALLOWED_HOSTS = []
 
 # Application definition
 
