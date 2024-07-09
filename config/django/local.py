@@ -13,6 +13,7 @@ from config.settings.compressor import *
 from config.settings.live_reload import *
 from config.settings.stripe import *
 
+
 CACHES = {
     "default":{
         "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
@@ -27,6 +28,7 @@ EMAIL_TIMEOUT = 5
 INSTALLED_APPS +=['django_extensions']  #,'debug_toolbar']
 MIDDLEWARE+=[LIVE_RELOAD_MIDDLEWARE]    #'debug_toolbar.middleware.DebugToolbarMiddleware'] # live reloading and django toolbar
 INTERNAL_IPS = ["127.0.0.1","0.0.0.0"]  # For the django tool bar
+
 
 # Admin settings
 # # Django Admin URL.

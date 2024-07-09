@@ -1,8 +1,8 @@
 from config.env import BASE_DIR, env
 
 # `allauth` specific authentication methods, such as login by email
-ALL_AUTH_AUTHENTICATION_BACKENDS = 'allauth.account.auth_backends.AuthenticationBackend', 
-ALL_AUTH_MIDDLEWARE = "allauth.account.middleware.AccountMiddleware",
+ALL_AUTH_AUTHENTICATION_BACKENDS = 'allauth.account.auth_backends.AuthenticationBackend'
+ALL_AUTH_MIDDLEWARE = "allauth.account.middleware.AccountMiddleware"
 
 ALL_AUTH_APPS = [
     'allauth',
@@ -21,9 +21,9 @@ ACCOUNT_EMAIL_REQUIRED = True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-ACCOUNT_ADAPTER = "google_auth.users.adapters.AccountAdapter"
+ACCOUNT_ADAPTER = "users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-SOCIALACCOUNT_ADAPTER = "google_auth.users.adapters.SocialAccountAdapter"
+SOCIALACCOUNT_ADAPTER = "users.adapters.SocialAccountAdapter"
 
 
 # Your stuff...

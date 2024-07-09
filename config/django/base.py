@@ -1,6 +1,7 @@
 
 import os
 from config.env import BASE_DIR, env
+from config.settings.all_auth import *
 
 # Read environment variables from .env file
 env.read_env(os.path.join(BASE_DIR, '.env'))
@@ -36,7 +37,7 @@ THIRD_PARTY_APPS = [
     # 3rd party libraries
     'compressor', # to be used with tailwind css 
     'livereload', #'django_extensions',
-]
+] + ALL_AUTH_APPS
 
 LOCAL_OWN_APPS =[
         # Custom apps
@@ -55,6 +56,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    ALL_AUTH_MIDDLEWARE,
+    
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -94,6 +97,7 @@ DATABASES = {
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
+    ALL_AUTH_AUTHENTICATION_BACKENDS,
 ]
 
 # Password validation
