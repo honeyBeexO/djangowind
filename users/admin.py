@@ -1,5 +1,8 @@
-from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin
+from django.contrib import admin # type: ignore
+from django.contrib.auth.admin import UserAdmin # type: ignore
+
+from django.contrib.auth import get_user_model # type: ignore
+from django.utils.translation import gettext_lazy as _ # type: ignore
 
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 from .models import CustomUser
@@ -24,7 +27,7 @@ class CustomUserAdmin(UserAdmin):
             )}
         ),
     )
-    search_fields = ("email",)
+    search_fields = ("email","name")
     ordering = ("email",)
 
 

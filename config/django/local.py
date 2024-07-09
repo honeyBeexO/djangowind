@@ -11,4 +11,27 @@ if os.environ.get('RUN_MAIN') == 'true':
 
 from config.settings.compressor import *
 from config.settings.live_reload import *
+from config.settings.stripe import *
 
+CACHES = {
+    "default":{
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+        "LOCATION": "",
+    }
+}
+ # Email settings: # https://docs.djangoproject.com/en/dev/ref/settings/#email-timeout
+EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND',default='django.core.mail.backends.smtp.EmailBackend')
+EMAIL_TIMEOUT = 5
+
+ # General settings 
+INSTALLED_APPS +=['django_extensions']  #,'debug_toolbar']
+MIDDLEWARE+=[LIVE_RELOAD_MIDDLEWARE]    #'debug_toolbar.middleware.DebugToolbarMiddleware'] # live reloading and django toolbar
+INTERNAL_IPS = ["127.0.0.1","0.0.0.0"]  # For the django tool bar
+
+# Admin settings
+# # Django Admin URL.
+# ADMIN_URL = "admin/"
+# # https://docs.djangoproject.com/en/dev/ref/settings/#admins
+# ADMINS = [("""Leon Wei""", "leon@instamentor.com")]
+# # https://docs.djangoproject.com/en/dev/ref/settings/#managers
+# MANAGERS = ADMINS
