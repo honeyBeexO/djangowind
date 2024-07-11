@@ -5,10 +5,14 @@ from config.settings.all_auth import *
 
 # Read environment variables from .env file
 env.read_env(os.path.join(BASE_DIR, '.env'))
-
+print(f'Environment read from .env file: f{env}')
 # Base settings
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 DEBUG = env.bool('DJANGO_DEBUG',default=False)
+
+print(f'SK: {SECRET_KEY}, DEBUG: {DEBUG} GOOGLE: {env("GOOGLE_CLIENT_ID")}')
+
+
 ALLOWED_HOSTS = []
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
@@ -24,6 +28,7 @@ USE_TZ = True
 
 DJANGO_APPS = [
     'django.contrib.admin',
+    'django.contrib.sites',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -37,6 +42,8 @@ THIRD_PARTY_APPS = [
     # 3rd party libraries
     'compressor', # to be used with tailwind css 
     'livereload', #'django_extensions',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ] + ALL_AUTH_APPS
 
 LOCAL_OWN_APPS =[
@@ -66,17 +73,22 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates',
-            BASE_DIR / 'admin',
-                 
+            BASE_DIR / 'templates',                 
         ],
         'APP_DIRS': True,
         'OPTIONS': {
+            # 'loaders': [
+            #     "django.template.loaders.filesystem.Loader",
+            #     "django.template.loaders.app_directories.Loader",
+            # ],
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # To get access to CLIENT_ID in the context template
+                "users.utils.context_processors.settings_context",
+                "users.utils.context_processors.google_client_id",
             ],
         },
     },
@@ -105,7 +117,7 @@ AUTHENTICATION_BACKENDS = [
 
 PASSWORD_HASHERS = [
     # https://docs.djangoproject.com/en/dev/topics/auth/passwords/#using-argon2-with-django
-    "django.contrib.auth.hashers.Argon2PasswordHasher",
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
     "django.contrib.auth.hashers.PBKDF2PasswordHasher",
     "django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher",
     "django.contrib.auth.hashers.BCryptSHA256PasswordHasher",
@@ -145,6 +157,15 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.CustomUser'
+
+# https://docs.djangoproject.com/en/dev/ref/settings/#form-renderer
+FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
+
+# http://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+
+
 # LOGIN_URL = 'account_login'
 # LOGIN_REDIRECT_URL = 'users:redirect'
 

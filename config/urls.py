@@ -3,11 +3,15 @@ from django.contrib import admin # type: ignore
 from django.urls import path,include # type: ignore
 from .views import index,signin,login,signup,error
 from django.conf import settings # type: ignore
+from django.conf.urls.static import static # type: ignore
+from django.views import defaults as default_views # type: ignore
+from django.views.generic import TemplateView # type: ignore
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='index'),
-    
+    #path('', index, name='index'),
+    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    path("about/", TemplateView.as_view(template_name="pages/about.html"), name="about"),
     # User management
     path("users/", include("users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
@@ -19,7 +23,7 @@ urlpatterns = [
     path('404/', error, name='error'),
     path('buy/', include('payments.urls')), # new
     path('products/', include('products.urls')), # new
-]
+] +  static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
 
 if settings.DEBUG:
     from django.views import defaults as default_views # type: ignore

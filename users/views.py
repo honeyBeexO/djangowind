@@ -7,12 +7,16 @@ from django.urls import reverse # type: ignore
 from django.utils.translation import gettext_lazy as _ # type: ignore
 from django.views.generic import DetailView, RedirectView, UpdateView # type: ignore
 
-User = get_user_model()
+from django.views.decorators.csrf import csrf_exempt # type: ignore
+from django.http import HttpResponseRedirect # type: ignore
+LOCAL_DOMAIN = 'localhost:8000'
+
+CustomUser = get_user_model()
 
 
 class UserDetailView(LoginRequiredMixin, DetailView):
 
-    model = User
+    model = CustomUser
     slug_field = "email"
     slug_url_kwarg = "email"
 
@@ -22,7 +26,7 @@ user_detail_view = UserDetailView.as_view()
 
 class UserUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
 
-    model = User
+    model = CustomUser
     fields = ("email")
     success_message = _("Information successfully updated")
 
@@ -45,3 +49,8 @@ class UserRedirectView(LoginRequiredMixin, RedirectView):
 
 
 user_redirect_view = UserRedirectView.as_view()
+
+@csrf_exempt
+def google_one_tap_login(request):
+    login_url = LOCAL_DOMAIN + '/accounts/google/login/'
+    return HttpResponseRedirect(login_url)
