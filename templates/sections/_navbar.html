@@ -83,9 +83,9 @@
          </div>
          {% if not request.user.is_authenticated %}
             {# URL provided by django-allauth/account/urls.py #}
-            <a href="{% url 'signin' %}" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Sign In</a>
+            <a href="{% url 'account_login' %}" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Sign In</a>
             {# URL provided by django-allauth/account/urls.py #}
-            <a href="{% url 'account_login' %}" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">Sign Up</a>
+            <a href="{% url 'account_signup' %}" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">Sign Up</a>
          {% else %}
             {# URL provided by django-allauth/account/urls.py #}
             <a href="{% url 'users:detail' request.user.email %}" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">{% trans "My Profile" %}</a>
@@ -98,5 +98,7 @@
  </header>
 
 {% endblock navbar_and_header %}
+
+<!-- ===== Header Ends ===== -->
 
 
