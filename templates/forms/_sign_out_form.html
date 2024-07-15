@@ -1,0 +1,13 @@
+
+{% load i18n %}
+<form class="sb" action="{% url 'account_logout' %}" method="POST">
+    {% csrf_token %}
+    {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+    {% endif %}
+    <div class="wb">
+      <button class="vd rj ek rc rg gh lk ml il _l gi hi" type="submit">
+        {% trans 'Sign Out' %}
+      </button>
+    </div>
+  </form>

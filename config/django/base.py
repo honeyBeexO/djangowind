@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = [
     'livereload', #'django_extensions',
     'crispy_forms',
     'crispy_bootstrap5',
+    'widget_tweaks',
 ] + ALL_AUTH_APPS
 
 LOCAL_OWN_APPS =[

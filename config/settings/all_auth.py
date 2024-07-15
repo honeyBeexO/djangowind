@@ -69,7 +69,8 @@ SOCIALACCOUNT_PROVIDERS = {
             'key': '',
         },
         'OAUTH_PKCE_ENABLED': True,
-        'FETCH_USERINFO': True
+        'FETCH_USERINFO': True,
+        'sites': [1,2], # IDs of example.com and localhost:8000
     }
 }
 

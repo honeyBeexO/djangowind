@@ -31,10 +31,7 @@
        <!-- Hamburger Toggle BTN -->
      </div>
  
-     <div
-       class="vd wo/4 sd qo f ho oo wf yf"
-       :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }"
-     >
+     <div class="vd wo/4 sd qo f ho oo wf yf" :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }">
        <nav>
          <ul class="tc _o sf yo cg ep">
            <li><a href="{% url 'index' %}" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
@@ -46,7 +43,7 @@
                @click.prevent="dropdown = !dropdown"
                :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }"
              >
-               Pages
+               NBJJ
  
                <svg
                :class="{ 'wh': dropdown }"
@@ -82,7 +79,7 @@
            </label>
          </div>
          {% if not request.user.is_authenticated %}
-            {# URL provided by django-allauth/account/urls.py #}
+            {# URL provided by django-allauth/account/urls.py  #}
             <a href="{% url 'account_login' %}" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Sign In</a>
             {# URL provided by django-allauth/account/urls.py #}
             <a href="{% url 'account_signup' %}" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">Sign Up</a>

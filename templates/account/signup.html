@@ -1,23 +1,74 @@
 {% extends "account/base.html" %}
-
-{% load i18n %}
-{% load crispy_forms_tags %}
-
-{% block head_title %}{% trans "Signup" %}{% endblock %}
+{% load i18n static %}
+{% load account socialaccount %}
 
 {% block inner %}
-<h1>{% trans "Sign Up" %}</h1>
 
-<p>{% blocktrans %}Already have an account? FUCK YOU Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form|crispy }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button class="btn btn-primary" type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+  <!-- ===== SignUp Form Start ===== -->
+  <section class="i pg fh rm ki xn vq gj qp gr hj rp hr">
+
+    {% include "utils/_background_shape.html" %}
+
+    <div class="animate_top bb af i va sg hh sm vk xm yi _n jp hi ao kp">
+      <!-- Bg Border -->
+      <span class="rc h r s zd/2 od zg gh"></span>
+      <span class="rc h r q zd/2 od xg mh"></span>
+
+      <div class="rj">
+        <h2 class="ek ck kk wm xb">Create an Account</h2>
+        <p>{% trans "Welcome to our platform" %}</p>
+
+        <h3 class="hk yj kk wm ob mc">
+          {% trans "Sign Up with Google" %}
+        </h3>
+        {% get_providers as socialaccount_providers %}
+
+        {% if socialaccount_providers %}
+        <p>
+          {% blocktrans with site.name as site_name %}
+          Please join us with one of your existing Google accounts. Or, 
+          <a href="{{ signup_url }}">sign up</a>
+          for a {{ site_name }} account and sign in below:
+          {% endblocktrans %}
+        </p>
+
+        <div class="socialaccount_ballot">
+          <ul class="tc wf xf mg ec">
+            {% for provider in socialaccount_providers %}
+            <li>
+              <a class="tc wf xf be dd di sg _g ch qm ml il bm rl/40 ym/40" href="{% provider_login_url provider.id %}">
+                {% if provider.id == "google" %}
+                  {% include "forms/sections/_google_svg.html" %}
+                  {% else %}
+                  {{ provider.name }}
+                {% endif %}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% else %}
+        <p>
+          {% blocktrans %}
+            If you have not created an account yet, then please
+            <a href="{{ signup_url }}">sign up</a> first.
+          {% endblocktrans %}
+        </p>
+        {% endif %}
+
+        <span class="i rc sj hk xj">
+          <span class="rc h s z/2 nd oe rh tm"></span>
+          <span class="rc h q z/2 nd oe rh tm"></span>
+
+          {% trans "Or, sign up with your email" %}
+        </span>
+      </div>
+      {% include "forms/_sign_up_form.html" %}
+    </div>
+  </section>
+  <!-- ===== SignUp Form End ===== -->
+
 
 {% endblock %}
 

@@ -11,6 +11,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', index, name='index'),
     path("", TemplateView.as_view(template_name="index.html"), name="home"),
+    path("test_x/", TemplateView.as_view(template_name="login_test.html"), name="test_x"),
     path("about/", TemplateView.as_view(template_name="pages/about.html"), name="about"),
     # User management
     path("users/", include("users.urls", namespace="users")),
