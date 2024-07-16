@@ -2,8 +2,9 @@ from django.utils.translation import gettext_lazy as _ # type: ignore
 from users.managers import CustomUserManager
 from django.contrib.auth.models import AbstractUser # type: ignore
 from django.urls import reverse # type: ignore
-from django.db.models import CharField, EmailField,UUIDField # type: ignore
+from django.db.models import Model,CharField, EmailField,UUIDField,OneToOneField,ImageField,TextField,CASCADE # type: ignore
 import uuid
+from django.conf import settings # type: ignore
 
 class CustomUser(AbstractUser):
     username = None
@@ -28,7 +29,16 @@ class CustomUser(AbstractUser):
         """
         return reverse("users:detail", kwargs={"uuid": self.uuid})
     
+class Profile(Model):
+    user = OneToOneField(settings.AUTH_USER_MODEL, on_delete=CASCADE)
+    full_name = CharField(max_length=255, blank=True, null=True)
+    profile_image = ImageField(upload_to='profile_images/', blank=True, null=True)
+    address = TextField(blank=True, null=True)
+    uuid = UUIDField(default=uuid.uuid4, editable=False, unique=True)
 
+    def __str__(self):
+        return self.user.email
+    
 # from django.contrib.auth.models import AbstractUser
 # from django.db.models import CharField
 # from django.urls import reverse

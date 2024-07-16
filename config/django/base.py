@@ -5,12 +5,10 @@ from config.settings.all_auth import *
 
 # Read environment variables from .env file
 env.read_env(os.path.join(BASE_DIR, '.env'))
-print(f'Environment read from .env file: f{env}')
 # Base settings
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 DEBUG = env.bool('DJANGO_DEBUG',default=False)
 
-print(f'SK: {SECRET_KEY}, DEBUG: {DEBUG} GOOGLE: {env("GOOGLE_CLIENT_ID")}')
 
 
 ALLOWED_HOSTS = []
@@ -151,6 +149,13 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+# MEDIA
+# ------------------------------------------------------------------------------
+# https://docs.djangoproject.com/en/dev/ref/settings/#media-root
+MEDIA_ROOT = str(BASE_DIR / "media")
+# https://docs.djangoproject.com/en/dev/ref/settings/#media-url
+MEDIA_URL = "/media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
