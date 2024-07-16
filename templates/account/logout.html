@@ -1,0 +1,32 @@
+{% extends "account/base.html" %}
+
+{% load i18n static %}
+
+{% block inner %}
+
+  <!-- ===== Sign out Form Start ===== -->
+  <section class="i pg fh rm ki xn vq gj qp gr hj rp hr">
+    {% include "utils/_background_shape.html" %}
+    <div class="animate_top bb af i va sg hh sm vk xm yi _n jp hi ao kp">
+      <!-- Bg Border -->
+      <span class="rc h r s zd/2 od zg gh"></span>
+      <span class="rc h r q zd/2 od xg mh"></span>
+
+      <div class="rj">
+        <h2 class="ek ck kk wm xb">
+          {%trans "Sign Out" %}
+        </h2>
+        <p>{%trans 'Are you sure you want to sign out?' %}</p>
+
+        <span class="i rc sj hk xj">
+          <span class="rc h s z/2 nd oe rh tm"></span>
+          <span class="rc h q z/2 nd oe rh tm"></span>
+        </span>
+      </div>
+      {% include "forms/_sign_out_form.html" %}
+    </div>
+  </section>
+  <!-- ===== Sign Out Form End ===== -->
+
+{% endblock %}
+

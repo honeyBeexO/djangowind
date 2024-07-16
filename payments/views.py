@@ -5,10 +5,10 @@ from django.http.response import JsonResponse, HttpResponse # type: ignore # new
 from django.views.decorators.csrf import csrf_exempt # type: ignore # new
 from django.views.generic.base import TemplateView # type: ignore
 from config.settings import stripe # type: ignore
-from django.http import HttpResponseRedirect
-from django.shortcuts import render,redirect
-from django.urls import reverse
-from django.contrib import messages
+from django.http import HttpResponseRedirect # type: ignore
+from django.shortcuts import render,redirect # type: ignore
+from django.urls import reverse # type: ignore
+from django.contrib import messages # type: ignore
 
 class HomePageView(TemplateView):
     template_name = 'home.html'

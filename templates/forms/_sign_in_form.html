@@ -1,0 +1,60 @@
+{% load widget_tweaks %}
+{% load i18n %}
+<form class="sb login" action="{% url 'account_login' %}" method="POST">
+  {% csrf_token %}  
+  {{ form.non_field_errors | safe }}
+  <input type="hidden" name="remember" value="true" />
+
+  {% if form.username %}
+  {{ form.username.errors | safe }}
+  <div class="wb">
+    <label class="rc kk wm vb" for="username">Username</label>
+    {% render_field form.username  id="username" name="username" placeholder="example@gmail.com" type="text" required="True" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40" %}
+  </div>
+  {% endif %}
+
+
+  {% if form.email %}
+  {{ form.email.errors | safe }}
+  <div class="wb">
+    <label class="rc kk wm vb" for="email">Email</label>
+    {% render_field form.email  id="email" name="email" placeholder="example@gmail.com" type="email" required="True" autocomplete="email" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40" %}
+  </div>
+  {% endif %}
+  
+  <div class="wb">
+    <label class="rc kk wm vb" for="login">{% trans "Email" %}</label>
+    {% render_field form.login id="login" type="email" required="True" autocomplete="email" placeholder="example@gmail.com" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40" %}
+    {{ form.login.errors.as_text | safe }}
+  </div>
+
+  
+  {% if form.password %}
+    {{ form.password.errors.as_text | safe }}
+    <div class="wb">
+      <label class="rc kk wm vb" for="password">Password</label>
+      {% render_field form.password  id="password" name="password" placeholder="**************" type="password" autocomplete="current-password" required="True" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40" %}
+    </div>
+  {% endif %}
+  
+
+
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+
+    <button class="vd rj ek rc rg gh lk ml il _l gi hi" type="submit">
+      {% trans "Sign In" %}
+    </button>
+
+    <p class="sj hk xj rj ob">
+      {% trans "Don't have an account?" %}
+      <a class="mk" href="{% url 'account_signup' %}"> {% trans "Sign Up " %}</a>
+    </p>
+
+    <p class="sj hk xj rj ob">
+      <a href="{% url 'account_reset_password' %}">
+        {% trans "Forgot Password?" %}
+      </a>
+    </p>
+ </form>

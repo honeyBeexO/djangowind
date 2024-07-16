@@ -1,0 +1,65 @@
+
+{% load widget_tweaks %}
+{% load i18n %}
+<form class="sb signup group" novalidate action="{% url 'account_signup' %}"" method="POST">
+  {% csrf_token %}
+
+    {% if form.username %}
+      {{ form.username.errors | safe }}
+      <div class="wb">
+        <label class="rc kk wm vb" for="username">Username</label>
+        {% render_field form.username  id="username" name="username" placeholder="example@gmail.com" type="text" required="True" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40" %}
+      </div>
+    {% endif %}
+
+      {% if form.email %}
+        <div class="wb">
+          <label class="rc kk wm vb" for="email">{% trans "Email" %}</label>
+          {% render_field form.email id="email" type="email" name="email" required="True" autocomplete="email" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 peer" %}
+          {{ form.email.errors.as_text | safe }}
+          <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+            {% trans "Please enter a valid email address" %}
+          </span>
+        </div>
+      {% endif %}
+
+    {% if form.password1 %}
+      <div class="wb">
+        <label class="rc kk wm vb" for="password1">Password</label>
+        {% render_field form.password1  id="password1" name="password1" placeholder="**************" type="password" autocomplete="current-password" required="True" pattern=".{8,}" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 peer" %}
+      
+      <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+          {{ form.password1.errors.as_text | safe }}
+          {% trans "Password is too short" %}
+      </span>
+    </div>
+    {% endif %}
+
+    {% if form.password2 %}
+    <div class="wb">
+      <label class="rc kk wm vb" for="password2">{% trans "Re-Password" %}</label>
+      {% render_field form.password2  id="password2" name="password2" placeholder="**************" type="password" autocomplete="current-password" required="True" pattern=".{8,}" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 peer" %}
+    
+    <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+        {{ form.password2.errors.as_text | safe }}
+        {% trans "Password is too short" %}
+    </span>
+  </div>
+  {% endif %}
+
+
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+
+    <button class="vd rj ek rc rg gh lk ml il _l gi hi group-invalid:pointer-events-none group-invalid:opacity-30" type="submit">
+      {% trans "Sign Up" %} &raquo;
+    </button>
+
+    <p class="sj hk xj rj ob">
+      {% blocktrans %}
+      Already have an account? Then please 
+      <a class="mk" href="{{ login_url }}">sign in</a>.
+      {% endblocktrans %}
+    </p>
+  </form>

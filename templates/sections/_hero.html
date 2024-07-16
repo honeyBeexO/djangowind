@@ -1,0 +1,72 @@
+{% load static i18n %}
+{% block hero %}
+
+  <!-- ===== Hero Start ===== -->
+  <section class="gj do ir hj sp jr i pg">
+    <!-- Hero Images -->
+    <div class="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
+      <img
+        src="{% static 'images/shape-01.svg' %}"
+        alt="shape"
+        class="xc 2xl:ud-block h t -ud-left-[10%] ua"
+      />
+      <img
+        src="{% static 'images/shape-02.svg' %}"
+        alt="shape"
+        class="xc 2xl:ud-block h u p va"
+      />
+      <img
+        src="{% static 'images/shape-03.svg' %}"
+        alt="shape"
+        class="xc 2xl:ud-block h v w va"
+      />
+      <img src="{% static 'images/shape-04.svg' %}" alt="shape" class="h q r" />
+      <img src="{% static 'images/hero.png' %}" alt="Woman" class="h q r ua" />
+    </div>
+
+    <!-- Hero Content -->
+    <div class="bb ze ki xn 2xl:ud-px-0">
+      <div class="tc _o">
+        <div class="animate_left jn/2">
+          <h1 class="fk vj zp or kk wm wb">
+            We specialize in UI/UX, Web Development, Digital Marketing.
+          </h1>
+          <p class="fq">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus
+            consequat varius nisi quis, posuere magna. Lorem ipsum dol or sit
+            amet, consectetur adipiscing
+          </p>
+
+          <div class="tc tf yo zf mb">
+            <button
+              class="button is-primary ek jk lk gh gi hi rg ml il vc _d _l"
+              id="submitBtn"
+              data-config-url="{% url 'config' %}"
+              data-checkout-session-url="{% url 'checkout' %}"
+            >
+              Buy Now!
+            </button>
+            {% comment %}
+            <a
+              href="{% url 'home' %}"
+              class="ek jk lk gh gi hi rg ml il vc _d _l"
+              id="submitBtn"
+              >Get Started Now</a
+            >
+            {% endcomment %}
+
+            <span class="tc sf">
+              <a href="#" class="inline-block ek xj kk wm">
+                Call us (0123) 456 – 789
+              </a>
+              <span class="inline-block">For any question or concern</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Hero End ===== -->
+
+{% endblock hero %}
