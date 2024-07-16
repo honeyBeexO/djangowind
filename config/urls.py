@@ -6,10 +6,11 @@ from django.conf import settings # type: ignore
 from django.conf.urls.static import static # type: ignore
 from django.views import defaults as default_views # type: ignore
 from django.views.generic import TemplateView # type: ignore
-
+from users.views import user_detail_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', index, name='index'),
+    path('<uuid:uuid>/', user_detail_view, name='detail'),
     path("", TemplateView.as_view(template_name="index.html"), name="home"),
     path("test_x/", TemplateView.as_view(template_name="login_test.html"), name="test_x"),
     path("about/", TemplateView.as_view(template_name="pages/about.html"), name="about"),

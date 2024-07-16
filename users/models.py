@@ -2,13 +2,15 @@ from django.utils.translation import gettext_lazy as _ # type: ignore
 from users.managers import CustomUserManager
 from django.contrib.auth.models import AbstractUser # type: ignore
 from django.urls import reverse # type: ignore
-from django.db.models import CharField, EmailField # type: ignore
+from django.db.models import CharField, EmailField,UUIDField # type: ignore
+import uuid
 
 class CustomUser(AbstractUser):
     username = None
     name = CharField(_("Name of User"), blank=True, max_length=255)
     email = EmailField(_("email address"), unique=True)
-
+    uuid = UUIDField(default=uuid.uuid4, editable=False, unique=True)
+    
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 
@@ -24,7 +26,7 @@ class CustomUser(AbstractUser):
             str: URL for user detail.
 
         """
-        return reverse("users:detail", kwargs={"email": self.email})
+        return reverse("users:detail", kwargs={"uuid": self.uuid})
     
 
 # from django.contrib.auth.models import AbstractUser

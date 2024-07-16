@@ -11,6 +11,6 @@ app_name = "users"
 urlpatterns = [
     path("~redirect/", view=user_redirect_view, name="redirect"),
     path("~update/", view=user_update_view, name="update"),
-    path("<str:email>/", view=user_detail_view, name="detail"),
+    path("<str:uuid>/", view=user_detail_view, name="detail"),
     path('google_one_tap_login/',view=google_one_tap_login, name='google-one-tap-login' ), # new
 ]

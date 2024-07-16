@@ -74,36 +74,36 @@
   {% endblock navbar_and_header %}
 
  
-
-	 <!-- ====== Messages ===== -->
-	{% if messages %}
-		{% for message in messages %}
-			<div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
-			{{ message }}
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-		</div>
-		{% endfor %}
-	{% endif %}
-
-	{% if not request.user.is_authenticated %}
-	  <div id="g_id_onload"
-		data-client_id="{{ GOOGLE_CLIENT_ID }}"
-		{% comment %} data-login_uri="{% url 'google_login_by_token' %}" {% endcomment %}
-		data-login_uri="http://localhost:8000{% url 'users:google-one-tap-login' %}">
-	  </div>
-
-		
-	  
-	{%endif%}
 {% block content %}
-
+	<div class="relative isolate px-6 pt-14 lg:px-8">
 	{% block inner %}
+
+		 <!-- ====== Messages ===== -->
+		 {% if messages %}
+		 {% for message in messages %}
+			 <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+			 {{ message }}
+			 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				 <span aria-hidden="true">&times;</span>
+			 </button>
+		 </div>
+		 {% endfor %}
+	 {% endif %}
+ 
+	 {% if not request.user.is_authenticated %}
+	   <div id="g_id_onload"
+		 data-client_id="{{ GOOGLE_CLIENT_ID }}"
+		 {% comment %} data-login_uri="{% url 'google_login_by_token' %}" {% endcomment %}
+		 data-login_uri="http://localhost:8000{% url 'users:google-one-tap-login' %}">
+	   </div>
+ 
+		 
+	   
+	 {%endif%}
 
 
 	{% endblock inner %}
-	
+	</div>
 {% endblock content %}
 
 {% block footer %}
