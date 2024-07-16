@@ -31,7 +31,7 @@
         {% get_providers as socialaccount_providers %}
 
     {% if socialaccount_providers %}
-        <p>
+        {% comment %} <p>
           {% blocktrans with site.name as site_name %}
           Please sign in with one
           of your existing third party accounts. Or, 
@@ -39,25 +39,39 @@
           for a {{ site_name }} 
           account and sign in below:
           {% endblocktrans %}
-        </p>
+        </p> {% endcomment %}
 
         <div class="socialaccount_ballot">
           <ul class="tc wf xf mg ec">
             {% for provider in socialaccount_providers %}
             <li>
-              <a class="tc wf xf be dd di sg _g ch qm ml il bm rl/40 ym/40" href="{% provider_login_url provider.id %}">
+              <a href="{% provider_login_url provider.id %}" class="flex items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  {% if provider.id == "google" %}
+                    <div class="px-4 py-2">
+                      {% include "forms/sections/_google_svg.html" %}
+                    </div>
+                  {% else %}
+                  {{ provider.name }}
+                {% endif %}
+                <span class="w-5/6 px-4 py-3 font-bold text-center">Sign in with Google</span>
+            </a>
+
+            </li>
+            <li>
+              {% comment %} <a class="tc wf xf be dd di sg _g ch qm ml il bm rl/40 ym/40" href="{% provider_login_url provider.id %}">
                 {% if provider.id == "google" %}
                   {% include "forms/sections/_google_svg.html" %}
+                  
                   {% else %}
                   {{ provider.name }}
                 {% endif %}
               </a>
-            </li>
+            </li> {% endcomment %}
             {% endfor %}
           </ul>
-          <ul class="socialaccount_providers">
+          {% comment %} <ul class="socialaccount_providers">
             {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-          </ul>
+          </ul> {% endcomment %}
 
           <div class="login-or">{% trans 'or' %}</div>
 

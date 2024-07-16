@@ -14,7 +14,7 @@
       <!-- Bg Border -->
       <span class="rc h r s zd/2 od zg gh"></span>
       <span class="rc h r q zd/2 od xg mh"></span>
-
+      
       <div class="rj">
         <h2 class="ek ck kk wm xb">Create an Account</h2>
         <p>{% trans "Welcome to our platform" %}</p>
@@ -25,13 +25,13 @@
         {% get_providers as socialaccount_providers %}
 
         {% if socialaccount_providers %}
-        <p>
+        {% comment %} <p>
           {% blocktrans with site.name as site_name %}
           Please join us with one of your existing Google accounts. Or, 
           <a href="{{ signup_url }}">sign up</a>
           for a {{ site_name }} account and sign in below:
           {% endblocktrans %}
-        </p>
+        </p> {% endcomment %}
 
         <div class="socialaccount_ballot">
           <ul class="tc wf xf mg ec">
