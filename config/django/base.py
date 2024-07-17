@@ -43,6 +43,7 @@ THIRD_PARTY_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'widget_tweaks',
+    'formtools',
 ] + ALL_AUTH_APPS
 
 LOCAL_OWN_APPS =[

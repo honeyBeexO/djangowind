@@ -9,7 +9,7 @@
  >
    <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
      <div class="vd to/4 tc wf yf">
-       <a href="{% url 'index' %}">
+       <a href="{% url 'home' %}">
          <img class="om" src="{% static 'images/logo-light.svg' %}" alt="Logo Light" />
          <img class="xc nm" src="{% static 'images/logo-dark.svg' %}" alt="Logo Dark" />
        </a>
@@ -34,11 +34,11 @@
      <div class="vd wo/4 sd qo f ho oo wf yf" :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }">
        <nav>
          <ul class="tc _o sf yo cg ep">
-           <li><a href="{% url 'index' %}" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-           <li><a href="{% url 'index' %}#features" class="xl">Features</a></li>
+           <li><a href="{% url 'home' %}" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
+           <li><a href="{% url 'home' %}#features" class="xl">Features</a></li>
            <li class="c i" x-data="{ dropdown: false }">
              <a
-               href="{% url 'index' %}#pages"
+               href="{% url 'home' %}#pages"
                class="xl tc wf yf bg"
                @click.prevent="dropdown = !dropdown"
                :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }"
@@ -54,15 +54,15 @@
  
              <!-- Dropdown Start -->
              <ul class="a" :class="{ 'tc': dropdown }">
-               <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
-               <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
+               <li><a href="pages/blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
+               <li><a href="pages/blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
                <li><a href="{% url 'signin' %}" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
                <li><a href="{% url 'signup' %}" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
                <li><a href="{% url 'error' %}" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
              </ul>
              <!-- Dropdown End -->
            </li>
-           <li><a href="{% url 'index'%}#support" class="xl">Support</a></li>
+           <li><a href="{% url 'home'%}#support" class="xl">Support</a></li>
          </ul>
        </nav>
  

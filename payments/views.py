@@ -10,7 +10,7 @@ from django.shortcuts import render,redirect # type: ignore
 from django.urls import reverse # type: ignore
 from django.contrib import messages # type: ignore
 
-class HomePageView(TemplateView):
+class HomePageView(TemplateView): # Just to test the stripe functionality
     template_name = 'home.html'
 
 
@@ -69,19 +69,19 @@ def create_checkout_session(request):
         except Exception as e:
             return JsonResponse({'error': str(e)})
    
-# def sucess_view(request):
-#     messages.success(request, f'Payement Successfully Completed!')
+# def success_view(request):
+#     messages.success(request, f'Payment Successfully Completed!')
 #     return redirect(request,reverse('index'))     
 
 class SuccessView(TemplateView):
     #HttpResponseRedirect(reverse("polls:results", args=(question.id,)))
     #messages.success(request, f'Account was successfully registered for {username}! You can now login with using your details')
     #return redirect('login')
-    template_name = 'success.html'
+    template_name = 'stripe/success.html'
 
 
 class CancelledView(TemplateView):
-    template_name = 'cancelled.html'
+    template_name = 'stripe/cancelled.html'
     
 @csrf_exempt
 def stripe_webhook(request):
