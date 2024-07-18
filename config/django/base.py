@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = [
     'crispy_bootstrap5',
     'widget_tweaks',
     'formtools',
+    'phonenumber_field',
 ] + ALL_AUTH_APPS
 
 LOCAL_OWN_APPS =[
@@ -51,6 +52,7 @@ LOCAL_OWN_APPS =[
     'users.apps.UsersConfig',
     'payments.apps.PaymentsConfig',
     'products.apps.ProductsConfig',
+    'core.apps.CoreConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_OWN_APPS
@@ -171,6 +173,9 @@ FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
 # http://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
+
+#PHONE NUMBER VALIDATION
+PHONENUMBER_DEFAULT_REGION = 'FR'
 
 
 # LOGIN_URL = 'account_login'

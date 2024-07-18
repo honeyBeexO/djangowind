@@ -6,6 +6,10 @@ from django.db import models # type: ignore
 import uuid
 from django.conf import settings # type: ignore
 from django.core.validators import RegexValidator # type: ignore
+from phonenumber_field.modelfields import PhoneNumberField # type: ignore
+
+
+from datetime import date
 
 class Address(models.Model):
     name = models.CharField(max_length=255)
@@ -28,17 +32,31 @@ class Address(models.Model):
     def formatted_address(self):
         return f"{self.name}\n{self.street_address}\n{self.postal_code} {self.city}\n{self.country}"
 
+class PersonalInformation(models.Model):
+    gender_choices =  [
+             ('MALE', _('Man')),
+             ('FEMALE', _('Woman')),
+             ('OTHER', _('Other')),
+            ]
+    birth_country = models.CharField(max_length=100,blank=True, default=_('France'))
+    birth_place = models.TextField(blank=True)
+    birth_date = models.DateField(blank=True,default=date(1990,1,1))
+    gender = models.CharField(max_length=20,blank=True,choices=gender_choices)
+    
 class CustomUser(AbstractUser):
-    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$', message=_("Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed."))
-
+    # phone_regex = RegexValidator(
+    #     regex=r'^\+?1?\d{9,15}$', 
+    #     message=_("Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed."),
+    #                              )
     username = None
     uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     first_name = models.CharField(_("First name"), blank=True, max_length=255)
     last_name = models.CharField(_("Last name"), blank=True, max_length=255)
     email = models.EmailField(_("Email address"), unique=True)
-    phone_number = models.CharField(validators=[phone_regex], max_length=17, blank=True)
-    home_address = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True, blank=True, related_name='home_users')
-    business_address = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True, blank=True, related_name='business_users')
+    phone_number = PhoneNumberField(unique=True, max_length=16)
+    # phone_number = models.CharField(validators=[phone_regex], max_length=17, blank=True)
+    home_address = models.OneToOneField(Address, on_delete=models.SET_NULL, null=True, blank=True, related_name='user_home_address')
+    business_address = models.OneToOneField(Address, on_delete=models.SET_NULL, null=True, blank=True, related_name='user_business_address')
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []

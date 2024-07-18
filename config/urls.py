@@ -11,7 +11,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', index, name='index'),
     path('<uuid:uuid>/', user_detail_view, name='detail'),
-    path("", TemplateView.as_view(template_name="index.html"), name="home"),
+    path("", TemplateView.as_view(template_name="index.html"), name="home"), 
     path("test_x/", TemplateView.as_view(template_name="login_test.html"), name="test_x"),
     path("about/", TemplateView.as_view(template_name="pages/about.html"), name="about"),
     # User management
@@ -25,6 +25,7 @@ urlpatterns = [
     path('404/', error, name='error'),
     path('buy/', include('payments.urls')), # new
     path('products/', include('products.urls')), # new
+    path('onboarding/', include('core.urls')), # new
 ] +  static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
 
 if settings.DEBUG:

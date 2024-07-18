@@ -74,40 +74,38 @@
   {% endblock navbar_and_header %}
 
  
-{% block content %}
+{% block playground %}
 
 <div class="px-6 pt-6 2xl:container">
 	<div class="flex h-[80vh] items-center justify-center rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-600">
+			 <!-- ====== Messages ===== -->
+		 {% if messages %}
+			 {% for message in messages %}
+				 <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+				 {{ message }}
+				 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					 <span aria-hidden="true">&times;</span>
+				 </button>
+			 </div>
+			 {% endfor %}
+		 {% endif %}
+	 
+		 {% if not request.user.is_authenticated %}
+		   <div id="g_id_onload"
+			 data-client_id="{{ GOOGLE_CLIENT_ID }}"
+			 {% comment %} data-login_uri="{% url 'google_login_by_token' %}" {% endcomment %}
+			 data-login_uri="http://localhost:8000{% url 'users:google-one-tap-login' %}">
+		   </div>
+		 {%endif%}
+
 	{% block inner %}
 
-		 <!-- ====== Messages ===== -->
-		 {% if messages %}
-		 {% for message in messages %}
-			 <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
-			 {{ message }}
-			 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				 <span aria-hidden="true">&times;</span>
-			 </button>
-		 </div>
-		 {% endfor %}
-	 {% endif %}
- 
-	 {% if not request.user.is_authenticated %}
-	   <div id="g_id_onload"
-		 data-client_id="{{ GOOGLE_CLIENT_ID }}"
-		 {% comment %} data-login_uri="{% url 'google_login_by_token' %}" {% endcomment %}
-		 data-login_uri="http://localhost:8000{% url 'users:google-one-tap-login' %}">
-	   </div>
- 
-		 
-	   
-	 {%endif%}
 
 
 	{% endblock inner %}
    </div>
 </div>
-{% endblock content %}
+{% endblock playground %}
 
 {% block footer %}
 	{% include "sections/_footer.html" %}
