@@ -5,7 +5,7 @@ from django.core.validators import EmailValidator  # type: ignore
 from users import models as user_models
 from django.core.exceptions import ValidationError # type: ignore
 from phonenumber_field.widgets import PhoneNumberPrefixWidget # type: ignore
-from phonenumber_field.formfields import PhoneNumberField # type: ignore
+from phonenumber_field.formfields import PhoneNumberField,SplitPhoneNumberField # type: ignore
 from django.db.models import  TextChoices # type: ignore
 
 class UserEntryInformationForm(forms.ModelForm):
@@ -18,18 +18,23 @@ class UserEntryInformationForm(forms.ModelForm):
             raise ValidationError(_("Only Gmail, Outlook, iCloud, Hotmail, and Live email domains are allowed."))
 
     email = forms.EmailField(validators=[email_validator, validate_email])
-    phone_number = PhoneNumberField()
+    phone_number = SplitPhoneNumberField()
     
     class Meta:
         model = user_models.CustomUser
-        fields = (_('first_name'), _('last_name'),_('email'),_('phone_number'),) 
+        fields = (_('first_name'), _('last_name'),) 
+        # widgets = {
+        #     'phone_number': PhoneNumberPrefixWidget()
+        # }
         
-    def __init__(self, *args, **kwargs):
-        super(UserEntryInformationForm, self).__init__(*args, **kwargs)
-        self.fields['phone_number'].widget = PhoneNumberPrefixWidget(initial='FR')
+    # def __init__(self, *args, **kwargs):
+    #     super(UserEntryInformationForm, self).__init__(*args, **kwargs)
+    #     self.fields['phone_number'].widget = PhoneNumberPrefixWidget(initial='FR')
 
 class UserPersonalInformationForm(forms.ModelForm):
-    pass
+    class Meta:
+        model = user_models.PersonalInformation
+        fields = (_('gender'),_('birth_date'),_('birth_country'),_('birth_place'),)
      
 
 class UserBusinessActivityInformationForm(forms.ModelForm):

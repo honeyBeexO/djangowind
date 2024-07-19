@@ -43,40 +43,45 @@
 
                 {% block content %}
                     <p>Step {{ wizard.steps.step1 }} of {{ wizard.steps.count }}</p>
-                    <form action="" method="post">{% csrf_token %}
+                    <form action="" method="post">
+                      {% csrf_token %}
                     <table>
-                {{ wizard.management_form }}
-                {% if wizard.form.forms %}
-                    {{ wizard.form.management_form }}
-                    {% for form in wizard.form.forms %}
-                        {{ form.as_table }}
-                    {% endfor %}
-                {% else %}
-                    {{ wizard.form }}
-                {% endif %}
+                        {{ wizard.management_form }}
+                        {% if wizard.form.forms %}
+                            {{ wizard.form.management_form }}
+                            {% for form in wizard.form.forms %}
+                                {{ form.as_table }}
+                            {% endfor %}
+                        {% else %}
+                            {{ wizard.form }}
+                        {% endif %}
                 </table>
-                {% if wizard.steps.prev %}
-                <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.first }}">{% translate "first step" %}</button>
-                <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}">{% translate "prev step" %}</button>
-                {% endif %}
-                <input type="submit" value="{% translate "submit" %}"/>
+                  {% if wizard.steps.prev %}
+                    <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.first }}">{% translate "first step" %}</button>
+                    <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}">{% translate "prev step" %}</button>
+                  {% endif %}
+                  <input type="submit" value="{% translate 'submit' %}"/>
+                  <div class="flex !gap-4 mt-8">
+
+                    <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg border border-gray-900 text-gray-900 hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] block w-full"
+                      type="submit" 
+                      data-ripple-dark="true"
+                      id="submitBtn"
+                      >
+                      Back
+                    </button>
+        
+                    <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-black shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none bg-gray-900 block w-full"
+                      type="button" data-ripple-dark="true">
+                        Next
+                    </button>
+        
+                  </div>
                 </form>
                 {% endblock %}
 
           </div>
-          <div class="flex !gap-4 mt-8">
 
-            <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg border border-gray-900 text-gray-900 hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] block w-full"
-              type="button" data-ripple-dark="true">
-              Back
-            </button>
-
-            <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-black shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none bg-gray-900 block w-full"
-              type="button" data-ripple-dark="true">
-                Next
-            </button>
-
-          </div>
         </div>
       </div>
     </div>
