@@ -6,7 +6,7 @@
 
 
   <!-- ===== SignUp Form Start ===== -->
-  <section class="i pg fh rm ki xn vq gj qp gr hj rp hr">
+  <section class="i pg fh rm ki xn vq gj qp gr hj rp hr w-[90vw]">
 
     {% include "utils/_background_shape.html" %}
 
@@ -15,7 +15,7 @@
       <span class="rc h r s zd/2 od zg gh"></span>
       <span class="rc h r q zd/2 od xg mh"></span>
       
-      <div class="rj">
+      <div class="rj mb-0">
         <p>{% trans "Welcome to our platform" %}</p>
 
         <h3 class="hk yj kk wm ob mc">
@@ -24,22 +24,21 @@
         {% get_providers as socialaccount_providers %}
 
         {% if socialaccount_providers %}
-        {% comment %} <p>
-          {% blocktrans with site.name as site_name %}
-          Please join us with one of your existing Google accounts. Or, 
-          <a href="{{ signup_url }}">sign up</a>
-          for a {{ site_name }} account and sign in below:
-          {% endblocktrans %}
-        </p>
-        
-        
+        {% comment %} 
+          <p>
+            {% blocktrans with site.name as site_name %}
+            Please join us with one of your existing Google accounts. Or, 
+            <a href="{{ signup_url }}">sign up</a>
+            for a {{ site_name }} account and sign in below:
+            {% endblocktrans %}
+          </p>
         {% endcomment %}
 
         <div class="socialaccount_ballot flex items-center justify-center flex-grow">
           <ul class="tc wf xf mg ec">
             {% for provider in socialaccount_providers %}
             <li>
-              <a class="tc wf xf be dd di sg _g ch qm ml il bm rl/40 ym/40" href="{% provider_login_url provider.id %}">
+              <a class="tc wf xf be dd di sg _g ch qm ml il bm rl/40 ym/40 " href="{% provider_login_url provider.id %}">
                 {% if provider.id == "google" %}
                   {% include "forms/sections/_google_svg.html" %}
                   {% else %}
@@ -60,8 +59,6 @@
           </span>
         </p>
         {% endif %}
-
-        
       </div>
       {% include "forms/_sign_up_form.html" %}
     </div>

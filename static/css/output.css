@@ -1001,6 +1001,14 @@ select {
   margin-top: 1.25rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1100,6 +1108,22 @@ select {
   height: 60vh;
 }
 
+.h-\[70vh\] {
+  height: 70vh;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
+}
+
+.h-\[95vh\] {
+  height: 95vh;
+}
+
+.h-\[99vh\] {
+  height: 99vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1158,6 +1182,14 @@ select {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[90vw\] {
+  width: 90vw;
+}
+
+.w-\[60vw\] {
+  width: 60vw;
 }
 
 .max-w-2xl {
@@ -1620,6 +1652,10 @@ select {
   padding: 1.75rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1703,6 +1739,16 @@ select {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .\!pt-0 {
@@ -5923,6 +5969,10 @@ h1,  h2,  h3,  h4,  h5,  h6{
     width: 72.1875rem;
   }
 
+  .sm\:w-\[90vw\] {
+    width: 90vw;
+  }
+
   .sm\:max-w-md {
     max-width: 28rem;
   }
@@ -5968,6 +6018,11 @@ h1,  h2,  h3,  h4,  h5,  h6{
   .sm\:py-48 {
     padding-top: 12rem;
     padding-bottom: 12rem;
+  }
+
+  .sm\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .sm\:text-2xl {
@@ -6023,6 +6078,10 @@ h1,  h2,  h3,  h4,  h5,  h6{
 @media (min-width: 768px) {
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-\[90vw\] {
+    width: 90vw;
   }
 
   .md\:p-10 {

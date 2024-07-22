@@ -4,23 +4,16 @@
  
     <!-- ===== Footer Start ===== -->
     <footer>
-		<div class="bb ze ki xn 2xl:ud-px-0">
+		<div class="bb ze ki xn 2xl:ud-px-0 ">
 		  <!-- Footer Top -->
-		  <div class="ji gp">
+		  <div class="ji gp flex items-center justify-center">
 			<div class="tc uf ap gg fp">
-			  <div class="animate_top zd/2 to/4">
+			  <div class="animate_top">
 				<a href="{% url 'signin' %}">
 				  <img src="{% static 'images/logo-light.svg' %}" alt="Logo" class="om" />
 				  <img src="{% static 'images/logo-dark.svg' %}" alt="Logo" class="xc nm" />
 				</a>
-	  
-				<p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</p>
-	  
-				<ul class="tc wf cg">
+				{% comment %} <ul class="tc wf cg">
 				  <li>
 					<a href="#">
 					  <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,37 +78,28 @@
 					  </svg>
 					</a>
 				  </li>
-				</ul>
+				</ul> {% endcomment %}
 			  </div>
 	  
 			  <div class="vd ro tc sf rn un gg vn">
 				<div class="animate_top">
 				  <h4 class="kk wm tj ec">Quick Links</h4>
 	  
-				  <ul>
+				  <ul class="flex items-center justify-between">
 					<li><a href="#" class="sc xl vb">Home</a></li>
-					<li><a href="#" class="sc xl vb">Product</a></li>
+					<li><a href="#" class="sc xl vb">Support</a></li>
 					<li>
 					  <a href="#" class="sc xl vb">
-						Careers 
-						<span class="sc ek uj lk nh rg zi _i nc">Hiring</span>
+						Deals 
+						<span class="sc ek uj lk nh rg zi _i nc">New</span>
 					  </a>
 					</li>
 					<li><a href="#" class="sc xl vb">Pricing</a></li>
 				  </ul>
 				</div>
 	  
-				<div class="animate_top">
-				  <h4 class="kk wm tj ec">Services</h4>
-	  
-				  <ul>
-					<li><a href="#" class="sc xl vb">Web Development</a></li>
-					<li><a href="#" class="sc xl vb">Graphics Design</a></li>
-					<li><a href="#" class="sc xl vb">Digital Marketing</a></li>
-					<li><a href="#" class="sc xl vb">Ui/Ux Design</a></li>
-				  </ul>
-				</div>
-	  
+			
+{% comment %} 	  
 				<div class="animate_top">
 				  <h4 class="kk wm tj ec">Support</h4>
 	  
@@ -125,9 +109,9 @@
 					<li><a href="#" class="sc xl vb">Our Blog</a></li>
 					<li><a href="#" class="sc xl vb">Contact Us</a></li>
 				  </ul>
-				</div>
+				</div> {% endcomment %}
 	  
-				<div class="animate_top">
+				{% comment %} <div class="animate_top">
 				  <h4 class="kk wm tj ec">Newsletter</h4>
 				  <p class="ac qe">Subscribe to receive future updates</p>
 	  
@@ -156,7 +140,7 @@
 					  </button>
 					</div>
 				  </form>
-				</div>
+				</div> {% endcomment %}
 			  </div>
 			</div>
 		  </div>
