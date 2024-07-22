@@ -38,9 +38,9 @@ class PersonalInformation(models.Model):
              ('FEMALE', _('Woman')),
              ('OTHER', _('Other')),
             ]
-    birth_country = models.CharField(max_length=100,blank=True, default=_('France'))
-    birth_place = models.CharField(max_length=256, blank=True,default=_('Paris'))
-    birth_date = models.DateField(blank=True,default=date(1990,1,1))
+    birth_country = models.CharField(max_length=100,blank=True,)#default=_('France')
+    birth_place = models.CharField(max_length=256, blank=True,)#default=_('Saint denis, Paris')
+    birth_date = models.DateField(blank=True,) #default=date(1990,1,1)
     gender = models.CharField(max_length=20,blank=True,choices=gender_choices)
     
 class CustomUser(AbstractUser):

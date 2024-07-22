@@ -39,16 +39,25 @@ class UserEntryInformationForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(UserEntryInformationForm, self).__init__(*args, **kwargs)
         self.fields['first_name'].required = True
-        self.fields['last_name'].required = True
+        self.fields['last_name'].required = True 
         #self.fields['phone_number'].widget = PhoneNumberPrefixWidget(initial='FR')
 
 class UserPersonalInformationForm(forms.ModelForm):
     class Meta:
         model = user_models.PersonalInformation
         fields = (_('gender'),_('birth_date'),_('birth_country'),_('birth_place'),)
+        widgets = {
+            'gender': forms.Select(attrs={'placeholder': _('Select Gender')}),
+            'birth_date': forms.DateInput(attrs={'placeholder': _('DD-MM-YYYY'), 'type': 'date'}),
+            'birth_country': forms.TextInput(attrs={'placeholder': _('France')}),
+            'birth_place': forms.TextInput(attrs={'placeholder': _('Saint denis, Paris')}),
+        }
         
     def __init__(self, *args, **kwargs):
         super(UserPersonalInformationForm, self).__init__(*args, **kwargs)
+        self.fields['birth_date'].required = True
+        self.fields['birth_country'].required = True
+        self.fields['birth_place'].required = True
         self.fields['gender'].initial = 'MALE'
      
 
