@@ -35,6 +35,10 @@ class UserPersonalInformationForm(forms.ModelForm):
     class Meta:
         model = user_models.PersonalInformation
         fields = (_('gender'),_('birth_date'),_('birth_country'),_('birth_place'),)
+        
+    def __init__(self, *args, **kwargs):
+        super(UserPersonalInformationForm, self).__init__(*args, **kwargs)
+        self.fields['gender'].initial = 'MALE'
      
 
 class UserBusinessActivityInformationForm(forms.ModelForm):

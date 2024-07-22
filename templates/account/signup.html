@@ -16,11 +16,10 @@
       <span class="rc h r q zd/2 od xg mh"></span>
       
       <div class="rj">
-        <h2 class="ek ck kk wm xb">Create an Account</h2>
         <p>{% trans "Welcome to our platform" %}</p>
 
         <h3 class="hk yj kk wm ob mc">
-          {% trans "Sign Up with Google" %}
+          {% trans "Join with Google" %}
         </h3>
         {% get_providers as socialaccount_providers %}
 
@@ -31,9 +30,12 @@
           <a href="{{ signup_url }}">sign up</a>
           for a {{ site_name }} account and sign in below:
           {% endblocktrans %}
-        </p> {% endcomment %}
+        </p>
+        
+        
+        {% endcomment %}
 
-        <div class="socialaccount_ballot">
+        <div class="socialaccount_ballot flex items-center justify-center flex-grow">
           <ul class="tc wf xf mg ec">
             {% for provider in socialaccount_providers %}
             <li>
@@ -50,19 +52,16 @@
         </div>
         {% else %}
         <p>
-          {% blocktrans %}
-            If you have not created an account yet, then please
-            <a href="{{ signup_url }}">sign up</a> first.
-          {% endblocktrans %}
+          <span class="i rc sj hk xj">
+            <span class="rc h s z/2 nd oe rh tm"></span>
+            <span class="rc h q z/2 nd oe rh tm"></span>
+  
+            {% trans "Or, sign up with your email" %}
+          </span>
         </p>
         {% endif %}
 
-        <span class="i rc sj hk xj">
-          <span class="rc h s z/2 nd oe rh tm"></span>
-          <span class="rc h q z/2 nd oe rh tm"></span>
-
-          {% trans "Or, sign up with your email" %}
-        </span>
+        
       </div>
       {% include "forms/_sign_up_form.html" %}
     </div>

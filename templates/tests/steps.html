@@ -1,0 +1,126 @@
+
+
+<!--ORGINAL FORM -->
+
+<div class="p-6 max-w-lg md:p-20">
+    <h2 class="sr-only">
+      Step {{ wizard.steps.step1 }} of {{ wizard.steps.count }}
+    </h2>
+    <div>
+      <ol class="flex items-center gap-2 text-xs font-medium text-gray-500 sm:gap-4">
+        {% comment %} <li class="flex">
+          <span class="rounded bg-green-50 p-1.5 text-green-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+          <span> Contact </span>
+        </li>
+    
+        <li class="flex items-center justify-center gap-2 text-blue-600">
+          <span class="size-6 rounded bg-blue-50 text-center text-[10px]/6 font-bold"> 2 </span>
+          <span> Personal Details </span>
+        </li>
+    
+        <li class="flex items-center justify-end gap-2">
+          <span class="size-6 rounded bg-gray-50 text-center text-[10px]/6 font-bold text-gray-600">
+            3
+          </span>
+          <span> Address </span>
+        </li> {% endcomment %}
+        {% for step_name, form in steps.items %}
+          {% if forloop.counter0 < step_index %}
+          <li class="flex items-center justify-end gap-2">
+            {% include "utils/_step_done.html" %}
+            <span> {{ step_name }} </span>
+          </li>
+          {% elif forloop.counter0 == step_index %}
+          <li class="flex items-center justify-end gap-2">
+            <span class="size-6 rounded bg-indigo-300 text-center text-[10px]/6 font-bold text-black">
+              {{ forloop.counter }}
+            </span>
+            <span> {{ step_name }} (current)</span>
+          </li>
+          {% elif forloop.counter0 > step_index %}
+          <li class="flex items-center justify-end gap-2">
+            <span class="size-6 rounded bg-gray-50 text-center text-[10px]/6 font-bold text-gray-600">
+              {{ foorloop.counter }}
+            </span>
+            <span> {{ step_name }} </span>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </div>
+    <div class="flex items-start justify-start gap-2">
+      <form action="#" method="POST">
+        {% csrf_token %}
+        {{ wizard.management_form }}
+        {{ wizard.form }}
+        <h3 class="mb-4 text-lg font-medium leading-none text-gray-900 dark:text-white">Invoice details</h3>
+        <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+                <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
+                <input type="text" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="username.example" required="">
+            </div>
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="">
+            </div>
+            <div>
+                <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                <input type="password" name="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required="">
+            </div>                        <div>
+                <label for="confirm-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm password</label>
+                <input type="password" name="confirm-password" id="confirm-password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required="">
+            </div>
+        </div>
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Next Step: Payment Info
+        </button>
+    </form>
+    {% block content %}
+        <p>Step {{ wizard.steps.step1 }} of {{ wizard.steps.count }}</p>
+    <form action="" method="post">
+      {% csrf_token %}
+    <table>
+        {{ wizard.management_form }}
+        {% if wizard.form.forms %}
+            {{ wizard.form.management_form }}
+            {% for form in wizard.form.forms %}
+                {{ form.as_table }}
+            {% endfor %}
+        {% else %}
+            {{ wizard.form }}
+        {% endif %}
+</table>
+  {% if wizard.steps.prev %}
+    <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.first }}">{% translate "first step" %}</button>
+    <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}">{% translate "prev step" %}</button>
+  {% endif %}
+  <input type="submit" value="{% translate 'submit' %}"/>
+  <div class="flex !gap-4 mt-8">
+
+    <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg border border-gray-900 text-gray-900 hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] block w-full"
+      type="submit" 
+      data-ripple-dark="true"
+      id="submitBtn"
+      >
+      Back
+    </button>
+
+    <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-black shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none bg-gray-900 block w-full"
+      type="button" data-ripple-dark="true">
+        Next
+    </button>
+
+  </div>
+</form>
+    {% endblock content %}
+    </div>
+
+  </div>
+</div>

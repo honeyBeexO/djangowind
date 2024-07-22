@@ -1,7 +1,7 @@
 
 {% load widget_tweaks %}
 {% load i18n %}
-<form class="sb signup group" novalidate action="{% url 'account_signup' %}"" method="POST">
+<form class="sb signup group" novalidate action="{% url 'account_signup' %}" method="POST">
   {% csrf_token %}
 
     {% if form.username %}
@@ -56,9 +56,9 @@
       {% trans "Sign Up" %} &raquo;
     </button>
 
-    <p class="sj hk xj rj ob">
+    <p class="sj hk xj rj ob text-sm">
       {% blocktrans %}
-      Already have an account? Then please 
+      Already have an account? 
       <a class="mk" href="{{ login_url }}">sign in</a>.
       {% endblocktrans %}
     </p>
