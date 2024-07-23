@@ -11,6 +11,33 @@ from phonenumber_field.modelfields import PhoneNumberField # type: ignore
 
 from datetime import date
 
+class Country(models.Model):
+    name = models.CharField(max_length=256,unique=True)
+    code = models.IntegerField(max_length=6,unique=True)
+    alpha_two_code = models.CharField(max_length=2,unique=True)
+    alpha_three_code = models.CharField(max_length=3,unique=True)
+
+class Activity(models.Model):
+    name = models.CharField(max_length=256,unique=True)
+    description = models.TextField(blank=True)
+    # connector_activity_id = models.ForeignKey(null=True)
+    has_children = models.BooleanField(default=True)
+    to_be_reviewed = models.BooleanField(default=False)
+    type = models.CharField(max_length=64, null=True)
+    jqpa = models.CharField(max_length=64, null=True)
+    post_payment = models.IntegerField(max_length=6,unique=True)
+    
+class ActivitySector(models.Model):
+    name = models.CharField(max_length=256,unique=True)
+    description = models.TextField(blank=True)
+    parent = models.ForeignKey(Activity,null=True,on_delete=models.SET_NULL)
+    # connector_activity_id = models.ForeignKey(null=True)
+    has_children = models.BooleanField(default=False)
+    to_be_reviewed = models.BooleanField(default=False)
+    type = models.CharField(max_length=64, null=True)
+    jqpa = models.CharField(max_length=64, null=True)
+    post_payment = models.IntegerField(max_length=6,unique=True)
+
 class Address(models.Model):
     name = models.CharField(max_length=255)
     street_address = models.CharField(max_length=255)

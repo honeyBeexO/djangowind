@@ -1,0 +1,1668 @@
+[
+    {
+        "id": 238,
+        "name": "FRANCE",
+        "code": 0,
+        "alpha_two_code": "FR",
+        "alpha_three_code": "FRA"
+    },
+    {
+        "id": 112,
+        "name": "ACORES, MADERE",
+        "code": 99319,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 50,
+        "name": "AFGHANISTAN",
+        "code": 99212,
+        "alpha_two_code": "AF",
+        "alpha_three_code": "AFG"
+    },
+    {
+        "id": 113,
+        "name": "AFRIQUE DU SUD",
+        "code": 99303,
+        "alpha_two_code": "ZA",
+        "alpha_three_code": "ZAF"
+    },
+    {
+        "id": 1,
+        "name": "ALBANIE",
+        "code": 99125,
+        "alpha_two_code": "AL",
+        "alpha_three_code": "ALB"
+    },
+    {
+        "id": 114,
+        "name": "ALGERIE",
+        "code": 99352,
+        "alpha_two_code": "DZ",
+        "alpha_three_code": "DZA"
+    },
+    {
+        "id": 2,
+        "name": "ALLEMAGNE",
+        "code": 99109,
+        "alpha_two_code": "DE",
+        "alpha_three_code": "DEU"
+    },
+    {
+        "id": 3,
+        "name": "ANDORRE",
+        "code": 99130,
+        "alpha_two_code": "AD",
+        "alpha_three_code": "AND"
+    },
+    {
+        "id": 115,
+        "name": "ANGOLA",
+        "code": 99395,
+        "alpha_two_code": "AO",
+        "alpha_three_code": "AGO"
+    },
+    {
+        "id": 176,
+        "name": "ANTIGUA-ET-BARBUDA",
+        "code": 99441,
+        "alpha_two_code": "AG",
+        "alpha_three_code": "ATG"
+    },
+    {
+        "id": 177,
+        "name": "ANTILLES NEERLANDAISES",
+        "code": 99431,
+        "alpha_two_code": null,
+        "alpha_three_code": "ANT"
+    },
+    {
+        "id": 51,
+        "name": "ARABIE SAOUDITE",
+        "code": 99201,
+        "alpha_two_code": "SA",
+        "alpha_three_code": "SAU"
+    },
+    {
+        "id": 178,
+        "name": "ARGENTINE",
+        "code": 99415,
+        "alpha_two_code": "AR",
+        "alpha_three_code": "ARG"
+    },
+    {
+        "id": 52,
+        "name": "ARMENIE",
+        "code": 99252,
+        "alpha_two_code": "AM",
+        "alpha_three_code": "ARM"
+    },
+    {
+        "id": 220,
+        "name": "AUSTRALIE, CHRISTMAS (ILE), COCOS ou KEELING (ILES), HEARD ET MACDONALD (ILES), NORFOLK (ILE)",
+        "code": 99501,
+        "alpha_two_code": "AU",
+        "alpha_three_code": "AUS"
+    },
+    {
+        "id": 4,
+        "name": "AUTRICHE",
+        "code": 99110,
+        "alpha_two_code": "AT",
+        "alpha_three_code": "AUT"
+    },
+    {
+        "id": 53,
+        "name": "AZERBAIDJAN",
+        "code": 99253,
+        "alpha_two_code": "AZ",
+        "alpha_three_code": "AZE"
+    },
+    {
+        "id": 179,
+        "name": "BAHAMAS",
+        "code": 99436,
+        "alpha_two_code": "BS",
+        "alpha_three_code": "BHS"
+    },
+    {
+        "id": 54,
+        "name": "BAHREIN",
+        "code": 99249,
+        "alpha_two_code": "BH",
+        "alpha_three_code": "BHR"
+    },
+    {
+        "id": 55,
+        "name": "BANGLADESH",
+        "code": 99246,
+        "alpha_two_code": "BD",
+        "alpha_three_code": "BGD"
+    },
+    {
+        "id": 180,
+        "name": "BARBADE",
+        "code": 99434,
+        "alpha_two_code": "BB",
+        "alpha_three_code": "BRB"
+    },
+    {
+        "id": 5,
+        "name": "BELGIQUE",
+        "code": 99131,
+        "alpha_two_code": "BE",
+        "alpha_three_code": "BEL"
+    },
+    {
+        "id": 181,
+        "name": "BELIZE",
+        "code": 99429,
+        "alpha_two_code": "BZ",
+        "alpha_three_code": "BLZ"
+    },
+    {
+        "id": 116,
+        "name": "BENIN",
+        "code": 99327,
+        "alpha_two_code": "BJ",
+        "alpha_three_code": "BEN"
+    },
+    {
+        "id": 56,
+        "name": "BHOUTAN",
+        "code": 99214,
+        "alpha_two_code": "BT",
+        "alpha_three_code": "BTN"
+    },
+    {
+        "id": 6,
+        "name": "BIELORUSSIE",
+        "code": 99148,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 57,
+        "name": "BIRMANIE",
+        "code": 99224,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 182,
+        "name": "BOLIVIE",
+        "code": 99418,
+        "alpha_two_code": "BO",
+        "alpha_three_code": "BOL"
+    },
+    {
+        "id": 183,
+        "name": "BONAIRE, SAINT EUSTACHE ET SABA",
+        "code": 99443,
+        "alpha_two_code": "BQ",
+        "alpha_three_code": "BES"
+    },
+    {
+        "id": 7,
+        "name": "BOSNIE-HERZEGOVINE",
+        "code": 99118,
+        "alpha_two_code": "BA",
+        "alpha_three_code": "BIH"
+    },
+    {
+        "id": 117,
+        "name": "BOTSWANA",
+        "code": 99347,
+        "alpha_two_code": "BW",
+        "alpha_three_code": "BWA"
+    },
+    {
+        "id": 184,
+        "name": "BRESIL",
+        "code": 99416,
+        "alpha_two_code": "BR",
+        "alpha_three_code": "BRA"
+    },
+    {
+        "id": 58,
+        "name": "BRUNEI",
+        "code": 99225,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 8,
+        "name": "BULGARIE",
+        "code": 99111,
+        "alpha_two_code": "BG",
+        "alpha_three_code": "BGR"
+    },
+    {
+        "id": 118,
+        "name": "BURKINA FASO",
+        "code": 99331,
+        "alpha_two_code": "BF",
+        "alpha_three_code": "BFA"
+    },
+    {
+        "id": 119,
+        "name": "BURUNDI",
+        "code": 99321,
+        "alpha_two_code": "BI",
+        "alpha_three_code": "BDI"
+    },
+    {
+        "id": 59,
+        "name": "CAMBODGE",
+        "code": 99234,
+        "alpha_two_code": "KH",
+        "alpha_three_code": "KHM"
+    },
+    {
+        "id": 120,
+        "name": "CAMEROUN",
+        "code": 99322,
+        "alpha_two_code": "CM",
+        "alpha_three_code": "CMR"
+    },
+    {
+        "id": 121,
+        "name": "CAMEROUN ET TOGO",
+        "code": 99305,
+        "alpha_two_code": "TG",
+        "alpha_three_code": "TGO"
+    },
+    {
+        "id": 185,
+        "name": "CANADA",
+        "code": 99401,
+        "alpha_two_code": "CA",
+        "alpha_three_code": "CAN"
+    },
+    {
+        "id": 122,
+        "name": "CAP-VERT",
+        "code": 99396,
+        "alpha_two_code": "CV",
+        "alpha_three_code": "CPV"
+    },
+    {
+        "id": 123,
+        "name": "CENTRAFRICAINE (REPUBLIQUE)",
+        "code": 99323,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 186,
+        "name": "CHILI",
+        "code": 99417,
+        "alpha_two_code": "CL",
+        "alpha_three_code": "CHL"
+    },
+    {
+        "id": 60,
+        "name": "CHINE",
+        "code": 99216,
+        "alpha_two_code": "CN",
+        "alpha_three_code": "CHN"
+    },
+    {
+        "id": 61,
+        "name": "CHYPRE",
+        "code": 99254,
+        "alpha_two_code": "CY",
+        "alpha_three_code": "CYP"
+    },
+    {
+        "id": 187,
+        "name": "COLOMBIE",
+        "code": 99419,
+        "alpha_two_code": "CO",
+        "alpha_three_code": "COL"
+    },
+    {
+        "id": 124,
+        "name": "COMORES",
+        "code": 99397,
+        "alpha_two_code": "KM",
+        "alpha_three_code": "COM"
+    },
+    {
+        "id": 125,
+        "name": "CONGO",
+        "code": 99324,
+        "alpha_two_code": "CG",
+        "alpha_three_code": "COG"
+    },
+    {
+        "id": 126,
+        "name": "CONGO (REPUBLIQUE DEMOCRATIQUE)",
+        "code": 99312,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 62,
+        "name": "COREE",
+        "code": 99237,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 63,
+        "name": "COREE (REPUBLIQUE DE)",
+        "code": 99239,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 64,
+        "name": "COREE (REPUBLIQUE POPULAIRE DEMOCRATIQUE DE)",
+        "code": 99238,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 188,
+        "name": "COSTA RICA",
+        "code": 99406,
+        "alpha_two_code": "CR",
+        "alpha_three_code": "CRI"
+    },
+    {
+        "id": 127,
+        "name": "COTE D'IVOIRE",
+        "code": 99326,
+        "alpha_two_code": "CI",
+        "alpha_three_code": "CIV"
+    },
+    {
+        "id": 9,
+        "name": "CROATIE",
+        "code": 99119,
+        "alpha_two_code": "HR",
+        "alpha_three_code": "HRV"
+    },
+    {
+        "id": 189,
+        "name": "CUBA",
+        "code": 99407,
+        "alpha_two_code": "CU",
+        "alpha_three_code": "CUB"
+    },
+    {
+        "id": 190,
+        "name": "CURA\u00c7AO",
+        "code": 99444,
+        "alpha_two_code": "CW",
+        "alpha_three_code": "CUW"
+    },
+    {
+        "id": 10,
+        "name": "DANEMARK, FEROE (ILES)",
+        "code": 99101,
+        "alpha_two_code": "DK",
+        "alpha_three_code": "DNK"
+    },
+    {
+        "id": 128,
+        "name": "DJIBOUTI",
+        "code": 99399,
+        "alpha_two_code": "DJ",
+        "alpha_three_code": "DJI"
+    },
+    {
+        "id": 191,
+        "name": "DOMINICAINE (REPUBLIQUE)",
+        "code": 99408,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 192,
+        "name": "DOMINIQUE",
+        "code": 99438,
+        "alpha_two_code": "DM",
+        "alpha_three_code": "DMA"
+    },
+    {
+        "id": 129,
+        "name": "EGYPTE",
+        "code": 99301,
+        "alpha_two_code": "EG",
+        "alpha_three_code": "EGY"
+    },
+    {
+        "id": 193,
+        "name": "EL SALVADOR",
+        "code": 99414,
+        "alpha_two_code": "SV",
+        "alpha_three_code": "SLV"
+    },
+    {
+        "id": 65,
+        "name": "EMIRATS ARABES UNIS",
+        "code": 99247,
+        "alpha_two_code": "AE",
+        "alpha_three_code": "ARE"
+    },
+    {
+        "id": 194,
+        "name": "EQUATEUR",
+        "code": 99420,
+        "alpha_two_code": "EC",
+        "alpha_three_code": "ECU"
+    },
+    {
+        "id": 130,
+        "name": "ERYTHREE",
+        "code": 99317,
+        "alpha_two_code": "ER",
+        "alpha_three_code": "ERI"
+    },
+    {
+        "id": 11,
+        "name": "ESPAGNE",
+        "code": 99134,
+        "alpha_two_code": "ES",
+        "alpha_three_code": "ESP"
+    },
+    {
+        "id": 12,
+        "name": "ESTONIE",
+        "code": 99106,
+        "alpha_two_code": "EE",
+        "alpha_three_code": "EST"
+    },
+    {
+        "id": 131,
+        "name": "ESWATINI",
+        "code": 99391,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 66,
+        "name": "ETATS MALAIS NON FEDERES",
+        "code": 99228,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 175,
+        "name": "ETATS-UNIS",
+        "code": 99404,
+        "alpha_two_code": "US",
+        "alpha_three_code": "USA"
+    },
+    {
+        "id": 132,
+        "name": "ETHIOPIE",
+        "code": 99315,
+        "alpha_two_code": "ET",
+        "alpha_three_code": "ETH"
+    },
+    {
+        "id": 221,
+        "name": "FIDJI",
+        "code": 99508,
+        "alpha_two_code": "FJ",
+        "alpha_three_code": "FJI"
+    },
+    {
+        "id": 14,
+        "name": "FINLANDE",
+        "code": 99105,
+        "alpha_two_code": "FI",
+        "alpha_three_code": "FIN"
+    },
+    {
+        "id": 133,
+        "name": "GABON",
+        "code": 99328,
+        "alpha_two_code": "GA",
+        "alpha_three_code": "GAB"
+    },
+    {
+        "id": 134,
+        "name": "GAMBIE",
+        "code": 99304,
+        "alpha_two_code": "GM",
+        "alpha_three_code": "GMB"
+    },
+    {
+        "id": 67,
+        "name": "GEORGIE",
+        "code": 99255,
+        "alpha_two_code": "GE",
+        "alpha_three_code": "GEO"
+    },
+    {
+        "id": 135,
+        "name": "GHANA",
+        "code": 99329,
+        "alpha_two_code": "GH",
+        "alpha_three_code": "GHA"
+    },
+    {
+        "id": 15,
+        "name": "GIBRALTAR",
+        "code": 99133,
+        "alpha_two_code": "GI",
+        "alpha_three_code": "GIB"
+    },
+    {
+        "id": 16,
+        "name": "GRECE",
+        "code": 99126,
+        "alpha_two_code": "GR",
+        "alpha_three_code": "GRC"
+    },
+    {
+        "id": 195,
+        "name": "GRENADE",
+        "code": 99435,
+        "alpha_two_code": "GD",
+        "alpha_three_code": "GRD"
+    },
+    {
+        "id": 196,
+        "name": "GROENLAND",
+        "code": 99430,
+        "alpha_two_code": "GL",
+        "alpha_three_code": "GRL"
+    },
+    {
+        "id": 197,
+        "name": "GUATEMALA",
+        "code": 99409,
+        "alpha_two_code": "GT",
+        "alpha_three_code": "GTM"
+    },
+    {
+        "id": 136,
+        "name": "GUINEE",
+        "code": 99330,
+        "alpha_two_code": "GN",
+        "alpha_three_code": "GIN"
+    },
+    {
+        "id": 137,
+        "name": "GUINEE EQUATORIALE",
+        "code": 99314,
+        "alpha_two_code": "GQ",
+        "alpha_three_code": "GNQ"
+    },
+    {
+        "id": 138,
+        "name": "GUINEE-BISSAU",
+        "code": 99392,
+        "alpha_two_code": "GW",
+        "alpha_three_code": "GNB"
+    },
+    {
+        "id": 198,
+        "name": "GUYANA",
+        "code": 99428,
+        "alpha_two_code": "GY",
+        "alpha_three_code": "GUY"
+    },
+    {
+        "id": 199,
+        "name": "HAITI",
+        "code": 99410,
+        "alpha_two_code": "HT",
+        "alpha_three_code": "HTI"
+    },
+    {
+        "id": 222,
+        "name": "HAWAII (ILES)",
+        "code": 99504,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 200,
+        "name": "HONDURAS",
+        "code": 99411,
+        "alpha_two_code": "HN",
+        "alpha_three_code": "HND"
+    },
+    {
+        "id": 69,
+        "name": "HONG-KONG",
+        "code": 99230,
+        "alpha_two_code": "HK",
+        "alpha_three_code": "HKG"
+    },
+    {
+        "id": 17,
+        "name": "HONGRIE",
+        "code": 99112,
+        "alpha_two_code": "HU",
+        "alpha_three_code": "HUN"
+    },
+    {
+        "id": 139,
+        "name": "ILES PORTUGAISES DE L'OCEAN INDIEN",
+        "code": 99320,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 68,
+        "name": "INDE",
+        "code": 99223,
+        "alpha_two_code": "IN",
+        "alpha_three_code": "IND"
+    },
+    {
+        "id": 70,
+        "name": "INDONESIE",
+        "code": 99231,
+        "alpha_two_code": "ID",
+        "alpha_three_code": "IDN"
+    },
+    {
+        "id": 71,
+        "name": "IRAN",
+        "code": 99204,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 72,
+        "name": "IRAQ",
+        "code": 99203,
+        "alpha_two_code": "IQ",
+        "alpha_three_code": "IRQ"
+    },
+    {
+        "id": 18,
+        "name": "IRLANDE, ou EIRE",
+        "code": 99136,
+        "alpha_two_code": "IE",
+        "alpha_three_code": "IRL"
+    },
+    {
+        "id": 19,
+        "name": "ISLANDE",
+        "code": 99102,
+        "alpha_two_code": "IS",
+        "alpha_three_code": "ISL"
+    },
+    {
+        "id": 73,
+        "name": "ISRAEL",
+        "code": 99207,
+        "alpha_two_code": "IL",
+        "alpha_three_code": "ISR"
+    },
+    {
+        "id": 20,
+        "name": "ITALIE",
+        "code": 99127,
+        "alpha_two_code": "IT",
+        "alpha_three_code": "ITA"
+    },
+    {
+        "id": 201,
+        "name": "JAMAIQUE",
+        "code": 99426,
+        "alpha_two_code": "JM",
+        "alpha_three_code": "JAM"
+    },
+    {
+        "id": 74,
+        "name": "JAPON",
+        "code": 99217,
+        "alpha_two_code": "JP",
+        "alpha_three_code": "JPN"
+    },
+    {
+        "id": 75,
+        "name": "JORDANIE",
+        "code": 99222,
+        "alpha_two_code": "JO",
+        "alpha_three_code": "JOR"
+    },
+    {
+        "id": 76,
+        "name": "KAMTCHATKA",
+        "code": 99211,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 77,
+        "name": "KAZAKHSTAN",
+        "code": 99256,
+        "alpha_two_code": "KZ",
+        "alpha_three_code": "KAZ"
+    },
+    {
+        "id": 140,
+        "name": "KENYA",
+        "code": 99332,
+        "alpha_two_code": "KE",
+        "alpha_three_code": "KEN"
+    },
+    {
+        "id": 78,
+        "name": "KIRGHIZISTAN",
+        "code": 99257,
+        "alpha_two_code": "KG",
+        "alpha_three_code": "KGZ"
+    },
+    {
+        "id": 223,
+        "name": "KIRIBATI",
+        "code": 99513,
+        "alpha_two_code": "KI",
+        "alpha_three_code": "KIR"
+    },
+    {
+        "id": 21,
+        "name": "KOSOVO",
+        "code": 99157,
+        "alpha_two_code": null,
+        "alpha_three_code": "UNK"
+    },
+    {
+        "id": 79,
+        "name": "KOWEIT",
+        "code": 99240,
+        "alpha_two_code": "KW",
+        "alpha_three_code": "KWT"
+    },
+    {
+        "id": 202,
+        "name": "LABRADOR",
+        "code": 99403,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 80,
+        "name": "LAOS",
+        "code": 99241,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 141,
+        "name": "LESOTHO",
+        "code": 99348,
+        "alpha_two_code": "LS",
+        "alpha_three_code": "LSO"
+    },
+    {
+        "id": 22,
+        "name": "LETTONIE",
+        "code": 99107,
+        "alpha_two_code": "LV",
+        "alpha_three_code": "LVA"
+    },
+    {
+        "id": 81,
+        "name": "LIBAN",
+        "code": 99205,
+        "alpha_two_code": "LB",
+        "alpha_three_code": "LBN"
+    },
+    {
+        "id": 142,
+        "name": "LIBERIA",
+        "code": 99302,
+        "alpha_two_code": "LR",
+        "alpha_three_code": "LBR"
+    },
+    {
+        "id": 143,
+        "name": "LIBYE",
+        "code": 99316,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 23,
+        "name": "LIECHTENSTEIN",
+        "code": 99113,
+        "alpha_two_code": "LI",
+        "alpha_three_code": "LIE"
+    },
+    {
+        "id": 24,
+        "name": "LITUANIE",
+        "code": 99108,
+        "alpha_two_code": "LT",
+        "alpha_three_code": "LTU"
+    },
+    {
+        "id": 25,
+        "name": "LUXEMBOURG",
+        "code": 99137,
+        "alpha_two_code": "LU",
+        "alpha_three_code": "LUX"
+    },
+    {
+        "id": 82,
+        "name": "MACAO",
+        "code": 99232,
+        "alpha_two_code": "MO",
+        "alpha_three_code": "MAC"
+    },
+    {
+        "id": 13,
+        "name": "MACEDOINE DU NORD",
+        "code": 99156,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 144,
+        "name": "MADAGASCAR",
+        "code": 99333,
+        "alpha_two_code": "MG",
+        "alpha_three_code": "MDG"
+    },
+    {
+        "id": 83,
+        "name": "MALAISIE",
+        "code": 99227,
+        "alpha_two_code": "MY",
+        "alpha_three_code": "MYS"
+    },
+    {
+        "id": 145,
+        "name": "MALAWI",
+        "code": 99334,
+        "alpha_two_code": "MW",
+        "alpha_three_code": "MWI"
+    },
+    {
+        "id": 84,
+        "name": "MALDIVES",
+        "code": 99229,
+        "alpha_two_code": "MV",
+        "alpha_three_code": "MDV"
+    },
+    {
+        "id": 146,
+        "name": "MALI",
+        "code": 99335,
+        "alpha_two_code": "ML",
+        "alpha_three_code": "MLI"
+    },
+    {
+        "id": 26,
+        "name": "MALTE",
+        "code": 99144,
+        "alpha_two_code": "MT",
+        "alpha_three_code": "MLT"
+    },
+    {
+        "id": 85,
+        "name": "MANDCHOURIE",
+        "code": 99218,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 147,
+        "name": "MAROC",
+        "code": 99350,
+        "alpha_two_code": "MA",
+        "alpha_three_code": "MAR"
+    },
+    {
+        "id": 224,
+        "name": "MARSHALL (ILES)",
+        "code": 99515,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 148,
+        "name": "MAURICE",
+        "code": 99390,
+        "alpha_two_code": "MU",
+        "alpha_three_code": "MUS"
+    },
+    {
+        "id": 149,
+        "name": "MAURITANIE",
+        "code": 99336,
+        "alpha_two_code": "MR",
+        "alpha_three_code": "MRT"
+    },
+    {
+        "id": 203,
+        "name": "MEXIQUE",
+        "code": 99405,
+        "alpha_two_code": "MX",
+        "alpha_three_code": "MEX"
+    },
+    {
+        "id": 225,
+        "name": "MICRONESIE (ETATS FEDERES DE)",
+        "code": 99516,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 27,
+        "name": "MOLDAVIE",
+        "code": 99151,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 28,
+        "name": "MONACO",
+        "code": 99138,
+        "alpha_two_code": "MC",
+        "alpha_three_code": "MCO"
+    },
+    {
+        "id": 86,
+        "name": "MONGOLIE",
+        "code": 99242,
+        "alpha_two_code": "MN",
+        "alpha_three_code": "MNG"
+    },
+    {
+        "id": 29,
+        "name": "MONTENEGRO",
+        "code": 99120,
+        "alpha_two_code": "ME",
+        "alpha_three_code": "MNE"
+    },
+    {
+        "id": 150,
+        "name": "MOZAMBIQUE",
+        "code": 99393,
+        "alpha_two_code": "MZ",
+        "alpha_three_code": "MOZ"
+    },
+    {
+        "id": 151,
+        "name": "NAMIBIE",
+        "code": 99311,
+        "alpha_two_code": "NA",
+        "alpha_three_code": "NAM"
+    },
+    {
+        "id": 226,
+        "name": "NAURU",
+        "code": 99507,
+        "alpha_two_code": "NR",
+        "alpha_three_code": "NRU"
+    },
+    {
+        "id": 87,
+        "name": "NEPAL",
+        "code": 99215,
+        "alpha_two_code": "NP",
+        "alpha_three_code": "NPL"
+    },
+    {
+        "id": 204,
+        "name": "NICARAGUA",
+        "code": 99412,
+        "alpha_two_code": "NI",
+        "alpha_three_code": "NIC"
+    },
+    {
+        "id": 152,
+        "name": "NIGER",
+        "code": 99337,
+        "alpha_two_code": "NE",
+        "alpha_three_code": "NER"
+    },
+    {
+        "id": 153,
+        "name": "NIGERIA",
+        "code": 99338,
+        "alpha_two_code": "NG",
+        "alpha_three_code": "NGA"
+    },
+    {
+        "id": 30,
+        "name": "NORVEGE, BOUVET (ILE), SVALBARD et ILE JAN MAYEN",
+        "code": 99103,
+        "alpha_two_code": "SJ",
+        "alpha_three_code": "SJM"
+    },
+    {
+        "id": 227,
+        "name": "NOUVELLE-ZELANDE, COOK (ILES), NIUE, TOKELAU",
+        "code": 99502,
+        "alpha_two_code": "TK",
+        "alpha_three_code": "TKL"
+    },
+    {
+        "id": 154,
+        "name": "OCEAN INDIEN (TERRITOIRE BRITANNIQUE DE L')",
+        "code": 99308,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 88,
+        "name": "OMAN",
+        "code": 99250,
+        "alpha_two_code": "OM",
+        "alpha_three_code": "OMN"
+    },
+    {
+        "id": 155,
+        "name": "OUGANDA",
+        "code": 99339,
+        "alpha_two_code": "UG",
+        "alpha_three_code": "UGA"
+    },
+    {
+        "id": 89,
+        "name": "OUZBEKISTAN",
+        "code": 99258,
+        "alpha_two_code": "UZ",
+        "alpha_three_code": "UZB"
+    },
+    {
+        "id": 90,
+        "name": "PAKISTAN",
+        "code": 99213,
+        "alpha_two_code": "PK",
+        "alpha_three_code": "PAK"
+    },
+    {
+        "id": 228,
+        "name": "PALAOS (ILES)",
+        "code": 99517,
+        "alpha_two_code": "PW",
+        "alpha_three_code": "PLW"
+    },
+    {
+        "id": 91,
+        "name": "PALESTINE (Etat de)",
+        "code": 99261,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 205,
+        "name": "PANAMA",
+        "code": 99413,
+        "alpha_two_code": "PA",
+        "alpha_three_code": "PAN"
+    },
+    {
+        "id": 229,
+        "name": "PAPOUASIE-NOUVELLE-GUINEE",
+        "code": 99510,
+        "alpha_two_code": "PG",
+        "alpha_three_code": "PNG"
+    },
+    {
+        "id": 206,
+        "name": "PARAGUAY",
+        "code": 99421,
+        "alpha_two_code": "PY",
+        "alpha_three_code": "PRY"
+    },
+    {
+        "id": 31,
+        "name": "PAYS-BAS ou ARUBA",
+        "code": 99135,
+        "alpha_two_code": "NL",
+        "alpha_three_code": "NLD"
+    },
+    {
+        "id": 237,
+        "name": "PAYS-BAS, ARUBA",
+        "code": 99135,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 207,
+        "name": "PEROU",
+        "code": 99422,
+        "alpha_two_code": "PE",
+        "alpha_three_code": "PER"
+    },
+    {
+        "id": 92,
+        "name": "PHILIPPINES",
+        "code": 99220,
+        "alpha_two_code": "PH",
+        "alpha_three_code": "PHL"
+    },
+    {
+        "id": 230,
+        "name": "PITCAIRN (ILE)",
+        "code": 99503,
+        "alpha_two_code": "PN",
+        "alpha_three_code": "PCN"
+    },
+    {
+        "id": 32,
+        "name": "POLOGNE",
+        "code": 99122,
+        "alpha_two_code": "PL",
+        "alpha_three_code": "POL"
+    },
+    {
+        "id": 33,
+        "name": "PORTUGAL",
+        "code": 99139,
+        "alpha_two_code": "PT",
+        "alpha_three_code": "PRT"
+    },
+    {
+        "id": 93,
+        "name": "POSSESSIONS BRITANNIQUES AU PROCHE-ORIENT",
+        "code": 99221,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 156,
+        "name": "PROVINCES ESPAGNOLES D'AFRIQUE (CANARIES (ILES), PRESIDES)",
+        "code": 99313,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 94,
+        "name": "QATAR",
+        "code": 99248,
+        "alpha_two_code": "QA",
+        "alpha_three_code": "QAT"
+    },
+    {
+        "id": 34,
+        "name": "REPUBLIQUE DEMOCRATIQUE ALLEMANDE",
+        "code": 99141,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 35,
+        "name": "REPUBLIQUE FEDERALE D'ALLEMAGNE",
+        "code": 99142,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 36,
+        "name": "ROUMANIE",
+        "code": 99114,
+        "alpha_two_code": "RO",
+        "alpha_three_code": "ROU"
+    },
+    {
+        "id": 37,
+        "name": "ROYAUME-UNI, GUERNESEY, JERSEY, MAN (ILE)",
+        "code": 99132,
+        "alpha_two_code": "GB",
+        "alpha_three_code": "GBR"
+    },
+    {
+        "id": 38,
+        "name": "RUSSIE",
+        "code": 99123,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 157,
+        "name": "RWANDA",
+        "code": 99340,
+        "alpha_two_code": "RW",
+        "alpha_three_code": "RWA"
+    },
+    {
+        "id": 158,
+        "name": "SAHARA OCCIDENTAL",
+        "code": 99389,
+        "alpha_two_code": "EH",
+        "alpha_three_code": "ESH"
+    },
+    {
+        "id": 208,
+        "name": "SAINT-CHRISTOPHE-ET-NIEVES",
+        "code": 99442,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 39,
+        "name": "SAINT-MARIN",
+        "code": 99128,
+        "alpha_two_code": "SM",
+        "alpha_three_code": "SMR"
+    },
+    {
+        "id": 210,
+        "name": "SAINT-MARTIN (PARTIE NEERLANDAISE)",
+        "code": 99445,
+        "alpha_two_code": "SX",
+        "alpha_three_code": "SXM"
+    },
+    {
+        "id": 211,
+        "name": "SAINT-VINCENT-ET-LES GRENADINES",
+        "code": 99440,
+        "alpha_two_code": "VC",
+        "alpha_three_code": "VCT"
+    },
+    {
+        "id": 159,
+        "name": "SAINTE HELENE, ASCENSION ET TRISTAN DA CUNHA",
+        "code": 99306,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 209,
+        "name": "SAINTE-LUCIE",
+        "code": 99439,
+        "alpha_two_code": "LC",
+        "alpha_three_code": "LCA"
+    },
+    {
+        "id": 231,
+        "name": "SALOMON (ILES)",
+        "code": 99512,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 232,
+        "name": "SAMOA OCCIDENTALES",
+        "code": 99506,
+        "alpha_two_code": "WS",
+        "alpha_three_code": "WSM"
+    },
+    {
+        "id": 160,
+        "name": "SAO TOME-ET-PRINCIPE",
+        "code": 99394,
+        "alpha_two_code": "ST",
+        "alpha_three_code": "STP"
+    },
+    {
+        "id": 161,
+        "name": "SENEGAL",
+        "code": 99341,
+        "alpha_two_code": "SN",
+        "alpha_three_code": "SEN"
+    },
+    {
+        "id": 40,
+        "name": "SERBIE",
+        "code": 99121,
+        "alpha_two_code": "RS",
+        "alpha_three_code": "SRB"
+    },
+    {
+        "id": 162,
+        "name": "SEYCHELLES",
+        "code": 99398,
+        "alpha_two_code": "SC",
+        "alpha_three_code": "SYC"
+    },
+    {
+        "id": 95,
+        "name": "SIBERIE",
+        "code": 99209,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 163,
+        "name": "SIERRA LEONE",
+        "code": 99342,
+        "alpha_two_code": "SL",
+        "alpha_three_code": "SLE"
+    },
+    {
+        "id": 96,
+        "name": "SINGAPOUR",
+        "code": 99226,
+        "alpha_two_code": "SG",
+        "alpha_three_code": "SGP"
+    },
+    {
+        "id": 41,
+        "name": "SLOVAQUIE",
+        "code": 99117,
+        "alpha_two_code": "SK",
+        "alpha_three_code": "SVK"
+    },
+    {
+        "id": 42,
+        "name": "SLOVENIE",
+        "code": 99145,
+        "alpha_two_code": "SI",
+        "alpha_three_code": "SVN"
+    },
+    {
+        "id": 164,
+        "name": "SOMALIE",
+        "code": 99318,
+        "alpha_two_code": "SO",
+        "alpha_three_code": "SOM"
+    },
+    {
+        "id": 165,
+        "name": "SOUDAN",
+        "code": 99343,
+        "alpha_two_code": "SD",
+        "alpha_three_code": "SDN"
+    },
+    {
+        "id": 166,
+        "name": "SOUDAN ANGLO-EGYPTIEN, KENYA, OUGANDA",
+        "code": 99307,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 167,
+        "name": "SOUDAN DU SUD",
+        "code": 99349,
+        "alpha_two_code": "SS",
+        "alpha_three_code": "SSD"
+    },
+    {
+        "id": 97,
+        "name": "SRI LANKA",
+        "code": 99235,
+        "alpha_two_code": "LK",
+        "alpha_three_code": "LKA"
+    },
+    {
+        "id": 43,
+        "name": "SUEDE",
+        "code": 99104,
+        "alpha_two_code": "SE",
+        "alpha_three_code": "SWE"
+    },
+    {
+        "id": 44,
+        "name": "SUISSE",
+        "code": 99140,
+        "alpha_two_code": "CH",
+        "alpha_three_code": "CHE"
+    },
+    {
+        "id": 212,
+        "name": "SURINAME",
+        "code": 99437,
+        "alpha_two_code": "SR",
+        "alpha_three_code": "SUR"
+    },
+    {
+        "id": 98,
+        "name": "SYRIE",
+        "code": 99206,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 99,
+        "name": "TADJIKISTAN",
+        "code": 99259,
+        "alpha_two_code": "TJ",
+        "alpha_three_code": "TJK"
+    },
+    {
+        "id": 100,
+        "name": "TAIWAN",
+        "code": 99236,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 168,
+        "name": "TANGER",
+        "code": 99325,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 169,
+        "name": "TANZANIE",
+        "code": 99309,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 170,
+        "name": "TCHAD",
+        "code": 99344,
+        "alpha_two_code": "TD",
+        "alpha_three_code": "TCD"
+    },
+    {
+        "id": 45,
+        "name": "TCHECOSLOVAQUIE",
+        "code": 99115,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 46,
+        "name": "TCHEQUE (REPUBLIQUE)",
+        "code": 99116,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 213,
+        "name": "TERR. DES ETATS-UNIS D'AMERIQUE EN AMERIQUE (PORTO RICO, VIERGES DES ETATS-UNIS (ILES))",
+        "code": 99432,
+        "alpha_two_code": "PR",
+        "alpha_three_code": "PRI"
+    },
+    {
+        "id": 233,
+        "name": "TERR. DES ETATS-UNIS D'AMERIQUE EN OCEANIE (GUAM, MARIANNES DU NORD (ILES), SAMOA AMERICAINES)",
+        "code": 99505,
+        "alpha_two_code": "AS",
+        "alpha_three_code": "ASM"
+    },
+    {
+        "id": 214,
+        "name": "TERR. DU ROYAUME-UNI DANS L'ATLANTIQUE SUD (GEORGIE DU SUD ET LES ILES SANDWICH DU SUD \/ MALOUINES, OU FALKLAND (ILES))",
+        "code": 99427,
+        "alpha_two_code": "GS",
+        "alpha_three_code": "SGS"
+    },
+    {
+        "id": 215,
+        "name": "TERRE-NEUVE",
+        "code": 99402,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 216,
+        "name": "TERRITOIRES DU ROYAUME-UNI AUX ANTILLES (ANGUILLA, BERMUDES, CAIMANES (ILES), MONTSERRAT, TURKS ET CAIQUES (ILES), VIERGES BRITANNIQUES (ILES))",
+        "code": 99425,
+        "alpha_two_code": "MS",
+        "alpha_three_code": "MSR"
+    },
+    {
+        "id": 101,
+        "name": "THAILANDE",
+        "code": 99219,
+        "alpha_two_code": "TH",
+        "alpha_three_code": "THA"
+    },
+    {
+        "id": 102,
+        "name": "TIMOR ORIENTAL",
+        "code": 99262,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 171,
+        "name": "TOGO",
+        "code": 99345,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 234,
+        "name": "TONGA",
+        "code": 99509,
+        "alpha_two_code": "TO",
+        "alpha_three_code": "TON"
+    },
+    {
+        "id": 217,
+        "name": "TRINITE-ET-TOBAGO",
+        "code": 99433,
+        "alpha_two_code": "TT",
+        "alpha_three_code": "TTO"
+    },
+    {
+        "id": 172,
+        "name": "TUNISIE",
+        "code": 99351,
+        "alpha_two_code": "TN",
+        "alpha_three_code": "TUN"
+    },
+    {
+        "id": 103,
+        "name": "TURKESTAN RUSSE",
+        "code": 99210,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 104,
+        "name": "TURKMENISTAN",
+        "code": 99260,
+        "alpha_two_code": "TM",
+        "alpha_three_code": "TKM"
+    },
+    {
+        "id": 105,
+        "name": "TURQUIE",
+        "code": 99208,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 47,
+        "name": "TURQUIE D'EUROPE",
+        "code": 99124,
+        "alpha_two_code": "TR",
+        "alpha_three_code": "TUR"
+    },
+    {
+        "id": 235,
+        "name": "TUVALU",
+        "code": 99511,
+        "alpha_two_code": "TV",
+        "alpha_three_code": "TUV"
+    },
+    {
+        "id": 48,
+        "name": "UKRAINE",
+        "code": 99155,
+        "alpha_two_code": "UA",
+        "alpha_three_code": "UKR"
+    },
+    {
+        "id": 218,
+        "name": "URUGUAY",
+        "code": 99423,
+        "alpha_two_code": "UY",
+        "alpha_three_code": "URY"
+    },
+    {
+        "id": 236,
+        "name": "VANUATU",
+        "code": 99514,
+        "alpha_two_code": "VU",
+        "alpha_three_code": "VUT"
+    },
+    {
+        "id": 49,
+        "name": "VATICAN, ou SAINT-SIEGE",
+        "code": 99129,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 219,
+        "name": "VENEZUELA",
+        "code": 99424,
+        "alpha_two_code": "VE",
+        "alpha_three_code": "VEN"
+    },
+    {
+        "id": 106,
+        "name": "VIET NAM",
+        "code": 99243,
+        "alpha_two_code": "VN",
+        "alpha_three_code": "VNM"
+    },
+    {
+        "id": 107,
+        "name": "VIET NAM DU NORD",
+        "code": 99244,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 108,
+        "name": "VIET NAM DU SUD",
+        "code": 99245,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 109,
+        "name": "YEMEN",
+        "code": 99251,
+        "alpha_two_code": "YE",
+        "alpha_three_code": "YEM"
+    },
+    {
+        "id": 111,
+        "name": "YEMEN (REPUBLIQUE ARABE DU)",
+        "code": 99202,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 110,
+        "name": "YEMEN DEMOCRATIQUE",
+        "code": 99233,
+        "alpha_two_code": null,
+        "alpha_three_code": null
+    },
+    {
+        "id": 173,
+        "name": "ZAMBIE",
+        "code": 99346,
+        "alpha_two_code": "ZM",
+        "alpha_three_code": "ZMB"
+    },
+    {
+        "id": 174,
+        "name": "ZIMBABWE",
+        "code": 99310,
+        "alpha_two_code": "ZW",
+        "alpha_three_code": "ZWE"
+    }
+]

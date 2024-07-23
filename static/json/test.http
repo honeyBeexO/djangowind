@@ -1,0 +1,14 @@
+# Get activities
+GET https://espace-autoentrepreneur.com/onboarding/eae-activities
+
+###
+
+# Get activities with a specific filter
+GET https://espace-autoentrepreneur.com/onboarding/eae-activities?filter[id]=Achat-Revente
+
+###
+
+# Get specific activity by ID
+GET https://espace-autoentrepreneur.com/onboarding/eae-activities/544
+
+# Get specific activity by ID Autre

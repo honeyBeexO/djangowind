@@ -1,0 +1,257 @@
+[
+    {
+        "id": 594,
+        "name": "Achat-Revente",
+        "description": "Achat-Revente",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 60,
+        "name": "Artisanat (Cr\u00e9ation, Fabrication, R\u00e9paration)",
+        "description": "Artisanat (Cr\u00e9ation, Fabrication, R\u00e9paration)",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 1,
+        "name": "B\u00e2timent \/ Gros \u0153uvre \/ Second \u0153uvre",
+        "description": "B\u00e2timent \/ Gros \u0153uvre \/ Second \u0153uvre",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 541,
+        "name": "Beaut\u00e9 \/ Bien-\u00eatre \/ Esot\u00e9risme",
+        "description": "Beaut\u00e9 \/ Bien-\u00eatre \/ Esot\u00e9risme",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 418,
+        "name": "Conseil \/ Expertise \/ Services aux entreprises",
+        "description": "Conseil \/ Expertise \/ Services aux entreprises",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 282,
+        "name": "Cours et Formation",
+        "description": "Cours et Formation",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 329,
+        "name": "Culture, Animation, Sports et Spectacles",
+        "description": "Culture, Animation, Sports et Spectacles",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 194,
+        "name": "H\u00f4tellerie-Restauration, Tourisme",
+        "description": "H\u00f4tellerie-Restauration, Tourisme",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 383,
+        "name": "Location d'\u00e9quipements et de mat\u00e9riel",
+        "description": "Location d'\u00e9quipements et de mat\u00e9riel",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 313,
+        "name": "M\u00e9canique \/ Technique",
+        "description": "M\u00e9canique \/ Technique",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 522,
+        "name": "M\u00e9dical \/ Sant\u00e9",
+        "description": "M\u00e9dical \/ Sant\u00e9",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 398,
+        "name": "Transport \/ Livraison \/ Logistique",
+        "description": "Transport \/ Livraison \/ Logistique",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 230,
+        "name": "Web \/ Informatique \/ Multim\u00e9dias",
+        "description": "Web \/ Informatique \/ Multim\u00e9dias",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 0,
+        "name": "Je ne trouve pas mon activit\u00e9",
+        "description": null,
+        "parent_id": null,
+        "has_children": false,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": null,
+        "post_payment": null,
+        "relations": {
+            "parent": null
+        }
+    },
+    {
+        "id": 0,
+        "name": "Je ne trouve pas mon activit\u00e9",
+        "description": null,
+        "parent_id": null,
+        "has_children": false,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": null,
+        "post_payment": null,
+        "relations": {
+          "parent": null
+        }
+      }
+]
