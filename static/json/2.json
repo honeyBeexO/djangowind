@@ -1,1 +1,43 @@
-[{"id":0,"name":"Autre","description":null,"parent_id":"2","has_children":false,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":null,"post_payment":null,"relations":{"parent":{"id":2,"name":"Assistance \u00e0 ma\u00eetrise d'ouvrage","description":"Assistance \u00e0 ma\u00eetrise d'ouvrage","parent_id":1,"has_children":false,"connector_activity_id":"357","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":1,"name":"B\u00e2timent \/ Gros \u0153uvre \/ Second \u0153uvre","description":"B\u00e2timent \/ Gros \u0153uvre \/ Second \u0153uvre","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}}}}]
+[
+  {
+    "id": 0,
+    "name": "Autre",
+    "description": null,
+    "parent_id": "2",
+    "has_children": false,
+    "connector_activity_id": null,
+    "type": null,
+    "jqpa": null,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 2,
+        "name": "Assistance \u00e0 ma\u00eetrise d'ouvrage",
+        "description": "Assistance \u00e0 ma\u00eetrise d'ouvrage",
+        "parent_id": 1,
+        "has_children": false,
+        "connector_activity_id": "357",
+        "type": "liberal",
+        "jqpa": false,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+          "parent": {
+            "id": 1,
+            "name": "B\u00e2timent / Gros \u0153uvre / Second \u0153uvre",
+            "description": "B\u00e2timent / Gros \u0153uvre / Second \u0153uvre",
+            "parent_id": null,
+            "has_children": true,
+            "connector_activity_id": null,
+            "type": null,
+            "jqpa": null,
+            "to_be_reviewed": false,
+            "post_payment": 0,
+            "relations": { "parent": null }
+          }
+        }
+      }
+    }
+  }
+]

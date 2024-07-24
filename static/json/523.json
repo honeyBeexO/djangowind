@@ -1,1 +1,43 @@
-[{"id":0,"name":"Autre","description":null,"parent_id":"523","has_children":false,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":null,"post_payment":null,"relations":{"parent":{"id":523,"name":"Chiropracteur","description":"Chiropracteur","parent_id":522,"has_children":false,"connector_activity_id":"498","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":522,"name":"M\u00e9dical \/ Sant\u00e9","description":"M\u00e9dical \/ Sant\u00e9","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}}}}]
+[
+  {
+    "id": 0,
+    "name": "Autre",
+    "description": null,
+    "parent_id": "523",
+    "has_children": false,
+    "connector_activity_id": null,
+    "type": null,
+    "jqpa": null,
+    "to_be_reviewed": null,
+    "post_payment": null,
+    "relations": {
+      "parent": {
+        "id": 523,
+        "name": "Chiropracteur",
+        "description": "Chiropracteur",
+        "parent_id": 522,
+        "has_children": false,
+        "connector_activity_id": "498",
+        "type": "liberal",
+        "jqpa": false,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": {
+          "parent": {
+            "id": 522,
+            "name": "M\u00e9dical / Sant\u00e9",
+            "description": "M\u00e9dical / Sant\u00e9",
+            "parent_id": null,
+            "has_children": true,
+            "connector_activity_id": null,
+            "type": null,
+            "jqpa": null,
+            "to_be_reviewed": false,
+            "post_payment": 0,
+            "relations": { "parent": null }
+          }
+        }
+      }
+    }
+  }
+]

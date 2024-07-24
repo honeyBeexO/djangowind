@@ -1,1 +1,1757 @@
-[{"id":133,"name":"Accompagnement de personnes \u00e2gees et handicapees hors de leur domicile","description":"Accompagnement de personnes \u00e2g\u00e9es et handicap\u00e9es hors de leur domicile (sans transport)","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":134,"name":"Accompagnement et soutien scolaire \u00e0 domicile","description":"Accompagnement et soutien scolaire \u00e0 domicile","parent_id":132,"has_children":false,"connector_activity_id":"479","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":159,"name":"Achat\/Vente d'accessoires pour animaux de compagnie","description":"Achat\/Vente d'accessoires pour animaux de compagnie","parent_id":132,"has_children":false,"connector_activity_id":"253","type":"commercial","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":160,"name":"Achat\/Vente d'aliments pour animaux de compagnie","description":"Achat\/Vente d'aliments pour animaux de compagnie","parent_id":132,"has_children":false,"connector_activity_id":"253","type":"commercial","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":161,"name":"Agence matrimoniale","description":"Agence matrimoniale","parent_id":132,"has_children":false,"connector_activity_id":"293","type":"commercial","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":806,"name":"Am\u00e9nagement paysager","description":"Am\u00e9nagement paysager - conseil et services","parent_id":132,"has_children":false,"connector_activity_id":"383","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":162,"name":"Animalerie","description":"Animalerie","parent_id":132,"has_children":false,"connector_activity_id":"253","type":"commercial","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":135,"name":"Assistance aux personnes dependantes ayant besoin d'aide \u00e0 domicile (\u00e0 l'exception d'acte medicaux)","description":"Assistance aux personnes dependantes ayant besoin d'aide \u00e0 domicile (\u00e0 l'exception d'acte medicaux)","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":136,"name":"Assistance et conseil administratif aux particuliers","description":"Assistance et conseil administratif aux particuliers","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":163,"name":"Assistante maternelle agr\u00e9\u00e9e","description":"Assistante maternelle agr\u00e9\u00e9e","parent_id":132,"has_children":false,"connector_activity_id":"462","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":137,"name":"Coaching relooking","description":"Coaching relooking","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":192,"name":"Collecte\/D\u00e9barras de mat\u00e9riaux recyclables","description":"Collecte\/D\u00e9barras de mat\u00e9riaux recyclables","parent_id":132,"has_children":false,"connector_activity_id":"185","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":193,"name":"Collecte\/D\u00e9barras de m\u00e9taux","description":"Collecte\/D\u00e9barras de m\u00e9taux","parent_id":132,"has_children":false,"connector_activity_id":"175","type":"commercial","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":191,"name":"Collecte\/D\u00e9barras\/Transformation de d\u00e9chets","description":"R\u00e9cup\u00e9ration et transformation de d\u00e9chets tri\u00e9s","parent_id":132,"has_children":false,"connector_activity_id":"185","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":164,"name":"Conciergerie","description":"Conciergerie","parent_id":132,"has_children":false,"connector_activity_id":"298","type":"commercial","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":138,"name":"Conseiller conjugal","description":"Conseiller conjugal","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":139,"name":"Conseiller de vie","description":"Conseiller de vie","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":140,"name":"Cours \u00e0 domicile","description":"Cours \u00e0 domicile","parent_id":132,"has_children":false,"connector_activity_id":"478","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":165,"name":"Couturi\u00e8re \/ couturier","description":"Services de couture","parent_id":132,"has_children":true,"connector_activity_id":"99","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":166,"name":"Desinsectisation \/ Destruction de nuisibles","description":"Desinsectisation \/ Destruction de nuisibles","parent_id":132,"has_children":false,"connector_activity_id":"421","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":141,"name":"Detective\/Enqu\u00eateur prive","description":"Detective\/Enqu\u00eateur prive","parent_id":132,"has_children":false,"connector_activity_id":"415","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":142,"name":"Documentaliste genealogiste","description":"Documentaliste genealogiste","parent_id":132,"has_children":false,"connector_activity_id":"435","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":143,"name":"Ecrivain public","description":"Ecrivain public","parent_id":132,"has_children":false,"connector_activity_id":"297","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":167,"name":"Educateur comportementaliste pour animaux de compagnie","description":"Educateur comportementaliste pour animaux de compagnie","parent_id":132,"has_children":false,"connector_activity_id":"547","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":144,"name":"Enseignement \u00e0 domicile","description":"Enseignement \u00e0 domicile","parent_id":132,"has_children":false,"connector_activity_id":"478","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":168,"name":"Entretien de pierres tombales","description":"Entretien de pierres tombales","parent_id":132,"has_children":false,"connector_activity_id":"425","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":169,"name":"Entretien nettoyage de piscines (sans intervention m\u00e9canique)","description":"Entretien nettoyage de piscines (sans intervention m\u00e9canique)","parent_id":132,"has_children":false,"connector_activity_id":"423","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":145,"name":"Etat des lieux pour le compte de proprietaires ou de leurs representants","description":"Etat des lieux pour le compte de proprietaires ou de leurs representants","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":170,"name":"Fabrication\/Vente d'accessoires pour animaux de compagnie","description":"Fabrication\/Vente d'accessoires pour animaux de compagnie","parent_id":132,"has_children":false,"connector_activity_id":"121","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":171,"name":"Garde \u00e0 domicile d'animaux de compagnie (pet-sitting)","description":"Garde \u00e0 domicile d'animaux de compagnie (pet-sitting)","parent_id":132,"has_children":false,"connector_activity_id":"547","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":146,"name":"Garde d'enfants de moins de 3 ans","description":"Garde d'enfants de moins de 3 ans","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":172,"name":"Garde d'enfants de plus de 3 ans","description":"Garde d'enfants de plus de 3 ans","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":173,"name":"Gardiennage","description":"Gardiennage","parent_id":132,"has_children":false,"connector_activity_id":"411","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":778,"name":"Homme toutes mains - services \u00e0 la personne petit bricolage hors activit\u00e9s r\u00e9glement\u00e9es","description":"Homme toutes mains - services \u00e0 la personne petit bricolage hors activit\u00e9s r\u00e9glement\u00e9es","parent_id":132,"has_children":false,"connector_activity_id":"559","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":779,"name":"Homme toutes mains - services aux professionnels petit bricolage hors activit\u00e9s r\u00e9glement\u00e9es","description":"Homme toutes mains - services aux professionnels petit bricolage hors activit\u00e9s r\u00e9glement\u00e9es","parent_id":132,"has_children":false,"connector_activity_id":"559","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":147,"name":"Kinesitherapeute pour animaux","description":"Kinesitherapeute pour animaux","parent_id":132,"has_children":false,"connector_activity_id":"383","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":175,"name":"Lavage et entretien de v\u00e9hicules chez les particuliers (sans r\u00e9paration)","description":"Lavage et entretien de v\u00e9hicules chez les particuliers (sans r\u00e9paration)","parent_id":132,"has_children":false,"connector_activity_id":"163","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":176,"name":"Laverie automatique (exploitant)","description":"Laverie automatique (exploitant)","parent_id":132,"has_children":false,"connector_activity_id":"535","type":"commercial","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":177,"name":"Magnetiseur pour animaux","description":"Magnetiseur pour animaux","parent_id":132,"has_children":false,"connector_activity_id":"383","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":148,"name":"Mandataire judiciaire \u00e0 la protection des majeurs","description":"Mandataire judiciaire \u00e0 la protection des majeurs","parent_id":132,"has_children":false,"connector_activity_id":"332","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":149,"name":"Mandataire judiciaire \u00e0 la protection des mineurs","description":"Mandataire judiciaire \u00e0 la protection des mineurs","parent_id":132,"has_children":false,"connector_activity_id":"332","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":178,"name":"Marr\u00e9chal ferrant","description":"Marr\u00e9chal ferrant","parent_id":132,"has_children":false,"connector_activity_id":"34","type":"regulated_artisan","jqpa":true,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":150,"name":"Mediateur familial","description":"Mediateur familial","parent_id":132,"has_children":false,"connector_activity_id":"336","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":151,"name":"Mediateur social","description":"Mediateur social","parent_id":132,"has_children":false,"connector_activity_id":"336","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":179,"name":"Montage de meubles de cuisine (sans raccordement)","description":"Montage de meubles de cuisine (sans raccordement)","parent_id":132,"has_children":false,"connector_activity_id":"218","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":180,"name":"Nettoyage automobile","description":"Nettoyage automobile","parent_id":132,"has_children":false,"connector_activity_id":"163","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":827,"name":"Nettoyage de mobiliers","description":"Nettoyage de mobiliers","parent_id":132,"has_children":false,"connector_activity_id":"425","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":152,"name":"Offre globale de service \u00e0 domicile et transport de personnes \u00e0 mobilite reduite","description":"Offre globale de service \u00e0 domicile et transport de personnes \u00e0 mobilite reduite","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":153,"name":"Offre globale de service et d'accompagnement de personnes dependantes hors de leur domicile","description":"Offre globale de service et d'accompagnement de personnes dependantes hors de leur domicile","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":154,"name":"Osteopathe pour animaux","description":"Osteopathe pour animaux","parent_id":132,"has_children":false,"connector_activity_id":"383","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":181,"name":"Palefrenier soigneur","description":"Palefrenier soigneur","parent_id":132,"has_children":false,"connector_activity_id":"383","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":155,"name":"Personnal shopper","description":"Personnal shopper","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":182,"name":"Prise en pension d'animaux domestiques","description":"Prise en pension d'animaux domestiques","parent_id":132,"has_children":false,"connector_activity_id":"547","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":183,"name":"Prise en pension de chevaux (sans \u00e9levage, dressage ou entrainement)","description":"Prise en pension de chevaux (sans \u00e9levage, dressage ou entrainement)","parent_id":132,"has_children":false,"connector_activity_id":"522","type":"commercial","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":156,"name":"Promenade de chiens","description":"Promenade de chiens","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":184,"name":"Repassage","description":"Repassage","parent_id":132,"has_children":false,"connector_activity_id":"537","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":185,"name":"Service de pressing \u00e0 domicile","description":"Service de pressing \u00e0 domicile","parent_id":132,"has_children":false,"connector_activity_id":"537","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":186,"name":"Services fun\u00e9raires pour animaux","description":"Services fun\u00e9raires pour animaux","parent_id":132,"has_children":false,"connector_activity_id":"540","type":"commercial","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":157,"name":"Soutien scolaire \u00e0 domicile","description":"Soutien scolaire \u00e0 domicile","parent_id":132,"has_children":false,"connector_activity_id":"479","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":187,"name":"Surveillance de r\u00e9sidence principale ou secondaire","description":"Surveillance de r\u00e9sidence principale ou secondaire","parent_id":132,"has_children":false,"connector_activity_id":"413","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":188,"name":"Tatoueur","description":"Tatoueur","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"liberal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":189,"name":"Taxidermiste","description":"Taxidermiste","parent_id":132,"has_children":false,"connector_activity_id":"541","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":158,"name":"Toilettage d'animaux de compagnie","description":"Toilettage d'animaux de compagnie","parent_id":132,"has_children":false,"connector_activity_id":"543","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":190,"name":"Travaux m\u00e9nagers","description":"Nettoyage courant des b\u00e2timents","parent_id":132,"has_children":false,"connector_activity_id":"418","type":"artisanal","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":0,"name":"Autre","description":null,"parent_id":"132","has_children":false,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":null,"post_payment":null,"relations":{"parent":{"id":132,"name":"Services \u00e0 la personne et aux animaux","description":"Services \u00e0 la personne et aux animaux","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}}]
+[
+  {
+    "id": 133,
+    "name": "Accompagnement de personnes \u00e2gees et handicapees hors de leur domicile",
+    "description": "Accompagnement de personnes \u00e2g\u00e9es et handicap\u00e9es hors de leur domicile (sans transport)",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 134,
+    "name": "Accompagnement et soutien scolaire \u00e0 domicile",
+    "description": "Accompagnement et soutien scolaire \u00e0 domicile",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "479",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 159,
+    "name": "Achat/Vente d'accessoires pour animaux de compagnie",
+    "description": "Achat/Vente d'accessoires pour animaux de compagnie",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "253",
+    "type": "commercial",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 160,
+    "name": "Achat/Vente d'aliments pour animaux de compagnie",
+    "description": "Achat/Vente d'aliments pour animaux de compagnie",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "253",
+    "type": "commercial",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 161,
+    "name": "Agence matrimoniale",
+    "description": "Agence matrimoniale",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "293",
+    "type": "commercial",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 806,
+    "name": "Am\u00e9nagement paysager",
+    "description": "Am\u00e9nagement paysager - conseil et services",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "383",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 162,
+    "name": "Animalerie",
+    "description": "Animalerie",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "253",
+    "type": "commercial",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 135,
+    "name": "Assistance aux personnes dependantes ayant besoin d'aide \u00e0 domicile (\u00e0 l'exception d'acte medicaux)",
+    "description": "Assistance aux personnes dependantes ayant besoin d'aide \u00e0 domicile (\u00e0 l'exception d'acte medicaux)",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 136,
+    "name": "Assistance et conseil administratif aux particuliers",
+    "description": "Assistance et conseil administratif aux particuliers",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 163,
+    "name": "Assistante maternelle agr\u00e9\u00e9e",
+    "description": "Assistante maternelle agr\u00e9\u00e9e",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "462",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 137,
+    "name": "Coaching relooking",
+    "description": "Coaching relooking",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 192,
+    "name": "Collecte/D\u00e9barras de mat\u00e9riaux recyclables",
+    "description": "Collecte/D\u00e9barras de mat\u00e9riaux recyclables",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "185",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 193,
+    "name": "Collecte/D\u00e9barras de m\u00e9taux",
+    "description": "Collecte/D\u00e9barras de m\u00e9taux",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "175",
+    "type": "commercial",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 191,
+    "name": "Collecte/D\u00e9barras/Transformation de d\u00e9chets",
+    "description": "R\u00e9cup\u00e9ration et transformation de d\u00e9chets tri\u00e9s",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "185",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 164,
+    "name": "Conciergerie",
+    "description": "Conciergerie",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "298",
+    "type": "commercial",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 138,
+    "name": "Conseiller conjugal",
+    "description": "Conseiller conjugal",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 139,
+    "name": "Conseiller de vie",
+    "description": "Conseiller de vie",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 140,
+    "name": "Cours \u00e0 domicile",
+    "description": "Cours \u00e0 domicile",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "478",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 165,
+    "name": "Couturi\u00e8re / couturier",
+    "description": "Services de couture",
+    "parent_id": 132,
+    "has_children": true,
+    "connector_activity_id": "99",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 166,
+    "name": "Desinsectisation / Destruction de nuisibles",
+    "description": "Desinsectisation / Destruction de nuisibles",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "421",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 141,
+    "name": "Detective/Enqu\u00eateur prive",
+    "description": "Detective/Enqu\u00eateur prive",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "415",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 142,
+    "name": "Documentaliste genealogiste",
+    "description": "Documentaliste genealogiste",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "435",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 143,
+    "name": "Ecrivain public",
+    "description": "Ecrivain public",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "297",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 167,
+    "name": "Educateur comportementaliste pour animaux de compagnie",
+    "description": "Educateur comportementaliste pour animaux de compagnie",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "547",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 144,
+    "name": "Enseignement \u00e0 domicile",
+    "description": "Enseignement \u00e0 domicile",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "478",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 168,
+    "name": "Entretien de pierres tombales",
+    "description": "Entretien de pierres tombales",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "425",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 169,
+    "name": "Entretien nettoyage de piscines (sans intervention m\u00e9canique)",
+    "description": "Entretien nettoyage de piscines (sans intervention m\u00e9canique)",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "423",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 145,
+    "name": "Etat des lieux pour le compte de proprietaires ou de leurs representants",
+    "description": "Etat des lieux pour le compte de proprietaires ou de leurs representants",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 170,
+    "name": "Fabrication/Vente d'accessoires pour animaux de compagnie",
+    "description": "Fabrication/Vente d'accessoires pour animaux de compagnie",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "121",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 171,
+    "name": "Garde \u00e0 domicile d'animaux de compagnie (pet-sitting)",
+    "description": "Garde \u00e0 domicile d'animaux de compagnie (pet-sitting)",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "547",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 146,
+    "name": "Garde d'enfants de moins de 3 ans",
+    "description": "Garde d'enfants de moins de 3 ans",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 172,
+    "name": "Garde d'enfants de plus de 3 ans",
+    "description": "Garde d'enfants de plus de 3 ans",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 173,
+    "name": "Gardiennage",
+    "description": "Gardiennage",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "411",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 778,
+    "name": "Homme toutes mains - services \u00e0 la personne petit bricolage hors activit\u00e9s r\u00e9glement\u00e9es",
+    "description": "Homme toutes mains - services \u00e0 la personne petit bricolage hors activit\u00e9s r\u00e9glement\u00e9es",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "559",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 779,
+    "name": "Homme toutes mains - services aux professionnels petit bricolage hors activit\u00e9s r\u00e9glement\u00e9es",
+    "description": "Homme toutes mains - services aux professionnels petit bricolage hors activit\u00e9s r\u00e9glement\u00e9es",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "559",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 147,
+    "name": "Kinesitherapeute pour animaux",
+    "description": "Kinesitherapeute pour animaux",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "383",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 175,
+    "name": "Lavage et entretien de v\u00e9hicules chez les particuliers (sans r\u00e9paration)",
+    "description": "Lavage et entretien de v\u00e9hicules chez les particuliers (sans r\u00e9paration)",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "163",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 176,
+    "name": "Laverie automatique (exploitant)",
+    "description": "Laverie automatique (exploitant)",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "535",
+    "type": "commercial",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 177,
+    "name": "Magnetiseur pour animaux",
+    "description": "Magnetiseur pour animaux",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "383",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 148,
+    "name": "Mandataire judiciaire \u00e0 la protection des majeurs",
+    "description": "Mandataire judiciaire \u00e0 la protection des majeurs",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "332",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 149,
+    "name": "Mandataire judiciaire \u00e0 la protection des mineurs",
+    "description": "Mandataire judiciaire \u00e0 la protection des mineurs",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "332",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 178,
+    "name": "Marr\u00e9chal ferrant",
+    "description": "Marr\u00e9chal ferrant",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "34",
+    "type": "regulated_artisan",
+    "jqpa": true,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 150,
+    "name": "Mediateur familial",
+    "description": "Mediateur familial",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "336",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 151,
+    "name": "Mediateur social",
+    "description": "Mediateur social",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "336",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 179,
+    "name": "Montage de meubles de cuisine (sans raccordement)",
+    "description": "Montage de meubles de cuisine (sans raccordement)",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "218",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 180,
+    "name": "Nettoyage automobile",
+    "description": "Nettoyage automobile",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "163",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 827,
+    "name": "Nettoyage de mobiliers",
+    "description": "Nettoyage de mobiliers",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "425",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 152,
+    "name": "Offre globale de service \u00e0 domicile et transport de personnes \u00e0 mobilite reduite",
+    "description": "Offre globale de service \u00e0 domicile et transport de personnes \u00e0 mobilite reduite",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 153,
+    "name": "Offre globale de service et d'accompagnement de personnes dependantes hors de leur domicile",
+    "description": "Offre globale de service et d'accompagnement de personnes dependantes hors de leur domicile",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 154,
+    "name": "Osteopathe pour animaux",
+    "description": "Osteopathe pour animaux",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "383",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 181,
+    "name": "Palefrenier soigneur",
+    "description": "Palefrenier soigneur",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "383",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 155,
+    "name": "Personnal shopper",
+    "description": "Personnal shopper",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 182,
+    "name": "Prise en pension d'animaux domestiques",
+    "description": "Prise en pension d'animaux domestiques",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "547",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 183,
+    "name": "Prise en pension de chevaux (sans \u00e9levage, dressage ou entrainement)",
+    "description": "Prise en pension de chevaux (sans \u00e9levage, dressage ou entrainement)",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "522",
+    "type": "commercial",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 156,
+    "name": "Promenade de chiens",
+    "description": "Promenade de chiens",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 184,
+    "name": "Repassage",
+    "description": "Repassage",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "537",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 185,
+    "name": "Service de pressing \u00e0 domicile",
+    "description": "Service de pressing \u00e0 domicile",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "537",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 186,
+    "name": "Services fun\u00e9raires pour animaux",
+    "description": "Services fun\u00e9raires pour animaux",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "540",
+    "type": "commercial",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 157,
+    "name": "Soutien scolaire \u00e0 domicile",
+    "description": "Soutien scolaire \u00e0 domicile",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "479",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 187,
+    "name": "Surveillance de r\u00e9sidence principale ou secondaire",
+    "description": "Surveillance de r\u00e9sidence principale ou secondaire",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "413",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 188,
+    "name": "Tatoueur",
+    "description": "Tatoueur",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "liberal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 189,
+    "name": "Taxidermiste",
+    "description": "Taxidermiste",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "541",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 158,
+    "name": "Toilettage d'animaux de compagnie",
+    "description": "Toilettage d'animaux de compagnie",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "543",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 190,
+    "name": "Travaux m\u00e9nagers",
+    "description": "Nettoyage courant des b\u00e2timents",
+    "parent_id": 132,
+    "has_children": false,
+    "connector_activity_id": "418",
+    "type": "artisanal",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 0,
+    "name": "Autre",
+    "description": null,
+    "parent_id": "132",
+    "has_children": false,
+    "connector_activity_id": null,
+    "type": null,
+    "jqpa": null,
+    "to_be_reviewed": null,
+    "post_payment": null,
+    "relations": {
+      "parent": {
+        "id": 132,
+        "name": "Services \u00e0 la personne et aux animaux",
+        "description": "Services \u00e0 la personne et aux animaux",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  }
+]

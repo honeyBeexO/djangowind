@@ -1,1 +1,515 @@
-[{"id":788,"name":"Agent commercial dans le cecteur du commerce ,du n\u00e9goce et de la distribution","description":"Agent commercial dans le cecteur du commerce ,du n\u00e9goce et de la distribution","parent_id":782,"has_children":false,"connector_activity_id":"448","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":783,"name":"Agent commercial dans le secteur agrolimentaire","description":"Agent commercial dans le secteur agrolimentaire","parent_id":782,"has_children":false,"connector_activity_id":"443","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":785,"name":"Agent commercial dans le secteur Bois, papier, carton, Imprimerie","description":"Agent commercial dans le secteur Bois, papier, carton, Imprimerie","parent_id":782,"has_children":false,"connector_activity_id":"445","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":789,"name":"Agent commercial dans le secteur de l'\u00e9dition, du multim\u00e9dia et de la communication","description":"Agent commercial dans le secteur de l'\u00e9dition, du multim\u00e9dia et de la communication","parent_id":782,"has_children":false,"connector_activity_id":"449","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":790,"name":"Agent commercial dans le secteur de l'\u00e9lectronique et de l'\u00e9lectricit\u00e9","description":"Agent commercial dans le secteur de l'\u00e9lectronique et de l'\u00e9lectricit\u00e9","parent_id":782,"has_children":false,"connector_activity_id":"450","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":800,"name":"Agent commercial dans le secteur de l'immobilier","description":"Agent commercial dans le secteur de l'immobilier","parent_id":782,"has_children":false,"connector_activity_id":"460","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":792,"name":"Agent commercial dans le secteur de l'industrie pharmaceutique","description":"Agent commercial dans le secteur de l'industrie pharmaceutique","parent_id":782,"has_children":false,"connector_activity_id":"452","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":793,"name":"Agent commercial dans le secteur de l'informatique et des t\u00e9l\u00e9coms","description":"Agent commercial dans le secteur de l'informatique et des t\u00e9l\u00e9coms","parent_id":782,"has_children":false,"connector_activity_id":"453","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":784,"name":"Agent commercial dans le secteur de la banque ou de l'assurance","description":"Agent commercial dans le secteur de la banque ou de l'assurance","parent_id":782,"has_children":false,"connector_activity_id":"444","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":787,"name":"Agent commercial dans le secteur de la Chimie, et de la parachimie","description":"Agent commercial dans le secteur de la Chimie, et de la parachimie","parent_id":782,"has_children":false,"connector_activity_id":"447","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":795,"name":"Agent commercial dans le secteur de la m\u00e9tallurgie et du fer","description":"Agent commercial dans le secteur de la m\u00e9tallurgie et du fer","parent_id":782,"has_children":false,"connector_activity_id":"455","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":791,"name":"Agent commercial dans le secteur des \u00e9tudes et conseil","description":"Agent commercial dans le secteur des \u00e9tudes et conseil","parent_id":782,"has_children":false,"connector_activity_id":"451","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":794,"name":"Agent commercial dans le secteur des machines, des \u00e9quipements et de l'automobile","description":"Agent commercial dans le secteur des machines, des \u00e9quipements et de l'automobile","parent_id":782,"has_children":false,"connector_activity_id":"592","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":786,"name":"Agent commercial dans le secteur du b\u00e2timent","description":"Agent commercial dans le secteur du b\u00e2timent","parent_id":782,"has_children":false,"connector_activity_id":"446","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":796,"name":"Agent commercial dans le secteur du plastique et du caoutchouc","description":"Agent commercial dans le secteur du plastique et du caoutchouc","parent_id":782,"has_children":false,"connector_activity_id":"456","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":797,"name":"Agent commercial dans le secteur du services aux entreprises","description":"Agent commercial dans le secteur du services aux entreprises","parent_id":782,"has_children":false,"connector_activity_id":"457","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":798,"name":"Agent commercial dans le secteur du textile, de l'habillement et des chaussures","description":"Agent commercial dans le secteur du textile, de l'habillement et des chaussures","parent_id":782,"has_children":false,"connector_activity_id":"458","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":799,"name":"Agent commercial dans le secteur du transport et de la logistique","description":"Agent commercial dans le secteur du transport et de la logistique","parent_id":782,"has_children":false,"connector_activity_id":"459","type":"commercial_agent","jqpa":false,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}},{"id":0,"name":"Autre","description":null,"parent_id":"782","has_children":false,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":null,"post_payment":null,"relations":{"parent":{"id":782,"name":"Agent commercial","description":"Agent commercial","parent_id":null,"has_children":true,"connector_activity_id":null,"type":null,"jqpa":null,"to_be_reviewed":false,"post_payment":0,"relations":{"parent":null}}}}]
+[
+  {
+    "id": 788,
+    "name": "Agent commercial dans le cecteur du commerce ,du n\u00e9goce et de la distribution",
+    "description": "Agent commercial dans le cecteur du commerce ,du n\u00e9goce et de la distribution",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "448",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 783,
+    "name": "Agent commercial dans le secteur agrolimentaire",
+    "description": "Agent commercial dans le secteur agrolimentaire",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "443",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 785,
+    "name": "Agent commercial dans le secteur Bois, papier, carton, Imprimerie",
+    "description": "Agent commercial dans le secteur Bois, papier, carton, Imprimerie",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "445",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 789,
+    "name": "Agent commercial dans le secteur de l'\u00e9dition, du multim\u00e9dia et de la communication",
+    "description": "Agent commercial dans le secteur de l'\u00e9dition, du multim\u00e9dia et de la communication",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "449",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 790,
+    "name": "Agent commercial dans le secteur de l'\u00e9lectronique et de l'\u00e9lectricit\u00e9",
+    "description": "Agent commercial dans le secteur de l'\u00e9lectronique et de l'\u00e9lectricit\u00e9",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "450",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 800,
+    "name": "Agent commercial dans le secteur de l'immobilier",
+    "description": "Agent commercial dans le secteur de l'immobilier",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "460",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 792,
+    "name": "Agent commercial dans le secteur de l'industrie pharmaceutique",
+    "description": "Agent commercial dans le secteur de l'industrie pharmaceutique",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "452",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 793,
+    "name": "Agent commercial dans le secteur de l'informatique et des t\u00e9l\u00e9coms",
+    "description": "Agent commercial dans le secteur de l'informatique et des t\u00e9l\u00e9coms",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "453",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 784,
+    "name": "Agent commercial dans le secteur de la banque ou de l'assurance",
+    "description": "Agent commercial dans le secteur de la banque ou de l'assurance",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "444",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 787,
+    "name": "Agent commercial dans le secteur de la Chimie, et de la parachimie",
+    "description": "Agent commercial dans le secteur de la Chimie, et de la parachimie",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "447",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 795,
+    "name": "Agent commercial dans le secteur de la m\u00e9tallurgie et du fer",
+    "description": "Agent commercial dans le secteur de la m\u00e9tallurgie et du fer",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "455",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 791,
+    "name": "Agent commercial dans le secteur des \u00e9tudes et conseil",
+    "description": "Agent commercial dans le secteur des \u00e9tudes et conseil",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "451",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 794,
+    "name": "Agent commercial dans le secteur des machines, des \u00e9quipements et de l'automobile",
+    "description": "Agent commercial dans le secteur des machines, des \u00e9quipements et de l'automobile",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "592",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 786,
+    "name": "Agent commercial dans le secteur du b\u00e2timent",
+    "description": "Agent commercial dans le secteur du b\u00e2timent",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "446",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 796,
+    "name": "Agent commercial dans le secteur du plastique et du caoutchouc",
+    "description": "Agent commercial dans le secteur du plastique et du caoutchouc",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "456",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 797,
+    "name": "Agent commercial dans le secteur du services aux entreprises",
+    "description": "Agent commercial dans le secteur du services aux entreprises",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "457",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 798,
+    "name": "Agent commercial dans le secteur du textile, de l'habillement et des chaussures",
+    "description": "Agent commercial dans le secteur du textile, de l'habillement et des chaussures",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "458",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 799,
+    "name": "Agent commercial dans le secteur du transport et de la logistique",
+    "description": "Agent commercial dans le secteur du transport et de la logistique",
+    "parent_id": 782,
+    "has_children": false,
+    "connector_activity_id": "459",
+    "type": "commercial_agent",
+    "jqpa": false,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  },
+  {
+    "id": 0,
+    "name": "Autre",
+    "description": null,
+    "parent_id": "782",
+    "has_children": false,
+    "connector_activity_id": null,
+    "type": null,
+    "jqpa": null,
+    "to_be_reviewed": false,
+    "post_payment": 0,
+    "relations": {
+      "parent": {
+        "id": 782,
+        "name": "Agent commercial",
+        "description": "Agent commercial",
+        "parent_id": null,
+        "has_children": true,
+        "connector_activity_id": null,
+        "type": null,
+        "jqpa": null,
+        "to_be_reviewed": false,
+        "post_payment": 0,
+        "relations": { "parent": null }
+      }
+    }
+  }
+]
