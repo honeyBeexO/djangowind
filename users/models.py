@@ -38,16 +38,13 @@ class PersonalInformation(models.Model):
              ('FEMALE', _('Woman')),
              ('OTHER', _('Other')),
             ]
+    
     birth_country = models.CharField(max_length=100,blank=True,)#default=_('France')
     birth_place = models.CharField(max_length=256, blank=True,)#default=_('Saint denis, Paris')
     birth_date = models.DateField(blank=True,) #default=date(1990,1,1)
     gender = models.CharField(max_length=20,blank=True,choices=gender_choices)
     
 class CustomUser(AbstractUser):
-    # phone_regex = RegexValidator(
-    #     regex=r'^\+?1?\d{9,15}$', 
-    #     message=_("Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed."),
-    #                              )
     username = None
     uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     first_name = models.CharField(_("First name"), blank=True, max_length=255)

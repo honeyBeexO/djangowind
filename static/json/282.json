@@ -845,8 +845,8 @@
     "connector_activity_id": null,
     "type": null,
     "jqpa": null,
-    "to_be_reviewed": null,
-    "post_payment": null,
+    "to_be_reviewed": false,
+    "to_be_reviewed": 0,
     "relations": {
       "parent": {
         "id": 282,

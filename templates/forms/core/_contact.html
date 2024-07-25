@@ -1,0 +1,166 @@
+
+{% extends "_base.html" %}
+{% load i18n static %}
+{% load form_tags %}
+{% load widget_tweaks %}
+
+{% block inner %}
+<section class="i pg fh rm ki xn vq gj qp gr hj rp hr">
+    {% include "utils/_background_shape.html" %}
+    <div class="animate_top bb af i va sg hh sm vk xm yi _n jp hi ao kp">
+        <!-- Bg Border -->
+        <span class="rc h r s zd/2 od zg gh"></span>
+        <span class="rc h r q zd/2 od xg mh"></span>
+    <section class="flex justify-center mx-auto px-0 sm:px-0 sm:py-0 lg:px-8">
+        <div class="relative w-screen max-w-sm border lg:px-8" aria-modal="true" role="dialog" tabindex="-1">
+            <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+            <div class="my-auto mx-auto">
+                <h2 class="sr-only">Steps</h2>
+                <ol class="flex items-center justify-between gap-2 text-xs font-medium text-gray-500 sm:gap-4 w-full mb-4 sm:mb-5">
+                    {% for step in wizard.steps.all %}
+                        {% if forloop.counter0 > wizard.steps.index %}
+                            <li class="flex items-center justify-end gap-2">
+                                <span class="size-6 rounded bg-gray-50 text-center text-[10px]/6 font-bold text-gray-600">
+                                    {{ forloop.counter }}
+                                </span>
+                                <span> </span>
+                            </li>
+                        {% elif forloop.counter0 < wizard.steps.index %}
+                            <li class="flex">
+                                <span class="rounded bg-green-200 p-1.5 text-green-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </li>
+                        {% else %}
+                            <li class="flex items-center justify-center flex-grow gap-2 text-blue-600">
+                                <span class="size-6 rounded bg-blue-50 text-center text-[10px]/6 font-bold">{{ forloop.counter }}</span>
+                                <span>{{ step }}</span>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+
+
+                <form action="" method="POST" novalidate>
+                    {% csrf_token %}
+                    {{ wizard.management_form }}
+                    <!-- FORM FIELDS -->
+                    <div class="grid grid-cols-1 gap-4 lg:grid-cols-1 lg:gap-8 rounded-lg">
+                            <!-- First Name Field -->
+                        <div class="py-1">
+                            <label for="{{ wizard.form.first_name.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                {{ wizard.form.first_name.label }}
+                            </label>
+                            <input type="text"
+                            name="{{ wizard.form.first_name.html_name }}"
+                            id="{{ wizard.form.first_name.id_for_label }}"
+                            placeholder="{{ wizard.form.first_name.field.widget.attrs.placeholder }}"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            required
+                            value="{{ wizard.form.first_name.value|default_if_none:'' }}" 
+                            />
+
+                            {% if wizard.form.first_name.errors %}
+                                <div class="text-red-500 text-sm mt-2">
+                                    {% for error in wizard.form.first_name.errors %}
+                                        <p>{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <!-- Last Name Field -->
+                        <div class="py-1">
+                            <label for="{{ wizard.form.last_name.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                {{ wizard.form.last_name.label }}
+                            </label>
+                            <input type="text" 
+                            name="{{ wizard.form.last_name.html_name }}" 
+                            id="{{ wizard.form.last_name.id_for_label }}"
+                                placeholder="{{ wizard.form.last_name.field.widget.attrs.placeholder }}" 
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required
+                                value="{{ wizard.form.last_name.value|default_if_none:'' }}"
+                            /> 
+                            {% if wizard.form.last_name.errors %}
+                                <div class="text-red-500 text-sm mt-2">
+                                    {% for error in wizard.form.last_name.errors %}
+                                        <p>{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        <!-- Email Field -->
+                        <div class="py-1">
+                            <label for="{{ wizard.form.email.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                {{ wizard.form.email.label }}
+                                </label>
+                                <input  type="email" 
+                                        required 
+                                        name="{{ wizard.form.email.html_name }}" 
+                                        id="{{ wizard.form.email.id_for_label }}" 
+                                        placeholder="{{ wizard.form.email.help_text }}" 
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        value="{{ wizard.form.email.value|default_if_none:'' }}"
+                            /> 
+                            {% if wizard.form.email.errors %}
+                                <div class="text-red-500 text-sm mt-2">
+                                    {% for error in wizard.form.email.errors %}
+                                        <p>{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <!-- Phone Number Field -->
+                        <div class="py-1">
+                            <label for="{{ wizard.form.phone_number.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                    {{ wizard.form.phone_number.label }}
+                                </label>
+                            
+                            <input type="tel" 
+                                name="{{ wizard.form.phone_number.html_name }}" 
+                                id="{{ wizard.form.phone_number.id_for_label }}" 
+                                placeholder="{{ wizard.form.phone_number.field.widget.attrs.placeholder }}" 
+                                title="{{ wizard.form.phone_number.field.widget.attrs.title }}" 
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required 
+                                value="{{ wizard.form.phone_number.value|default_if_none:'' }}"
+                                > 
+                                {% comment %} 
+                                {{  wizard.form.phone_number }}
+                            {% endcomment %}
+                            
+                            {% if wizard.form.phone_number.errors %}
+                                <div class="text-red-500 text-sm mt-2">
+                                    {% for error in wizard.form.phone_number.errors %}
+                                        <p>{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <!-- END FORM FIELDS -->
+                    <div class="flex items-center justify-between border-black">            
+                            <button type="submit" class="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-black focus:outline-none focus:ring active:bg-indigo-500 invalid:bg-black vd rj ek rc rg gh lk ml il _l gi hi group-invalid:pointer-events-none group-invalid:opacity-30 mt-4">
+                                <span class="absolute -start-full transition-all group-hover:start-4">
+                                    <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </span>
+                                <span class="text-sm font-medium transition-all group-hover:ms-4">{% translate 'Next' %}</span>
+                            </button>
+                    </div>
+                </form>
+            </div>
+        
+    </div>
+        </div>
+        </div>
+    </section>
+</div>
+</section>
+{% endblock inner %}
+

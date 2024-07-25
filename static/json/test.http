@@ -4,11 +4,11 @@ GET https://espace-autoentrepreneur.com/onboarding/eae-activities
 ###
 
 # Get activities with a specific filter
-GET https://espace-autoentrepreneur.com/onboarding/eae-activities?filter[id]=Achat-Revente
+GET https://espace-autoentrepreneur.com/onboarding/eae-activities?filter[id]=Autre
 
 ###
 
 # Get specific activity by ID
-GET https://espace-autoentrepreneur.com/onboarding/eae-activities/544
+GET https://espace-autoentrepreneur.com/onboarding/eae-activities/5
 
 # Get specific activity by ID Autre

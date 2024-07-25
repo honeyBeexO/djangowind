@@ -1,0 +1,126 @@
+
+{% extends "_base.html" %}
+{% load i18n static%}
+{% load form_tags %}
+{% load widget_tweaks %}
+
+{% block playground %}
+{% block inner %}
+<section class="flex justify-center items-center min-h-screen mt-4">
+<div class="w-full max-w-sm  p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+  <h2 class="sr-only">Steps</h2>
+  <ol class="flex items-center justify-between gap-2 text-xs font-medium text-gray-500 sm:gap-4 w-full mb-4 sm:mb-5">
+      {% for step in wizard.steps.all %}
+        {% if  forloop.counter0 > wizard.steps.index %}
+          <li class="flex items-center justify-end gap-2">
+            <span class="size-6 rounded bg-gray-50 text-center text-[10px]/6 font-bold text-gray-600">
+              {{ forloop.counter }}
+            </span>
+            <span> </span>
+          </li>
+        {% elif forloop.counter0 < wizard.steps.index %}
+          <li class="flex">
+            <span class="rounded bg-green-200 p-1.5 text-green-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </li>
+          {% else %}
+          <li class="flex items-center justify-center flex-grow gap-2 text-blue-600">
+            <span class="size-6 rounded bg-blue-50 text-center text-[10px]/6 font-bold"> {{ forloop.counter }} </span>
+    
+            <span> {{ step }} </span>
+          </li>
+        {% endif %}
+
+      {% endfor %}
+  </ol>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ wizard.management_form }}
+    {% if wizard.form.forms %}
+        {{ wizard.form.management_form }}
+        <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            {% for form in wizard.form.forms %}
+                {% for field in form %}
+                    <div>
+                        <label for="{{ field.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ field.label }}</label>
+                        {% render_field field  id="{{ field.id }}" name="{{ field.label }}" required="True" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" %}
+                        {{ field|add_class:"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" }}
+                        {% if field.errors %}
+                            <div class="text-red-500 text-sm mt-2">
+                                {% for error in field.errors %}
+                                    <p>{{ error }}</p>
+                                {% endfor %}
+
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            {% for field in wizard.form %}
+                <div>
+                    <label for="{{ field.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ field.label }}</label>
+                    {{ field|add_class:"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" }}
+                    {% if field.errors %}
+                        <div class="text-red-500 text-sm mt-2">
+                            {% for error in field.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    
+    <div class="flex items-center justify-between border-black">
+        {% if wizard.steps.prev %}
+            {% comment %} <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.first }}" class="text-black bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                {% translate "Reset" %}
+            </button> {% endcomment %}
+            <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}" class="text-black bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 mr-2">
+                {% translate "Back" %}
+            </button>
+        {% endif %}
+        
+        <button type="submit" class="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-black focus:outline-none focus:ring active:bg-indigo-500 invalid:bg-black vd rj ek rc rg gh lk ml il _l gi hi group-invalid:pointer-events-none group-invalid:opacity-30">
+          <span class="absolute -start-full transition-all group-hover:start-4">
+            <svg
+              class="size-5 rtl:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </span>
+          <span class="text-sm font-medium transition-all group-hover:ms-4"> {% translate 'Next' %} </span>
+        </button>
+    </div>
+</form>
+</div>
+</section>
+{% endblock inner %}
+
+{% endblock playground %}

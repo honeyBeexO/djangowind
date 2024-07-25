@@ -1,0 +1,251 @@
+{% extends "_base.html" %}
+{% load i18n static %}
+{% load form_tags %}
+{% load widget_tweaks %}
+
+{% block inner %}
+   <!-- Flatpickr CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<!-- Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<section class="i pg fh rm ki xn vq gj qp gr hj rp hr">
+    {% include "utils/_background_shape.html" %}
+    <div class="animate_top bb af i va sg hh sm vk xm yi _n jp hi ao kp">
+        <!-- Bg Border -->
+        <span class="rc h r s zd/2 od zg gh"></span>
+        <span class="rc h r q zd/2 od xg mh"></span>
+        
+    <section class="flex justify-center mx-auto max-w-screen-xl px-0 sm:px-6 sm:py-6 lg:px-8">
+        <div
+        class="relative w-screen max-w-sm border border-gray-600 bg-gray-100 px-4 py-8 sm:px-6 mt-16 lg:px-8"
+        aria-modal="true"
+        role="dialog" tabindex="-1"
+        >
+        <div class="mt-4 my-auto mx-auto space-y-6">
+            <h2 class="sr-only">Steps</h2>
+            <ol class="flex items-center justify-between gap-2 text-xs font-medium text-gray-500 sm:gap-4 w-full mb-4 sm:mb-5">
+                {% for step in wizard.steps.all %}
+                    {% if forloop.counter0 > wizard.steps.index %}
+                        <li class="flex items-center justify-end gap-2">
+                            <span class="size-6 rounded bg-gray-50 text-center text-[10px]/6 font-bold text-gray-600">
+                                {{ forloop.counter }}
+                            </span>
+                            <span> </span>
+                        </li>
+                    {% elif forloop.counter0 < wizard.steps.index %}
+                        <li class="flex">
+                            <span class="rounded bg-green-200 p-1.5 text-green-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </li>
+                    {% else %}
+                        <li class="flex items-center justify-center flex-grow gap-2 text-blue-600">
+                            <span class="size-6 rounded bg-blue-50 text-center text-[10px]/6 font-bold">{{ forloop.counter }}</span>
+                            <span>{{ step }}</span>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+<div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+    <form action="" method="POST" novalidate>
+                {% csrf_token %}
+                {{ wizard.management_form }}
+                <!-- FORM FIELDS -->
+
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-1  lg:gap-8">
+            <!-- Gender Field -->
+            <fieldset class="space-y-4 groupe" id="{{ wizard.form.gender.id_for_label }}">
+                <legend class="sr-only"></legend>
+                {% comment %} {% for choice in wizard.form.gender.field.choices %}
+                <div>
+                <label for="{{ wizard.form.gender.id_for_label }}_{{ forloop.counter }}" class="flex cursor-pointer justify-between gap-4 rounded-lg border border-gray-100 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-blue-500 has-[:checked]:ring-1 has-[:checked]:ring-blue-500">
+                    <div>
+                    <p class="text-gray-700">{{ wizard.form.gender.label }}</p>
+                    <p class="mt-1 text-gray-900"></p>
+                    </div>
+            
+                    <input
+                    type="radio"
+                    name="{{ wizard.form.gender.name }}"
+                    value="{{ choice.0 }}"
+                    id="{{ wizard.form.gender.id_for_label }}_{{ forloop.counter }}"
+                    class="size-5 border-gray-300 text-blue-500"
+                    {% if wizard.form.gender.value == choice.0 %}checked{% endif %}
+                    />
+                </label>
+                </div>
+                {% endfor %} {% endcomment %}
+                <label for="{{ wizard.form.gender.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                    {{ wizard.form.gender.label }}
+                </label>
+
+                <select name="{{ wizard.form.gender.html_name }}" 
+                    id="{{ wizard.form.gender.id_for_label }}" 
+                    required
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    {% for choice in wizard.form.gender.field.choices %}
+                        <option value="{{ choice.0 }}" {% if wizard.form.gender.value == choice.0 %}selected{% endif %}>{{ choice.1 }}</option>
+                    {% endfor %}
+                </select>
+
+                {% if wizard.form.is_micro.errors %}
+                    <div class="text-red-500 text-sm mt-2">
+                        {% for error in form.is_micro.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </fieldset>
+            {% comment %} <div>
+                <label for="{{ form.gender.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ form.gender.label }}</label>
+                <select name="{{ form.gender.name }}" id="{{ form.gender.id_for_label }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    {% for choice in form.gender.field.choices %}
+                        <option value="{{ choice.0 }}" {% if form.gender.value == choice.0 %}selected{% endif %}>{{ choice.1 }}</option>
+                    {% endfor %}
+                </select>
+                {% if form.gender.errors %}
+                    <div class="text-red-500 text-sm mt-2">
+                        {% for error in form.gender.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>  {% endcomment %}
+            
+            <!-- Birth Date Field -->
+            <div>
+                <label for="{{ wizard.form.birth_date.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                    {{ wizard.form.birth_date.label }}
+                </label>
+                <input type="text" 
+                        name="{{ wizard.form.birth_date.html_name }}" 
+                        id="{{ wizard.form.birth_date.id_for_label }}" 
+                        placeholder="{{ wizard.form.birth_date.field.widget.attrs.placeholder }}" 
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required
+                        initial="wizard.form.birth_date.field.initial"
+                        value="{{ wizard.form.birth_date.value|default:wizard.form.birth_date.field.initial }}"
+                        />
+                {% if wizard.form.birth_date.errors %}
+                    <div class="text-red-500 text-sm mt-2">
+                        {% for error in wizardform.birth_date.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            
+            <!-- Birth Country Field -->
+            <div>        
+                <label for="{{ wizard.form.birth_country.id_for_label }}" class="block text-sm font-medium text-gray-900"> 
+                    {{ wizard.form.birth_country.label }} 
+                </label>
+            
+                <div class="relative mt-1.5">
+                <input
+                    type="text"
+                    name="{{ wizard.form.birth_country.html_name }}"
+                    placeholder="{{ wizard.form.birth_country.field.widget.attrs.placeholder }}" 
+                    list="CountriesList"
+                    id="{{ fwizard.orm.birth_country.id_for_label }}"
+                    class="w-full rounded-lg border-gray-300 pe-10 text-gray-700 sm:text-sm [&::-webkit-calendar-picker-indicator]:opacity-0"
+                    required
+                    autocomplete="on"
+                    value="{{ wizard.form.birth_country.value|default_if_none:'' }}"
+                    />
+            
+                <span class="absolute inset-y-0 end-0 flex w-8 items-center">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-gray-500"
+                    >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                    </svg>
+                </span>
+                </div>
+                {% if wizard.form.birth_country.errors %}
+                <div class="text-red-500 text-sm mt-2">
+                    {% for error in wizard.form.birth_country.errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            
+                <datalist name="{{ wizard.form.birth_country.id_for_label }}" id="CountriesList">
+                {% for country in countries %}
+                    <option value="{{ country.name }}">{{ country.alpha_three_code }}</option>
+                {% endfor %}
+                </datalist>
+            </div>
+            
+            <!-- Birth Place Field -->
+            <div>
+                <label for="{{ wizard.form.birth_place.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                    {{ wizard.form.birth_place.label }}
+                </label>
+                <input type="text" 
+                name="{{ wizard.form.birth_place.html_name }}" 
+                id="{{ wizard.form.birth_place.id_for_label }}" 
+                placeholder="{{ wizard.form.birth_place.field.widget.attrs.placeholder }}" 
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                required
+                value="{{ wizard.form.birth_place.value|default_if_none:'' }}"
+                >
+                {% if wizard.form.birth_place.errors %}
+                    <div class="text-red-500 text-sm mt-2">
+                        {% for error in wizard.form.birth_place.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+                <!-- FORM FIELDS END -->
+                <div class="flex items-center justify-between border-black">
+                    {% if wizard.steps.prev %}
+                        <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}" class="text-black bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 mr-2 mt-3">
+                            {% translate "Back" %}
+                        </button>
+                    {% endif %}
+                    
+                    <button type="submit"
+                        name="wizard_goto_step"
+                        value="{{ wizard.steps.next }}"
+                        class="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-black focus:outline-none focus:ring active:bg-indigo-500 invalid:bg-black vd rj ek rc rg gh lk ml il _l gi hi group-invalid:pointer-events-none group-invalid:opacity-30 mt-4">
+                        <span class="absolute -start-full transition-all group-hover:start-4">
+                            <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </span>
+                        <span class="text-sm font-medium transition-all group-hover:ms-4">{% translate 'Next' %}</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
+        </section>
+    </div> 
+</section>
+
+<!-- Initialize Flatpickr -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        flatpickr("#{{ wizard.form.birth_date.id_for_label }}", {
+            dateFormat: "d-m-Y", // Format for Flatpickr
+            defaultDate: "{{ wizard.form.birth_date.field.initial|date:'d-m-Y' }}" // Initial date
+        });
+    });
+</script>
+{% endblock inner %}

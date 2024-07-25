@@ -14,7 +14,7 @@ class Country(models.Model):
     alpha_three_code = models.CharField(max_length=3,null=True)
     
     def __str__(self):
-        return f'{self.name} {self.code} {self.alpha_three_code}'
+        return f'{self.name}'
      
 
 class Sector(models.Model):
@@ -48,7 +48,7 @@ class Sector(models.Model):
     
 class SubSector(models.Model):
     sub_id = models.IntegerField(unique=True)  # Required, maps to the JSON id
-    name = models.CharField(max_length=256, unique=True)  # Required
+    name = models.CharField(max_length=256,default='Autre')  # Required unique=True
     description = models.TextField(blank=True, null=True)
     parent = models.ForeignKey(
         Sector,  # Points to the Activity model for parent
@@ -67,3 +67,26 @@ class SubSector(models.Model):
     def __str__(self):
         parent_sub_id = self.parent.sub_id if self.parent else 'None'
         return f'id: {self.sub_id}\nname: {self.name}\nparent_sub_id: {self.parent.sub_id}'
+
+class BusinessActivity(models.Model):
+
+    QUESTION1 = _("Quand souhaitez-vous débuter votre activité ?")
+    QUESTION2 = 'Avez-vous déjà exercé une activité non-salariée ?'
+    MICRO = 'En tant que micro-entreprise / entrepreneur individuel'
+    AUTRE = 'En tant que EURL, SARL, SASU, SAS, etc.'
+    BUSINESS_CHOICES = (
+        (None, "Non"),
+        (False, f"Oui, {AUTRE}"),
+        (True, f"Oui, {MICRO}"),
+    )
+    
+    sector = models.ForeignKey(Sector, on_delete=models.SET_NULL,null=True, default='Autre',verbose_name=_("Domaine d'activité"))
+    sub_sector = models.ForeignKey(SubSector, on_delete=models.SET_NULL,null=True,default='Autre',verbose_name=_("Secteur d'activité"))
+    when_to_start = models.DateField(default=date.today, null=True,verbose_name=QUESTION1)
+    commercial_name = models.CharField(max_length=256, blank=True, null=True)
+    business_choice = models.CharField(max_length=64, choices=BUSINESS_CHOICES, default='Non',verbose_name=QUESTION2)
+    is_micro = models.BooleanField(default=None, null=True, blank=True, choices=BUSINESS_CHOICES,verbose_name=QUESTION2)
+    
+    def __str__(self):
+        return self.QUESTION2
+    

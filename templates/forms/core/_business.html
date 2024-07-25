@@ -1,0 +1,159 @@
+{% extends "_base.html" %}
+{% load i18n static %}
+{% load form_tags %}
+{% load widget_tweaks %}
+
+{% block inner %}
+<section class="flex justify-center mx-auto max-w-screen-xl px-0 sm:px-6 sm:py-6 lg:px-8">
+<div
+  class="relative w-screen max-w-sm border border-gray-600 bg-gray-100 px-4 py-8 sm:px-6 mt-16 lg:px-8"
+  aria-modal="true"
+  role="dialog"
+  tabindex="-1"
+>
+  <div class="mt-4 my-auto mx-auto space-y-6">
+    <h2 class="sr-only">Steps</h2>
+    <ol class="flex items-center justify-between gap-2 text-xs font-medium text-gray-500 sm:gap-4 w-full mb-4 sm:mb-5">
+        {% for step in wizard.steps.all %}
+            {% if forloop.counter0 > wizard.steps.index %}
+                <li class="flex items-center justify-end gap-2">
+                    <span class="size-6 rounded bg-gray-50 text-center text-[10px]/6 font-bold text-gray-600">
+                        {{ forloop.counter }}
+                    </span>
+                    <span> </span>
+                </li>
+            {% elif forloop.counter0 < wizard.steps.index %}
+                <li class="flex">
+                    <span class="rounded bg-green-200 p-1.5 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </li>
+            {% else %}
+                <li class="flex items-center justify-center flex-grow gap-2 text-blue-600">
+                    <span class="size-6 rounded bg-blue-50 text-center text-[10px]/6 font-bold">{{ forloop.counter }}</span>
+                    <span>{{ step }}</span>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+
+    <form action="" method="POST" novalidate>
+        {% csrf_token %}
+        {{ wizard.management_form }}
+        <!-- FORM FIELDS -->
+
+<div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+    <div class="h-32 rounded-lg bg-gray-200"></div>
+    <div class="h-32 rounded-lg bg-gray-200"></div>
+    <!-- Sector Field -->
+    <div>
+        <label for="{{ form.sector.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ form.sector.label }}</label>
+        <select name="{{ form.sector.name }}" id="{{ form.sector.id_for_label }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            {% for choice in form.sector.field.choices %}
+                <option value="{{ choice.0 }}" {% if form.sector.value == choice.0 %}selected{% endif %}>{{ choice.1 }}</option>
+            {% endfor %}
+        </select>
+        {% if form.sector.errors %}
+            <div class="text-red-500 text-sm mt-2">
+                {% for error in form.sector.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Sub-Sector Field -->
+    <div>
+        <label for="{{ form.sub_sector.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ form.sub_sector.label }}</label>
+        <input type="text" name="{{ form.sub_sector.name }}" id="{{ form.sub_sector.id_for_label }}" placeholder="{{ form.sub_sector.field.widget.attrs.placeholder }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        {% if form.sub_sector.errors %}
+            <div class="text-red-500 text-sm mt-2">
+                {% for error in form.sub_sector.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+    
+    <!-- When to Start Field -->
+    <div>
+        <label for="{{ form.when_to_start.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ form.when_to_start.label }}</label>
+        <input type="date" name="{{ form.when_to_start.name }}" id="{{ form.when_to_start.id_for_label }}" placeholder="{{ form.when_to_start.field.widget.attrs.placeholder }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        {% if form.when_to_start.errors %}
+            <div class="text-red-500 text-sm mt-2">
+                {% for error in form.when_to_start.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Commercial Name Field -->
+    <div>
+        <label for="{{ form.commercial_name.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ form.commercial_name.label }}</label>
+        <input type="text" name="{{ form.commercial_name.name }}" id="{{ form.commercial_name.id_for_label }}" placeholder="{{ form.commercial_name.field.widget.attrs.placeholder }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        {% if form.commercial_name.errors %}
+            <div class="text-red-500 text-sm mt-2">
+                {% for error in form.commercial_name.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Is Micro Field -->
+    <fieldset class="space-y-4 groupe" id="{{ form.is_micro.id_for_label }}">
+        <legend class="sr-only"></legend>
+        {% for choice in form.is_micro.field.choices %}
+        <div>
+          <label for="{{ form.is_micro.id_for_label }}_{{ forloop.counter }}" class="flex cursor-pointer justify-between gap-4 rounded-lg border border-gray-100 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-blue-500 has-[:checked]:ring-1 has-[:checked]:ring-blue-500">
+            <div>
+              <p class="text-gray-700">{{ choice.1 }}</p>
+              <p class="mt-1 text-gray-900"></p>
+            </div>
+      
+            <input
+              type="radio"
+              name="{{ form.is_micro.name }}"
+              value="{{ choice.0 }}"
+              id="{{ form.is_micro.id_for_label }}_{{ forloop.counter }}"
+              class="size-5 border-gray-300 text-blue-500"
+              {% if form.is_micro.value == choice.0 %}checked{% endif %}
+            />
+          </label>
+        </div>
+        {% endfor %}
+
+        {% if form.is_micro.errors %}
+            <div class="text-red-500 text-sm mt-2">
+                {% for error in form.is_micro.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+      </fieldset>
+</div>
+        <!-- FORM FIELDS END -->
+        <div class="flex items-center justify-between border-black">
+            {% if wizard.steps.prev %}
+                <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}" class="text-black bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 mr-2 mt-3">
+                    {% translate "Back" %}
+                </button>
+            {% endif %}
+            
+            <button type="submit" class="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-black focus:outline-none focus:ring active:bg-indigo-500 invalid:bg-black vd rj ek rc rg gh lk ml il _l gi hi group-invalid:pointer-events-none group-invalid:opacity-30 mt-4">
+                <span class="absolute -start-full transition-all group-hover:start-4">
+                    <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </span>
+                <span class="text-sm font-medium transition-all group-hover:ms-4">{% translate 'Next' %}</span>
+            </button>
+        </div>
+    </form>
+  </div>
+</div>
+</section>
+{% endblock inner %}
