@@ -15,41 +15,38 @@
         <!-- Bg Border -->
         <span class="rc h r s zd/2 od zg gh"></span>
         <span class="rc h r q zd/2 od xg mh"></span>
-        
-    <section class="flex justify-center mx-auto max-w-screen-xl px-0 sm:px-6 sm:py-6 lg:px-8">
-        <div
-        class="relative w-screen max-w-sm border border-gray-600 bg-gray-100 px-4 py-8 sm:px-6 mt-16 lg:px-8"
-        aria-modal="true"
-        role="dialog" tabindex="-1"
-        >
-        <div class="mt-4 my-auto mx-auto space-y-6">
-            <h2 class="sr-only">Steps</h2>
-            <ol class="flex items-center justify-between gap-2 text-xs font-medium text-gray-500 sm:gap-4 w-full mb-4 sm:mb-5">
-                {% for step in wizard.steps.all %}
-                    {% if forloop.counter0 > wizard.steps.index %}
-                        <li class="flex items-center justify-end gap-2">
-                            <span class="size-6 rounded bg-gray-50 text-center text-[10px]/6 font-bold text-gray-600">
-                                {{ forloop.counter }}
-                            </span>
-                            <span> </span>
-                        </li>
-                    {% elif forloop.counter0 < wizard.steps.index %}
-                        <li class="flex">
-                            <span class="rounded bg-green-200 p-1.5 text-green-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                        </li>
-                    {% else %}
-                        <li class="flex items-center justify-center flex-grow gap-2 text-blue-600">
-                            <span class="size-6 rounded bg-blue-50 text-center text-[10px]/6 font-bold">{{ forloop.counter }}</span>
-                            <span>{{ step }}</span>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ol>
-<div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+    <section class="flex justify-center mx-auto px-0 sm:px-0 sm:py-0 lg:px-8">
+        <div class="relative w-screen max-w-sm border lg:px-8" aria-modal="true" role="dialog" tabindex="-1">
+            <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+            <div class="my-auto mx-auto">
+                <h2 class="sr-only">Steps</h2>
+                <ol class="flex items-center justify-between gap-2 text-xs font-medium text-gray-500 sm:gap-4 w-full mb-4 sm:mb-5">
+                    {% for step in wizard.steps.all %}
+                        {% if forloop.counter0 > wizard.steps.index %}
+                            <li class="flex items-center justify-end gap-2">
+                                <span class="size-6 rounded bg-gray-50 text-center text-[10px]/6 font-bold text-gray-600">
+                                    {{ forloop.counter }}
+                                </span>
+                                <span> </span>
+                            </li>
+                        {% elif forloop.counter0 < wizard.steps.index %}
+                            <li class="flex">
+                                <span class="rounded bg-green-200 p-1.5 text-green-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </li>
+                        {% else %}
+                            <li class="flex items-center justify-center flex-grow gap-2 text-blue-600">
+                                <span class="size-6 rounded bg-blue-50 text-center text-[10px]/6 font-bold">{{ forloop.counter }}</span>
+                                <span>{{ step }}</span>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+
+
     <form action="" method="POST" novalidate>
                 {% csrf_token %}
                 {{ wizard.management_form }}
