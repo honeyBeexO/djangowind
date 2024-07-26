@@ -44,7 +44,7 @@ class Sector(models.Model):
         verbose_name_plural = "Activities"
 
     def __str__(self):
-        return f'sub_id: {self.sub_id}, name: {self.name}, id: {self.id}'
+        return f'{self.name}'
     
 class SubSector(models.Model):
     sub_id = models.IntegerField(unique=True)  # Required, maps to the JSON id
@@ -66,7 +66,7 @@ class SubSector(models.Model):
 
     def __str__(self):
         parent_sub_id = self.parent.sub_id if self.parent else 'None'
-        return f'id: {self.sub_id}\nname: {self.name}\nparent_sub_id: {self.parent.sub_id}'
+        return f'{self.name}'
 
 class BusinessActivity(models.Model):
 
