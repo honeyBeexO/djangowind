@@ -69,7 +69,7 @@ class UserPersonalInformationForm(forms.ModelForm):
         # Calculate the date that is 18 years ago from today
         today = timezone.now().date()
         eighteen_years_ago = today.replace(year=today.year - 18)
-        self.fields['birth_date'].initial = eighteen_years_ago.strftime('%d-%m-%Y')
+        self.fields['birth_date'].initial = eighteen_years_ago.year
             # Debugging print statement
         print("Initial birth date value:", self.fields['birth_date'].initial)
      
@@ -82,7 +82,8 @@ class UserBusinessActivityInformationForm(forms.ModelForm):
     )
     class Meta:
         model = core_models.BusinessActivity
-        fields = (_('sector'),_('sub_sector'),_('when_to_start'),_('commercial_name'),_('is_micro'))
+        # fields = (_('sector'),_('sub_sector'),_('when_to_start'),_('commercial_name'),_('is_micro'))
+        fields = '__all__'
         widgets = {
             'sector': forms.Select(attrs={
                 'placeholder': _("Domaine d'activité "),

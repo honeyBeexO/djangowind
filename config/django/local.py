@@ -25,8 +25,7 @@ EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND',default='django.core.mail.backends.sm
 EMAIL_TIMEOUT = 5
 
  # General settings 
-INSTALLED_APPS +=['django_extensions']  #,'debug_toolbar']
-MIDDLEWARE+=[LIVE_RELOAD_MIDDLEWARE]    #'debug_toolbar.middleware.DebugToolbarMiddleware'] # live reloading and django toolbar
+#MIDDLEWARE+=[LIVE_RELOAD_MIDDLEWARE]    #'debug_toolbar.middleware.DebugToolbarMiddleware'] # live reloading and django toolbar
 INTERNAL_IPS = ["127.0.0.1","0.0.0.0"]  # For the django tool bar
 
 

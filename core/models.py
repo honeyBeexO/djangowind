@@ -15,6 +15,10 @@ class Country(models.Model):
     
     def __str__(self):
         return f'{self.name}'
+    
+    def get_absolute_url(self):
+        return reverse("country_detail", kwargs={"pk": self.pk})
+    
      
 
 class Sector(models.Model):
@@ -71,22 +75,27 @@ class SubSector(models.Model):
 class BusinessActivity(models.Model):
 
     QUESTION1 = _("Quand souhaitez-vous débuter votre activité ?")
-    QUESTION2 = 'Avez-vous déjà exercé une activité non-salariée ?'
-    MICRO = 'En tant que micro-entreprise / entrepreneur individuel'
-    AUTRE = 'En tant que EURL, SARL, SASU, SAS, etc.'
+    QUESTION2 = _('Avez-vous déjà exercé une activité non-salariée ?')
+
+    MICRO = 'micro'
+    AUTRE = 'autre'
+    NON = 'non'
+
     BUSINESS_CHOICES = (
-        (None, "Non"),
-        (False, f"Oui, {AUTRE}"),
-        (True, f"Oui, {MICRO}"),
+        (NON, _("Non")),
+        (MICRO, _("Oui, micro-entreprise / entrepreneur individuel")),
+        (AUTRE, _("Oui, EURL, SARL, SASU, SAS, etc.")),
     )
-    
-    sector = models.ForeignKey(Sector, on_delete=models.SET_NULL,null=True, default='Autre',verbose_name=_("Domaine d'activité"))
-    sub_sector = models.ForeignKey(SubSector, on_delete=models.SET_NULL,null=True,default='Autre',verbose_name=_("Secteur d'activité"))
+
+    activity_type = models.CharField(
+        max_length=20,
+        choices=BUSINESS_CHOICES,
+        default=NON,
+        verbose_name=_("Avez-vous déjà exercé une activité non-salariée ?")
+    )
+    sector = models.ForeignKey(Sector, on_delete=models.SET_NULL,null=True, default=BUSINESS_CHOICES[0][0], verbose_name=_("Domaine d'activité"))
     when_to_start = models.DateField(default=date.today, null=True,verbose_name=QUESTION1)
     commercial_name = models.CharField(max_length=256, blank=True, null=True)
-    business_choice = models.CharField(max_length=64, choices=BUSINESS_CHOICES, default='Non',verbose_name=QUESTION2)
-    is_micro = models.BooleanField(default=None, null=True, blank=True, choices=BUSINESS_CHOICES,verbose_name=QUESTION2)
     
     def __str__(self):
         return self.QUESTION2
-    

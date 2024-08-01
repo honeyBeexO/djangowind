@@ -12,3 +12,5 @@ GET https://espace-autoentrepreneur.com/onboarding/eae-activities?filter[id]=Aut
 GET https://espace-autoentrepreneur.com/onboarding/eae-activities/5
 
 # Get specific activity by ID Autre
+
+

@@ -4,17 +4,7 @@ from . import views
 from . import forms
 app_name = 'core'
 urlpatterns = [
-    # path('', views.OnboardingSessionWizardView.as_view( [
-    #     (_('Contact Information'),forms.UserEntryInformationForm),
-    #     (_('Personal Information'),forms.UserPersonalInformationForm),
-    #     (_('Business Information'),forms.UserBusinessActivityInformationForm),
-    #     ]), name='start'),
     path('', views.OnboardingSessionWizardView.as_view(views.FORMS), name='start'),
-    # path('', views.TestSessionWizardView.as_view(
-    #     [
-    #     (_('Contact Information'),forms.UserEntryInformationForm),
-    #     (_('Personal Information'),forms.UserPersonalInformationForm),
-    #     (_('Business Information'),forms.UserBusinessActivityInformationForm),
-    #     ]), name='start'),
+    path('get-subsectors/', views.get_subsectors, name='get-subsectors'),
     path('get-started/', views.OnboardingSessionWizardView.as_view(views.FORMS), name='get-started'),
 ]

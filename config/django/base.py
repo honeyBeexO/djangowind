@@ -25,6 +25,7 @@ USE_TZ = True
 # Application definition
 
 DJANGO_APPS = [
+    "unfold",  # before django.contrib.admin
     'django.contrib.admin',
     'django.contrib.sites',
     'django.contrib.auth',
@@ -39,7 +40,6 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     # 3rd party libraries
     'compressor', # to be used with tailwind css 
-    'livereload', #'django_extensions',
     'crispy_forms',
     'crispy_bootstrap5',
     'widget_tweaks',
@@ -53,6 +53,7 @@ LOCAL_OWN_APPS =[
     'payments.apps.PaymentsConfig',
     'products.apps.ProductsConfig',
     'core.apps.CoreConfig',
+    'django_htmx.apps.DjangoHtmxConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_OWN_APPS

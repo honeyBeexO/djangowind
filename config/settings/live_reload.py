@@ -1,5 +1,6 @@
 from config.env import BASE_DIR, env
 #LIVERELOAD_SERVER_PORT = 8080
+#'livereload', #'django_extensions',
 
 # Explicitly specify the directories to watch
 LIVERELOAD_WATCH_PATHS = [

@@ -9,10 +9,9 @@ from django.views.generic import TemplateView # type: ignore
 from users.views import user_detail_view
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('', index, name='index'),
     path('<uuid:uuid>/', user_detail_view, name='detail'),
-    path("", TemplateView.as_view(template_name="index.html"), name="home"), 
-    path("test_x/", TemplateView.as_view(template_name="login_test.html"), name="test_x"),
+    #path("", TemplateView.as_view(template_name="index.html"), name="home"), 
+    path('', include('django_htmx.urls')), # new
     path("about/", TemplateView.as_view(template_name="pages/about.html"), name="about"),
     # User management
     path("users/", include("users.urls", namespace="users")),

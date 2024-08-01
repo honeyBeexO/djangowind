@@ -1,8 +1,10 @@
 from django.contrib import admin # type: ignore
-from django.contrib.auth.admin import UserAdmin # type: ignore
+from django.contrib.auth.admin import UserAdmin as BaseUserAdmin # type: ignore
 from .models import CustomUser, Profile, Address
 from django.utils.translation import gettext_lazy as _ # type: ignore
 from django.utils.html import format_html # type: ignore
+
+from unfold.admin import ModelAdmin # type: ignore
 
 
 class HomeAddressInline(admin.StackedInline):
@@ -27,7 +29,7 @@ class ProfileInline(admin.StackedInline):
     verbose_name_plural = 'Profiles'
 
 @admin.register(Profile)
-class ProfileAdmin(admin.ModelAdmin):
+class ProfileAdmin(ModelAdmin):
     list_display = ('user', 'get_email', 'get_phone_number', 'get_profile_image')
     search_fields = ('user__email', 'user__phone_number')  # Search through User's phone_number
 
@@ -46,7 +48,7 @@ class ProfileAdmin(admin.ModelAdmin):
     get_profile_image.short_description = _("Profile Image")
     
 @admin.register(Address)
-class AddressAdmin(admin.ModelAdmin):
+class AddressAdmin(ModelAdmin):
     list_display = ('name', 'street_address', 'postal_code', 'city', 'country')
     list_filter = ('country', 'city')
     search_fields = ('name', 'street_address', 'postal_code', 'city')
@@ -69,7 +71,7 @@ class AddressAdmin(admin.ModelAdmin):
     
 
 @admin.register(CustomUser)
-class CustomUserAdmin(UserAdmin):
+class CustomUserAdmin(BaseUserAdmin, ModelAdmin):
     inlines = (ProfileInline,)
     list_display = ("email", "get_full_name", "phone_number", "is_staff", "is_active", "is_superuser",'home_address','business_address',)
     search_fields = ("email", "first_name", "last_name", "phone_number")

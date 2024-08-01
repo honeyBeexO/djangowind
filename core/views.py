@@ -1,7 +1,8 @@
 from django.shortcuts import render # type: ignore
 from core.forms import *
+from core.models import SubSector,Sector
 from formtools.wizard.views import SessionWizardView # type: ignore
-from django.http import HttpResponse # type: ignore
+from django.http import HttpResponse, JsonResponse, HttpRequest # type: ignore
 # Create your views here.
 from django.utils.translation import gettext_lazy as _ # type: ignore
 
@@ -17,6 +18,25 @@ TEMPLATES = {
     "business": "forms/core/_business.html",
     "address": "forms/core/_business.html"
     }
+# def get_subsectors(request):
+#     sector_id = request.GET.get('sector_id')
+#     if sector_id:
+#         subsectors = Sector.objects.get(id=sector_id).subsectors.all()#SubSector.objects.filter(parent_id=sector_id)
+#         subsector_options = [{'id': sub.id, 'name': sub.name} for sub in subsectors]
+#         print(f'JSON: {subsector_options} for {sector_id}')
+#         return JsonResponse({'subsectors': subsector_options})
+#     else:
+#         print(f'JSON: [] for {sector_id}')
+#     return JsonResponse({'subsectors': []})
+
+def get_subsectors(request):
+    sector_id = request.GET.get('sector_id')
+    subsectors = []
+    if sector_id:
+        sector = Sector.objects.get(id=sector_id)
+        subsectors = sector.subsectors.all()
+    print(f'Loading subs for {sector_id}: {subsectors[:4]}')
+    return render(request, 'partials/subsector_options.html', {'subsectors': subsectors})
 
 class OnboardingSessionWizardView(SessionWizardView):
     # form_list = [
@@ -38,8 +58,6 @@ class OnboardingSessionWizardView(SessionWizardView):
     def get_context_data(self, form, **kwargs):
         context = super().get_context_data(form=form, **kwargs)
         context['countries'] = core_models.Country.objects.all()
-        context['sectors'] = core_models.Sector.objects.all()
-        context['sub_sectors'] = core_models.SubSector.objects.all()
         return context
 
 

@@ -51,84 +51,82 @@
 <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
     <!-- Sector Field -->
     <div>
-        <label for="{{ wizard.form.sector.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ wizard.form.sector.label }}</label>
-        <select name="{{ wizard.form.sector.name }}" id="{{ wizard.form.sector.id_for_label }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-            {% for choice in wizard.form.sector.field.choices %}
-                <option value="{{ choice.0 }}" {% if wizard.form.sector.value == choice.0 %}selected{% endif %}>{{ choice.1 }}</option>
-            {% endfor %}
-        </select>
-        {% if form.sector.errors %}
-            <div class="text-red-500 text-sm mt-2">
-                {% for error in form.sector.errors %}
-                    <p>{{ error }}</p>
-                {% endfor %}
-            </div>
-        {% endif %}
-    </div>
-
-    <!-- Sub-Sector Field -->
-    <div>        
-        <label for="{{ wizard.form.sub_sector.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            {{ wizard.form.sub_sector.label }}
-        </label>    
+        <label for="{{ wizard.form.sector.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+            {{ wizard.form.sector.label }}
+        </label>
         <div class="relative mt-1.5">
-        <input
-            type="text"
-            name="{{ wizard.form.sub_sector.name }}" 
-            placeholder="{{ wizard.form.sub_sector.field.widget.attrs.placeholder }}"
-            id="{{ wizard.form.sub_sector.id_for_label }}"
-            list="SubSectorsList"
-            class="w-full rounded-lg border-gray-300 pe-10 text-gray-700 sm:text-sm [&::-webkit-calendar-picker-indicator]:opacity-0"
-            required
-            autocomplete="on"
-            value="{{ wizard.form.sub_sector.value|default_if_none:'' }}"
+            <input
+                type="text"
+                name="{{ wizard.form.sector.name }}"
+                id="{{ wizard.form.sector.id_for_label }}"
+                placeholder="{{ wizard.form.sector.field.widget.attrs.placeholder }}"
+                list="sectorsList"
+                class="w-full rounded-lg border-gray-300 pe-10 text-gray-700 sm:text-sm"
+                required
+                autocomplete="on"
+                hx-get="{% url 'core:get-subsectors' %}"
+                hx-trigger="change"
+                hx-target="#subsectorsList"
+                hx-include="#sector_id"
+                hx-params="*"
             />
-    
-        <span class="absolute inset-y-0 end-0 flex w-8 items-center">
-            <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-5 text-gray-500"
-            >
-            <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
-            />
-            </svg>
-        </span>
+            <datalist id="sectorsList">
+                {% for sector in form.fields.sector.queryset %}
+                    <option value="{{ sector.name }}" data-id="{{ sector.id }}">{{ sector.id }} </option>
+                {% endfor %}
+            </datalist>
+            <!-- Hidden field to store the selected sector ID -->
+            <input type="hidden" id="sector_id" name="sector_id" />
+            <span class="absolute inset-y-0 end-0 flex w-8 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                </svg>
+            </span>
         </div>
-        {% if wizard.form.birth_country.errors %}
+        {% if wizard.form.sector.errors %}
         <div class="text-red-500 text-sm mt-2">
-            {% for error in wizard.form.birth_country.errors %}
+            {% for error in wizard.form.sector.errors %}
                 <p>{{ error }}</p>
             {% endfor %}
         </div>
         {% endif %}
-    
-        <datalist name="{{ wizard.form.sub_sector.id_for_label }}" id="SubSectorsList">
-        {% for sub in sub_sectors %}
-            <option value="{{ sub_sectors.id }}">{{ sub_sectors.name }}</option>
-        {% endfor %}
-        </datalist>
     </div>
+     <!-- sectors field ends -->
+
+    <!-- Sub-Sector Field -->
     <div>
-        <label for="{{ wizard.form.sub_sector.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ wizard.form.sub_sector.label }}</label>
-        <input type="text" name="{{ wizard.form.sub_sector.name }}" 
-        id="{{ wizard.form.sub_sector.id_for_label }}" 
-        placeholder="{{ wizard.form.sub_sector.field.widget.attrs.placeholder }}"
-        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <label for="{{ wizard.form.sub_sector.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+            {{ wizard.form.sub_sector.label }}
+        </label>
+        <div class="relative mt-1.5">
+            <input
+                type="text"
+                name="{{ wizard.form.sub_sector.name }}"
+                id="{{ wizard.form.sub_sector.id_for_label }}"
+                placeholder="{{ wizard.form.sub_sector.field.widget.attrs.placeholder }}"
+                list="subSectorsList"
+                class="w-full rounded-lg border-gray-300 pe-10 text-gray-700 sm:text-sm"
+                required
+                autocomplete="on"
+            />
+            <datalist id="subSectorsList">
+                <!-- Options has to be dynamically populated from the htmx json response -->
+            </datalist>
+            <span class="absolute inset-y-0 end-0 flex w-8 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                </svg>
+            </span>
+        </div>
         {% if wizard.form.sub_sector.errors %}
-            <div class="text-red-500 text-sm mt-2">
-                {% for error in wizard.form.sub_sector.errors %}
-                    <p>{{ error }}</p>
-                {% endfor %}
-            </div>
+        <div class="text-red-500 text-sm mt-2">
+            {% for error in wizard.form.sub_sector.errors %}
+                <p>{{ error }}</p>
+            {% endfor %}
+        </div>
         {% endif %}
     </div>
+    <!-- subsectors field ends -->
     
     <!-- When to Start Field -->
     <div>
