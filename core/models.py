@@ -99,3 +99,34 @@ class BusinessActivity(models.Model):
     
     def __str__(self):
         return self.QUESTION2
+
+class BusinessAddress(models.Model):
+    street_address = models.CharField(max_length=255, null=True, blank=True)
+    postal_code = models.CharField(max_length=20, db_index=True, null=True, blank=True)
+    city = models.CharField(max_length=100, null=True, blank=True)
+    country = models.ForeignKey(Country, on_delete=models.SET_NULL, null=True, blank=True, default='France')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    is_verified = models.BooleanField(default=False)
+
+    class Meta:
+        verbose_name_plural = "Addresses"
+        indexes = [
+            models.Index(fields=['postal_code', 'city']),
+        ]
+
+    def __str__(self):
+        return self.generate_full_address()
+
+    def generate_full_address(self):
+        address_parts = []
+        if self.street_address:
+            address_parts.append(self.street_address)
+        if self.postal_code and self.city:
+            address_parts.append(f"{self.postal_code} {self.city}")
+        if self.country:
+            address_parts.append(str(self.country))
+        return ", ".join(address_parts)
+
+    def formatted_address(self):
+        return self.generate_full_address()

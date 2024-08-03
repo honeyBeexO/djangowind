@@ -63,7 +63,10 @@ class SegnoQRGen:
         # Generate the random pattern
         pattern_img = Image.new('RGB', 
                                 (pattern_size, pattern_size), 
-                                
+                                (random.randint(0, 255), 
+                                 random.randint(0, 255), 
+                                 random.randint(0, 255)
+                                ),
                             )
         draw = ImageDraw.Draw(pattern_img)
         for _ in range(10):  # Draw random lines to create a pattern
@@ -84,16 +87,6 @@ class SegnoQRGen:
         # Save the modified QR code image with the random pattern
         img.save("qr_code_with_random_finder_pattern.png")
         
-    def draw_borders(self):
-        # Open the image with the random pattern
-        img = Image.open('qr_code_with_random_finder_pattern.png')
-
-        # Add borders around the image
-        img_with_borders = ImageOps.expand(img, border=2, fill='black')
-
-        # Save the image with borders
-        img_with_borders.save("qr_code_with_borders.png")
-
     def draw_axis_with_ticks(self):
         # Open the image with the random pattern
         img = Image.open('qr_code_with_random_finder_pattern.png')

@@ -25,6 +25,10 @@
     
     <link href="{% static 'css/project.css' %}" rel="stylesheet">
     <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+    <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
+    {% comment %} <script async
+        src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_MAPS_API_KEY }}&loading=async&libraries=places&callback=initMap">
+    </script> {% endcomment %}
 
 </head>
 
@@ -45,6 +49,87 @@
         </div>
 
     </section>
+
+    <section class="bg-white py-8">
+        <div class="container py-8 px-6 mx-auto rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+            <form action="" class="space-y-4" method="POST" novalidate>
+            {% csrf_token %}
+            <div class="max-w-sm space-y-3 mx-auto">
+                <label for="{{ form.full_address.id_for_label }}" class="relative block overflow-hidden rounded-md border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600">
+                    <label for="{{form.search_address.id_for_label}}" class="sr-only"> Search </label>
+                    <gmpx-api-loader key="{{ GOOGLE_MAPS_API_KEY }}" solution-channel="GMP_GE_placepicker_v1"></gmpx-api-loader>
+                    <gmpx-place-picker 
+                        placeholder="{{form.search_address.field.widget.attrs.placeholder}}" 
+                        class="peer h-10 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm">
+                    </gmpx-place-picker>
+                </label>
+                {% if form.search_address.errors %}
+                    <div class="text-red-500">
+                    {% for error in form.search_address.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <!-- End of search address -->
+            <div class="max-w-sm space-y-3 mx-auto">
+                <label for="{{ form.full_address.id_for_label }}" class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600">
+                    <input
+                        type="text"
+                        id="{{ form.full_address.id_for_label }}"
+                        placeholder="{{ form.full_address.field.widget.attrs.placeholder }}"
+                        name="{{ form.full_address.name }}"
+                        class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                    />
+
+                    <span class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-400 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+                        {{ form.full_address.label }}
+                    </span>
+                </label>
+                {% if form.full_address.errors %}
+                    <div class="text-red-500">
+                    {% for error in form.full_address.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+              <!-- End Floating Input -->
+              <div class="max-w-sm space-y-3 mx-auto">
+                <label for="{{ form.city.id_for_label }}" class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600">
+                    <input
+                        type="text"
+                        id="{{ form.city.id_for_label }}"
+                        placeholder="{{ form.city.field.widget.attrs.placeholder }}"
+                        name="{{ form.city.name }}"
+                        class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                    />
+
+                    <span class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-400 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+                        {{ form.city.label }}
+                    </span>
+                </label>
+                {% if form.city.errors %}
+                    <div class="text-red-500">
+                    {% for error in form.city.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+              <!-- End Floating Input -->
+              <div class="max-w-sm space-y-3 mx-auto text-center h-8 border-separate my-auto border-black">
+                <p id="full_address"></p>
+                <p id="display_address"></p>
+                <p id="my_ctiy"></p>
+                <p id="postcode"></p>
+                <p id="country"></p>
+            </div>
+              <!-- End Floating Input -->
+            </form>
+        </div>
+    </section>
+
 
 
     <section class="bg-white py-8">
@@ -199,145 +284,55 @@
             <p class="mb-8">Lorem ipsum dolor sit amet, consectetur <a href="#">random link</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in. Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae congue eu consequat ac.</p>
 
         </div>
-
-        <div class="container py-8 px-6 mx-auto rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-            <form action="" class="space-y-4" method="POST">
-                {% csrf_token %}
-                <!-- Sector Field -->
-                <div>
-                    <div class="relative mt-1.5">
-                        <label for="{{ form.sector.name }}"> Domain d'activité </label>
-                        <input
-                            type="text"
-                            name="{{ form.sector.html_name }}"
-                            id="{{ form.sector.id_for_label }}"
-                            placeholder="{{ form.sector.field.widget.attrs.placeholder }}"
-                            list="sectorsList"
-                            class="w-full rounded-lg border-gray-300 pe-10 text-gray-700 sm:text-sm [&::-webkit-calendar-picker-indicator]:opacity-0"
-                            required
-                            autocomplete="on"
-                            hx-get="{% url 'dj-htmx:get-sub-sectors' %}"
-                            hx-trigger="change"
-                            hx-vals="value"
-                            hx-target="#subsectorsList"
-                            hx-swap="innerHTML"
-                        />
-                        <datalist id="sectorsList">
-                            {% for value, label in form.sector.field.choices %}
-                            <label for="sector_{{ value }}"> {{ label }} </label>
-                            <option id="sector_{{ value }}" name="name_sector_{{value }}" value="{{ label }}" data-id="sector_{{value }}"> {{ label }} </option>
-                            {% endfor %}
-                        </datalist>
-                        
-                        <span class="absolute inset-y-0 end-0 flex w-8 items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-gray-500">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                            </svg>
-                        </span>
-                    </div>
-                </div> 
-                <!-- Sub Sector Field -->
-                <div id="subsectorsList">
-                    
-                </div>                                
-     <!-- When to Start Field -->
-     <div>
-        <label for="{{ form.when_to_start.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ form.when_to_start.label }}</label>
-        <input type="date" name="{{ form.when_to_start.name }}" id="{{ form.when_to_start.id_for_label }}" placeholder="{{ form.when_to_start.field.widget.attrs.placeholder }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-        {% if form.when_to_start.errors %}
-            <div class="text-red-500 text-sm mt-2">
-                {% for error in form.when_to_start.errors %}
-                    <p>{{ error }}</p>
-                {% endfor %}
-            </div>
-        {% endif %}
-    </div>
-
-    <!-- Commercial Name Field -->
-    <div>
-        <label for="{{ form.commercial_name.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ wizard.form.commercial_name.label }}</label>
-        <input type="text" name="{{ form.commercial_name.name }}" id="{{ form.commercial_name.id_for_label }}" placeholder="{{ form.commercial_name.field.widget.attrs.placeholder }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-        {% if form.commercial_name.errors %}
-            <div class="text-red-500 text-sm mt-2">
-                {% for error in form.commercial_name.errors %}
-                    <p>{{ error }}</p>
-                {% endfor %}
-            </div>
-        {% endif %}
-    </div>
-
-    <!-- Is Micro Field -->  
-              <div class="">
-                {{ form.activity_type }}
-
-                <fieldset class="grid grid-cols-1 gap-4">
-                    <legend class="sr-only">Business Activity Type</legend>
-                    <label class="text-black"> {{form.instance.QUESTION2}}</label>
-                    {% for choice in form.activity_type.field.choices %}
-                    <div>
-                      <label
-                        for="{{ form.activity_type.id_for_label }}_{{ forloop.counter }}"
-                        class="flex cursor-pointer justify-between gap-4 rounded-lg border border-gray-100 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-blue-500 has-[:checked]:ring-1 has-[:checked]:ring-blue-500"
-                      >
-                        <div>
-                              <p class="mt-1 text-gray-900">{{ choice.1 }}</p>
-                        </div>
-                        <input
-                          type="radio"
-                          name="{{ form.activity_type.name }}"
-                          value="{{ choice.0 }}"
-                          id="{{ form.activity_type.id_for_label }}_{{ forloop.counter }}"
-                          class="size-5 border-gray-300 text-blue-500"
-                        />
-                      </label>
-                    </div>
-                    {% endfor %}
-                </fieldset>
-                {% comment %} <fieldset class="space-y-4 groupe" id="{{ form.activity_type.id_for_label }}">
-                    <legend class="sr-only">Business Activity Type</legend>
-                    <label for="{{ form.activity_type.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                        {{ form.activity_type.label }} {% endcomment %}
-                    {% comment %} </label>
-                    {% for choice in form.activity_type.field.choices %}
-                        <div>
-                            <label for="{{ form.activity_type.id_for_label }}_{{ forloop.counter }}" class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
-                              tabindex="0" 
-                            >
-                              <span class="text-sm"> {{ choice.1 }} </span>
-                            </label>
-                            <input class="sr-only" 
-                                id="{{ form.activity_type.id_for_label }}_{{ forloop.counter }}" 
-                                type="radio" 
-                                tabindex="-1" 
-                                name="{{ form.activity_type.id_for_label }}_{{ forloop.counter }}" 
-                                value="{{ choice.0 }}" 
-                                {% if form.activity_type.value == choice.0 %} checked {% endif %}
-                            />
-                          </div>
-                    {% endfor %} {% endcomment %}
-                    
-                    {% if form.activity_type.errors %}
-                        <div class="text-red-500 text-sm mt-2">
-                            {% for error in form.activity_type.errors %}
-                                <p>{{ error }}</p>
-                            {% endfor %}
-                        </div>
-                    {% endif %}
-                  </fieldset>
-              </div>
-    
-              <div class="mt-4">
-                <button
-                  type="submit"
-                  class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
-                >
-                  Send Enquiry
-                </button>
-              </div>
-            </form>
-          </div>
-
     </section>
 </body>
+
+<script>
+    const picker = document.querySelector('gmpx-place-picker');
+    const full_address = document.querySelector('#{{form.full_address.id_for_label}}');
+    const address_city = document.querySelector('#{{form.city.id_for_label}}');
+    const fl_addrs = document.querySelector('#full_address');
+    const display_address = document.querySelector('#display_address');
+    const country = document.querySelector('#country');
+    const postcode = document.querySelector('#postcode');
+    const my_city = document.querySelector('#city');
+
+    picker.addEventListener('gmpx-placechange', (e) => {
+        full_address.value = e.target.value?.formattedAddress ?? '';
+        fl_addrs.textContent = full_address.value;
+        display_address.textContent = e.target.value?.displayName ?? '';
+        address_city.value = extractCity(e.target.value?.formattedAddress ?? '');
+        country.textContent = extractCountry(e.target.value?.formattedAddress ?? '');
+        postcode.textContent = extractPostcode(e.target.value?.formattedAddress ?? '');
+        my_city.textContent = e.target.value?.formattedAddress ?? ''; 
+    });
+    const extractCountry = (formattedAddress) => {
+        if (formattedAddress.trim().length === 0) {
+            return '';
+        }
+        const addressParts = formattedAddress.split(', ');
+        const country = addressParts[addressParts.length - 1];
+        return country;
+    };
+
+    const extractPostcode = (formattedAddress) => {
+        if (formattedAddress.trim().length === 0) {
+            return '';
+        }
+        const addressParts = formattedAddress.split(', ');
+        const postcode = addressParts[addressParts.length - 2];
+        return postcode;
+    };
+
+    const extractCity = (formattedAddress) => {
+        if (formattedAddress.trim().length === 0) {
+            return '';
+        }
+        const addressParts = formattedAddress.split(', ');
+        const city = addressParts[addressParts.length - 3];
+        return city;
+    };
+
+</script> 
 
 </html>

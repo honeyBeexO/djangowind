@@ -92,6 +92,7 @@ TEMPLATES = [
                 # To get access to CLIENT_ID in the context template
                 "users.utils.context_processors.settings_context",
                 "users.utils.context_processors.google_client_id",
+                "users.utils.context_processors.google_maps_api_key", #GOOGLE_MAPS_API_KEY
             ],
         },
     },

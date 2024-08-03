@@ -7,7 +7,7 @@ from django.http import JsonResponse, HttpResponse # type: ignore
 
 
 def index(request):
-    form = BusinessActivityForm()
+    form = BusinessAddressForm()
     return render(request, 'tests/htmx_test.html', {'form': form})
 
 def get_subsectors(request):

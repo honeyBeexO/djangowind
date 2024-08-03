@@ -1,0 +1,111 @@
+<div class="container py-8 px-6 mx-auto rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+    <form action="" class="space-y-4" method="POST">
+        {% csrf_token %}
+        <!-- Sector Field -->
+        <div>
+            <div class="relative mt-1.5">
+                <label for="{{ form.sector.name }}"> Domain d'activité </label>
+                <input
+                    type="text"
+                    name="{{ form.sector.html_name }}"
+                    id="{{ form.sector.id_for_label }}"
+                    placeholder="{{ form.sector.field.widget.attrs.placeholder }}"
+                    list="sectorsList"
+                    class="w-full rounded-lg border-gray-300 pe-10 text-gray-700 sm:text-sm [&::-webkit-calendar-picker-indicator]:opacity-0"
+                    required
+                    autocomplete="on"
+                    hx-get="{% url 'dj-htmx:get-sub-sectors' %}"
+                    hx-trigger="change"
+                    hx-vals="value"
+                    hx-target="#subsectorsList"
+                    hx-swap="innerHTML"
+                />
+                <datalist id="sectorsList">
+                    {% for value, label in form.sector.field.choices %}
+                    <option value="{{ label }}" data-id="sector_{{value }}"> {{ label }} </option>
+                    {% endfor %}
+                </datalist>
+                
+                <span class="absolute inset-y-0 end-0 flex w-8 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-gray-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                    </svg>
+                </span>
+            </div>
+        </div> 
+        <!-- Sub Sector Field -->
+        <div id="subsectorsList">
+            
+        </div>
+<!-- When to Start Field -->
+    <div>
+        <label for="{{ form.when_to_start.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ form.when_to_start.label }}</label>
+        <input type="date" name="{{ form.when_to_start.name }}" id="{{ form.when_to_start.id_for_label }}" placeholder="{{ form.when_to_start.field.widget.attrs.placeholder }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        {% if form.when_to_start.errors %}
+            <div class="text-red-500 text-sm mt-2">
+                {% for error in form.when_to_start.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+<!-- Commercial Name Field -->
+    <div>
+        <label for="{{ form.commercial_name.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ wizard.form.commercial_name.label }}</label>
+        <input type="text" name="{{ form.commercial_name.name }}" id="{{ form.commercial_name.id_for_label }}" placeholder="{{ form.commercial_name.field.widget.attrs.placeholder }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        {% if form.commercial_name.errors %}
+            <div class="text-red-500 text-sm mt-2">
+                {% for error in form.commercial_name.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+<!-- Business Activity Radio Select Field -->  
+    <div>
+        <fieldset class="grid grid-cols-1 gap-4">
+            <legend class="sr-only">Business Activity Type</legend>
+            <label class="text-black"> {{form.instance.QUESTION2}}</label>
+            {% for choice in form.activity_type.field.choices %}
+            <div>
+              <label
+                for="{{ form.activity_type.id_for_label }}_{{ forloop.counter }}"
+                class="flex cursor-pointer justify-between gap-4 rounded-lg border border-gray-100 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-blue-500 has-[:checked]:ring-1 has-[:checked]:ring-blue-500"
+              >
+                <div>
+                      <p class="mt-1 text-gray-900">{{ choice.1 }}</p>
+                </div>
+                <input
+                  type="radio"
+                  name="{{ form.activity_type.name }}"
+                  value="{{ choice.0 }}"
+                  id="{{ form.activity_type.id_for_label }}_{{ forloop.counter }}"
+                  class="size-5 border-gray-300 text-blue-500"
+                  {% if form.activity_type.value == choice.0 %} checked {% endif %}
+                />
+              </label>
+            </div>
+            {% endfor %}
+        </fieldset>         
+            {% if form.activity_type.errors %}
+                <div class="text-red-500 text-sm mt-2">
+                    {% for error in form.activity_type.errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+          </fieldset>
+    </div>
+
+      <div class="mt-4">
+        <button
+          type="submit"
+          class="inline-block w-full border border-black rounded-lg bg-black px-5 py-3 font-medium text-black sm:w-auto"
+        >
+          Send Enquiry
+        </button>
+      </div>
+    </form>
+</div>

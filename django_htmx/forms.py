@@ -33,4 +33,25 @@ class BusinessActivityForm(forms.ModelForm):
             'commercial_name': forms.TextInput(attrs={'placeholder': _('Nom comercial (optionnel)')}),
         }
 
+
+class BusinessAddressForm(forms.Form):
+    STREET = _('Adresse de votre domicile')
+    SEARCH = _('Rechercher une adresse')
+    COMPLEMENT = _("Complément d'adresse de domicile (optionnel)")
+    CITY = _('Ville')
+
+    search_address = forms.CharField(
+        label=SEARCH,
+        widget=forms.TextInput(attrs={'placeholder': SEARCH})
+    )
+    
+    full_address = forms.CharField(
+        label=STREET,
+        widget=forms.TextInput(attrs={'placeholder': STREET})
+    )
+    
+    city = forms.CharField(
+        label=CITY,
+        widget=forms.TextInput(attrs={'placeholder': CITY})
+    )
         
