@@ -49,10 +49,11 @@ Make sure 'django.contrib.staticfiles' is in INSTALLED_APPS and you've set up ST
 Use Tailwind classes in your HTML.
 
 The STATIC_URL in Django's settings.py is typically set to /static/. This is a URL prefix, not a file system path. Here's how you should set it:
-pythonCopySTATIC_URL = '/static/'
-This means that Django will serve static files under the /static/ URL. For example, if you have a CSS file at static/css/style.css, it will be accessible at http://yourdomain.com/static/css/style.css.
+STATIC_URL = '/static/'
+T
+his means that Django will serve static files under the /static/ URL. For example, if you have a CSS file at static/css/style.css, it will be accessible at http://yourdomain.com/static/css/style.css.
 Additionally, you should also set STATICFILES_DIRS to tell Django where to find your static files:
-pythonCopyimport os
+import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -62,7 +63,7 @@ STATICFILES_DIRS = [
 ]
 This tells Django to look for static files in a directory named 'static' at the same level as your manage.py file.
 If you're deploying to production, you'll also want to set STATIC_ROOT:
-pythonCopySTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 ## i have few images to display on my website should i store them under static directory/images/ or somewhere else EditStoring your images in the static/images/ directory is indeed a good practice for Django projects. Here's why and how to do it:
 
@@ -78,10 +79,12 @@ Copyyour_project/
 
 Settings:
 Ensure your settings.py has the correct configuration:
-pythonCopySTATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = [BASE_DIR / 'static']
 
 Usage in templates:
 To use these images in your HTML templates:
-htmlCopy{% load static %}
-<img src="{% static 'images/logo.png' %}" alt="Logo">
+
+    {% load static %}
+    <img src="{% static 'images/logo.png' %}" alt="Logo">
+# boka
